@@ -7,11 +7,12 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-md bg-gradient-linkvision flex items-center justify-center">
-                <span className="text-white font-bold">LV</span>
-              </div>
-              <span className="text-white font-display font-bold text-2xl">LinkVision</span>
+            <div className="flex items-center mb-4">
+              <img 
+                src="/linkvision-logo.png" 
+                alt="LinkVision - AI Surveillance" 
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-white/80 mb-4">
               AI-ready solar CCTV and surveillance systems built for Australia.

@@ -22,11 +22,12 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" data-testid="link-home">
-            <div className="flex items-center gap-2 hover-elevate active-elevate-2 px-2 py-1 rounded-md cursor-pointer">
-              <div className="w-8 h-8 rounded-md bg-gradient-linkvision flex items-center justify-center">
-                <span className="text-white font-bold text-sm">LV</span>
-              </div>
-              <span className="text-white font-display font-bold text-xl">LinkVision</span>
+            <div className="flex items-center hover-elevate active-elevate-2 px-2 py-1 rounded-md cursor-pointer">
+              <img 
+                src="/linkvision-logo.png" 
+                alt="LinkVision - AI Surveillance" 
+                className="h-8 w-auto"
+              />
             </div>
           </Link>
 
