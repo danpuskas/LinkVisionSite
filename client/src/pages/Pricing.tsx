@@ -220,7 +220,7 @@ export default function Pricing() {
                           className="flex items-center justify-between p-3 bg-white/5 rounded-md"
                         >
                           <span className="text-white">
-                            {option.duration || option.type}
+                            {'duration' in option ? option.duration : option.type}
                           </span>
                           <span className="text-[#C800FF] font-semibold">
                             {option.price}
