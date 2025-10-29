@@ -141,26 +141,23 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#182863]">
       <section className="relative min-h-[700px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#C800FF]/20 via-transparent to-transparent" />
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[#182863]" />
+          <img 
+            src="/solar-camera-bg.jpg" 
+            alt="" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#182863]/80 via-[#182863]/90 to-[#182863]" />
           <div className="absolute inset-0 bg-gradient-to-br from-[#C800FF]/10 via-transparent to-[#B100FF]/10" />
         </div>
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="mb-8 flex justify-center relative">
-              <div className="absolute inset-0 flex items-center justify-center opacity-15">
-                <img 
-                  src="/solar-camera-bg.jpg" 
-                  alt="" 
-                  className="w-auto h-96 object-contain"
-                />
-              </div>
+            <div className="mb-8 flex justify-center">
               <img 
                 src="/linkvision-logo.png" 
                 alt="LinkVision - AI Surveillance" 
-                className="w-full max-w-2xl h-auto px-4 relative z-10"
+                className="w-full max-w-2xl h-auto px-4 drop-shadow-2xl"
               />
             </div>
             
