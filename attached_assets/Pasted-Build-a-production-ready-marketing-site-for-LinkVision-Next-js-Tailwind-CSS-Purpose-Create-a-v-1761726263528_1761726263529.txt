@@ -1,0 +1,108 @@
+Build a production-ready marketing site for LinkVision (Next.js + Tailwind CSS)
+
+Purpose:
+Create a visually striking and high-performance marketing website for LinkVision — AI Surveillance using the supplied logo assets and the following color palette.
+
+🎨 Brand Style
+
+Primary: #C800FF (vibrant magenta)
+
+Accent: #B100FF (electric purple)
+
+Background: #182863 (deep navy)
+
+Text: #FFFFFF (white)
+
+Gradient: linear-gradient(135deg, #C800FF, #B100FF)
+
+Font:
+
+Headings — Outfit, bold
+
+Body — Inter, regular
+
+Logo: use /public/linkvision-logo.svg (from “Color logo - no background.png”)
+
+Symbol: use /public/linkvision-symbol.svg (from “symbol.png”)
+
+Header/footer should use the deep navy background with magenta accents.
+
+💻 Layout & Components
+
+Keep all sections from the existing LinkVision build:
+
+/ Home (video hero, features, mini-pricing, contact form)
+
+/products
+
+/pricing
+
+/solutions
+
+/about
+
+/case-studies
+
+/contact
+
+/legal/privacy
+
+/legal/terms
+
+Update design system to match colors and typography:
+
+theme: {
+  extend: {
+    colors: {
+      linkvision: {
+        magenta: '#C800FF',
+        purple: '#B100FF',
+        navy: '#182863',
+        white: '#FFFFFF'
+      },
+      background: '#182863',
+      text: '#FFFFFF'
+    },
+    backgroundImage: {
+      'gradient-linkvision': 'linear-gradient(135deg, #C800FF, #B100FF)'
+    },
+    fontFamily: {
+      display: ['Outfit', 'sans-serif'],
+      sans: ['Inter', 'sans-serif']
+    }
+  }
+}
+
+🧱 UI Design Guidelines
+
+Header/Footer: deep navy with white text and magenta hover states
+
+Buttons: gradient from #C800FF to #B100FF, white text, slight glow on hover
+
+Hero Section: dark background with subtle magenta glow under logo
+
+Feature Icons: use gradient borders and magenta/purple icons
+
+Pricing Cards: navy background, magenta highlights on the middle “Popular” tier
+
+Lead Form: white input fields on navy background, magenta submit button
+
+🪄 Metadata
+
+Use the tagline and colors consistently in meta descriptions and OpenGraph images:
+
+Site title: LinkVision — AI Surveillance
+
+Meta description: AI-ready solar CCTV and surveillance systems built for Australia.
+
+OG color: #C800FF
+
+📁 Assets
+
+Place your uploaded files as:
+
+/public/linkvision-logo.svg
+
+/public/linkvision-symbol.svg
+
+Replace /public/images/hero.jpg with your brand-style background or gradient overlay (#182863 base + magenta light overlay).
