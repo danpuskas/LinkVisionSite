@@ -149,11 +149,18 @@ export default function Home() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="mb-8 flex justify-center">
+            <div className="mb-8 flex justify-center relative">
+              <div className="absolute inset-0 flex items-center justify-center opacity-15">
+                <img 
+                  src="/solar-camera-bg.jpg" 
+                  alt="" 
+                  className="w-auto h-96 object-contain"
+                />
+              </div>
               <img 
                 src="/linkvision-logo.png" 
                 alt="LinkVision - AI Surveillance" 
-                className="w-full max-w-2xl h-auto px-4"
+                className="w-full max-w-2xl h-auto px-4 relative z-10"
               />
             </div>
             
