@@ -140,7 +140,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#182863]">
-      <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[700px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#C800FF]/20 via-transparent to-transparent" />
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[#182863]" />
@@ -149,12 +149,15 @@ export default function Home() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-gradient-linkvision px-4 py-2 rounded-full mb-8">
-              <Shield className="w-5 h-5 text-white" />
-              <span className="text-white font-semibold">AI-Powered Surveillance</span>
+            <div className="mb-8 flex justify-center">
+              <img 
+                src="/linkvision-logo.png" 
+                alt="LinkVision - AI Surveillance" 
+                className="w-full max-w-2xl h-auto px-4"
+              />
             </div>
             
-            <h1 className="font-display font-bold text-5xl md:text-7xl text-white mb-6 leading-tight">
+            <h1 className="font-display font-bold text-4xl md:text-6xl text-white mb-6 leading-tight">
               Intelligent Security
               <br />
               <span className="bg-gradient-to-r from-[#C800FF] to-[#B100FF] bg-clip-text text-transparent">
