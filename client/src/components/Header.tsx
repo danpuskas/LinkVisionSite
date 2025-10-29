@@ -26,7 +26,7 @@ export function Header() {
               <img 
                 src="/linkvision-logo.png" 
                 alt="LinkVision - AI Surveillance" 
-                className="h-8 w-auto"
+                className="h-12 md:h-14 w-auto"
               />
             </div>
           </Link>
