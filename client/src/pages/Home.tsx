@@ -157,7 +157,7 @@ export default function Home() {
               <img 
                 src="/linkvision-logo.png" 
                 alt="LinkVision - AI Surveillance" 
-                className="w-full max-w-2xl h-auto px-4 drop-shadow-2xl"
+                className="w-full max-w-xl h-auto px-4 drop-shadow-2xl"
               />
             </div>
             
