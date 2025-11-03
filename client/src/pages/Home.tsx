@@ -145,7 +145,7 @@ export default function Home() {
           <img 
             src="/solar-camera-bg.jpg" 
             alt="" 
-            className="w-full h-full object-cover opacity-90"
+            className="w-full h-full object-cover opacity-98"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#182863]/80 via-[#182863]/90 to-[#182863]" />
           <div className="absolute inset-0 bg-gradient-to-br from-[#C800FF]/10 via-transparent to-[#B100FF]/10" />
