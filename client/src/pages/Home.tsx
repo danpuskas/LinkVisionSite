@@ -147,7 +147,7 @@ export default function Home() {
             alt="" 
             className="w-full h-full object-cover opacity-98"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#182863]/80 via-[#182863]/90 to-[#182863]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#182863]/40 via-[#182863]/50 to-[#182863]/70" />
           <div className="absolute inset-0 bg-gradient-to-br from-[#C800FF]/10 via-transparent to-[#B100FF]/10" />
         </div>
         
