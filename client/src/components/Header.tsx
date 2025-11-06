@@ -20,13 +20,13 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-[#182863] border-b border-[#C800FF]/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 md:h-24">
+        <div className="flex items-center justify-between h-16">
           <Link href="/" data-testid="link-home">
             <div className="flex items-center hover-elevate active-elevate-2 px-2 py-1 rounded-md cursor-pointer">
               <img 
                 src="/linkvision-logo.png" 
                 alt="LinkVision - AI Surveillance" 
-                className="h-18 md:h-21 w-auto"
+                className="h-[50px] md:h-[59px] w-auto"
               />
             </div>
           </Link>
