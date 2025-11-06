@@ -1,165 +1,169 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  Building2,
-  Home,
-  Factory,
-  HardHat,
-  Warehouse,
-  School,
-  CheckCircle2,
-  ArrowRight,
-} from "lucide-react";
+import { Sun, Camera, Cloud, Shield, Wifi, Battery, CheckCircle2 } from "lucide-react";
 
-export default function Solutions() {
-  const solutions = [
+export default function Products() {
+  const products = [
     {
-      icon: Home,
-      title: "Residential Construction",
-      description: "Protect your build with AI Driven intelligent solar surveillance",
-      benefits: [
-        "Deter and reduce theft and vandalism",
-        "Monitor deliveries",
-        "Remotely monitor weather and ground conditions",
-        "Reduce insurance premiums",
+      name: "SolarCam Pro 4K",
+      category: "Premium Solar CCTV",
+      price: "$1,499",
+      image: "🌞",
+      features: [
+        "4K Ultra HD Resolution",
+        "100W Solar Panel",
+        "AI-Powered Detection",
+        "Night Vision up to 30m",
+        "Weatherproof IP67 Rating",
+        "2-Year Warranty",
       ],
-      caseStudy: "See how the Johnson family secured their acreage property",
+      specs: {
+        resolution: "4K (3840×2160)",
+        power: "Solar + Battery Backup",
+        storage: "Cloud + Local SD Card",
+        connectivity: "4G LTE / WiFi",
+      },
     },
     {
-      icon: Building2,
-      title: "Commercial Construction",
-      description: "Complete surveillance solutions for commercial construction sites",
-      benefits: [
-        "24/7 perimeter monitoring",
-        "Arm and Disarm your site just like an Alarm System",
-        "24/7 Control Room Monitored",
-        "Reduce theft and vandalism",
+      name: "SolarCam Standard",
+      category: "Affordable Solar CCTV",
+      price: "$899",
+      image: "📹",
+      features: [
+        "1080p Full HD Resolution",
+        "60W Solar Panel",
+        "Motion Detection",
+        "Night Vision up to 20m",
+        "Weatherproof IP65 Rating",
+        "1-Year Warranty",
       ],
-      caseStudy: "Melbourne CBD office building case study",
+      specs: {
+        resolution: "1080p (1920×1080)",
+        power: "Solar + Battery Backup",
+        storage: "Cloud + Local SD Card",
+        connectivity: "WiFi",
+      },
     },
     {
-      icon: Factory,
-      title: "Industrial & Civil Construction",
-      description: "Protect and Monitor expansive areas all from the same screen",
-      benefits: [
-        "Protect industrial machinery and equipment",
-        "Monitor entry and exit construction ramps",
-        "Increase worker safety compliance",
-        "Verify trucks and vehicles number plates",
-        "Monitor service vehicles and deliveries"
+      name: "AI Analytics Suite",
+      category: "Software & Services",
+      price: "$299/mo",
+      image: "🤖",
+      features: [
+        "Advanced AI Object Detection",
+        "Facial Recognition",
+        "License Plate Recognition",
+        "Behavioral Analytics",
+        "Real-time Alerts",
+        "Custom Alert Zones",
       ],
-      caseStudy: "Mining operation in Western Australia",
+      specs: {
+        deployment: "Cloud-based",
+        integration: "All LinkVision Cameras",
+        alerts: "Email, SMS, Push",
+        storage: "Unlimited Cloud Storage",
+      },
     },
     {
-      icon: HardHat,
-      title: "Mining & Resources",
-      description: "Rugged surveillance for remote mining operations",
-      benefits: [
-        "Monitor remote mine sites 24/7",
-        "Heavy equipment and asset protection",
-        "Worker safety compliance",
-        "Reduce or eliminate security patrols",
+      name: "Enterprise Command Center",
+      category: "Complete Solution",
+      price: "Custom",
+      image: "🏢",
+      features: [
+        "Unlimited Camera Support",
+        "Centralized Management",
+        "Multi-site Monitoring",
+        "Advanced Reporting",
+        "Dedicated Support Team",
+        "Custom Integration",
       ],
-      caseStudy: "Mining operation in Western Australia",
-    },
-    {
-      icon: Warehouse,
-      title: "Warehouses & Logistics",
-      description: "Monitor large facilities with solar-powered coverage",
-      benefits: [
-        "Inventory and asset protection",
-        "Loading dock monitoring",
-        "Forklift safety compliance",
-        "Perimeter breach detection",
-      ],
-      caseStudy: "Distribution center in Queensland",
-    },
-    {
-      icon: School,
-      title: "Education Facilities",
-      description: "Safe learning environments with comprehensive monitoring",
-      benefits: [
-        "Campus-wide surveillance",
-        "Playground and parking monitoring",
-        "Emergency response support",
-        "Visitor tracking",
-      ],
-      caseStudy: "Primary school security upgrade",
+      specs: {
+        deployment: "On-premise or Cloud",
+        support: "24/7 Dedicated Team",
+        training: "Included",
+        customization: "Full API Access",
+      },
     },
   ];
 
-  const industries = [
-    "Agriculture & Farming",
-    "Healthcare Facilities",
-    "Hospitality & Hotels",
-    "Transportation Hubs",
-    "Government Buildings",
-    "Sports & Recreation",
+  const accessories = [
+    { icon: Battery, name: "Extended Battery Pack", price: "$299" },
+    { icon: Sun, name: "120W Solar Panel Upgrade", price: "$199" },
+    { icon: Wifi, name: "4G LTE Module", price: "$149" },
+    { icon: Shield, name: "Vandal-proof Housing", price: "$99" },
   ];
 
   return (
     <div className="min-h-screen bg-[#182863]">
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0">
-          <img 
-            src="/mining-excavator-bg.jpg" 
-            alt="" 
-            className="w-full h-full object-cover opacity-98"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#182863]/40 via-[#182863]/50 to-[#182863]/70" />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#C800FF]/10 via-transparent to-[#B100FF]/10" />
-        </div>
-        
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <section className="py-20 bg-gradient-to-b from-[#1a2f6f] to-[#182863]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h1 className="font-display font-bold text-5xl md:text-6xl text-white mb-6 drop-shadow-2xl">
-              Industry
+            <h1 className="font-display font-bold text-5xl md:text-6xl text-white mb-6">
+              Solutions
             </h1>
-            <p className="text-xl text-white/90 drop-shadow-lg">
-              Tailored solar surveillance systems designed for your specific security challenges
+            <p className="text-xl text-white/80">
+              Cutting-edge solar-powered surveillance solutions designed for Australian conditions
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {solutions.map((solution, index) => (
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {products.map((product, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover-elevate"
-                data-testid={`card-solution-${index}`}
+                className="bg-[#1a2f6f] border-2 border-[#C800FF]/30 hover-elevate"
+                data-testid={`card-product-${index}`}
               >
                 <CardHeader>
-                  <div className="w-16 h-16 rounded-lg bg-gradient-linkvision flex items-center justify-center mb-4">
-                    <solution.icon className="w-8 h-8 text-white" />
+                  <div className="text-6xl mb-4">{product.image}</div>
+                  <div className="text-sm text-[#C800FF] font-semibold mb-2">
+                    {product.category}
                   </div>
-                  <CardTitle className="text-white font-display text-2xl">
-                    {solution.title}
+                  <CardTitle className="text-white font-display text-3xl">
+                    {product.name}
                   </CardTitle>
-                  <CardDescription className="text-white/70 text-base">
-                    {solution.description}
-                  </CardDescription>
+                  <div className="text-4xl font-display font-bold text-white mt-2">
+                    {product.price}
+                    {product.price !== "Custom" && product.price.includes("/") === false && (
+                      <span className="text-lg text-white/60 ml-2">AUD</span>
+                    )}
+                  </div>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div>
-                    <h4 className="text-white font-semibold mb-3">Key Benefits</h4>
+                    <h4 className="text-white font-semibold mb-3">Features</h4>
                     <ul className="space-y-2">
-                      {solution.benefits.map((benefit, idx) => (
+                      {product.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start gap-2">
                           <CheckCircle2 className="w-5 h-5 text-[#C800FF] flex-shrink-0 mt-0.5" />
-                          <span className="text-white/90 text-sm">{benefit}</span>
+                          <span className="text-white/90">{feature}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
 
-                  <div className="pt-4 border-t border-white/10">
-                    <Link href="/case-studies">
-                      <button className="flex items-center gap-2 text-[#C800FF] hover:text-[#B100FF] transition-colors text-sm font-medium group">
-                        {solution.caseStudy}
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      </button>
-                    </Link>
+                  <div>
+                    <h4 className="text-white font-semibold mb-3">Specifications</h4>
+                    <div className="grid grid-cols-2 gap-3">
+                      {Object.entries(product.specs).map(([key, value]) => (
+                        <div key={key} className="text-sm">
+                          <div className="text-white/60 capitalize">
+                            {key.replace(/([A-Z])/g, " $1").trim()}
+                          </div>
+                          <div className="text-white font-medium">{value}</div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
+
+                  <Link href="/contact">
+                    <Button
+                      className="w-full bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30"
+                      data-testid={`button-product-${index}`}
+                    >
+                      Request Quote
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
@@ -171,69 +175,65 @@ export default function Solutions() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-display font-bold text-4xl text-white mb-4">
-              More Industries We Serve
+              Accessories & Add-ons
             </h2>
             <p className="text-xl text-white/80">
-              Our versatile solar CCTV systems adapt to any environment
+              Enhance your system with our premium accessories
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {industries.map((industry, index) => (
-              <div
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {accessories.map((accessory, index) => (
+              <Card
                 key={index}
-                className="bg-[#1a2f6f] border border-white/10 rounded-lg p-4 text-center hover-elevate"
-                data-testid={`industry-${index}`}
+                className="bg-[#1a2f6f] border-2 border-white/10 hover-elevate text-center"
+                data-testid={`card-accessory-${index}`}
               >
-                <span className="text-white font-medium">{industry}</span>
-              </div>
+                <CardHeader>
+                  <div className="w-16 h-16 rounded-lg bg-gradient-linkvision flex items-center justify-center mx-auto mb-4">
+                    <accessory.icon className="w-8 h-8 text-white" />
+                  </div>
+                  <CardTitle className="text-white text-lg">
+                    {accessory.name}
+                  </CardTitle>
+                  <div className="text-2xl font-display font-bold text-white mt-2">
+                    {accessory.price}
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <Link href="/contact">
+                    <Button
+                      variant="outline"
+                      className="w-full border-white/20 bg-white/5 text-white"
+                      data-testid={`button-accessory-${index}`}
+                    >
+                      Add to Quote
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
       </section>
 
       <section className="py-20 bg-[#1a2f6f]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <Card className="bg-[#182863] border-2 border-[#C800FF]/30">
-              <CardContent className="p-12 text-center">
-                <h2 className="font-display font-bold text-4xl text-white mb-4">
-                  Don't See Your Industry?
-                </h2>
-                <p className="text-xl text-white/80 mb-8">
-                  We've successfully deployed solar surveillance systems across hundreds of unique applications. Let's discuss your specific requirements.
-                </p>
-                <Link href="/contact">
-                  <Button
-                    size="lg"
-                    className="bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30"
-                    data-testid="button-custom-solution"
-                  >
-                    Request Custom Solution
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-[#182863]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
-            <div>
-              <div className="text-5xl font-display font-bold text-white mb-2">500+</div>
-              <div className="text-white/70">Industries Served</div>
-            </div>
-            <div>
-              <div className="text-5xl font-display font-bold text-white mb-2">10,000+</div>
-              <div className="text-white/70">Cameras Deployed</div>
-            </div>
-            <div>
-              <div className="text-5xl font-display font-bold text-white mb-2">99.9%</div>
-              <div className="text-white/70">Customer Satisfaction</div>
-            </div>
-          </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-display font-bold text-4xl text-white mb-6">
+            Need Help Choosing?
+          </h2>
+          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+            Our experts are here to help you find the perfect solution for your security needs
+          </p>
+          <Link href="/contact">
+            <Button
+              size="lg"
+              className="bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30"
+              data-testid="button-contact-expert"
+            >
+              Talk to an Expert
+            </Button>
+          </Link>
         </div>
       </section>
     </div>
