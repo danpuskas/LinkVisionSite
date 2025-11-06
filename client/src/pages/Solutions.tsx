@@ -58,7 +58,7 @@ export default function Solutions() {
         "Monitor remote mine sites 24/7",
         "Heavy equipment and asset protection",
         "Worker safety compliance",
-        "Reduce equipment theft by 85%",
+        "Reduce or eliminate security patrols",
       ],
       caseStudy: "Mining operation in Western Australia",
     },
