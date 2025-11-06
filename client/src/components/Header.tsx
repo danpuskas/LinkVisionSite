@@ -9,8 +9,8 @@ export function Header() {
 
   const navItems = [
     { path: "/", label: "Home" },
-    { path: "/products", label: "Solutions" },
     { path: "/solutions", label: "Industry" },
+    { path: "/products", label: "Solutions" },
     { path: "/pricing", label: "Pricing" },
     { path: "/case-studies", label: "Case Studies" },
     { path: "/about", label: "About" },
@@ -23,9 +23,9 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" data-testid="link-home">
             <div className="flex items-center hover-elevate active-elevate-2 px-2 py-1 rounded-md cursor-pointer">
-              <img 
-                src="/linkvision-logo.png" 
-                alt="LinkVision - AI Surveillance" 
+              <img
+                src="/linkvision-logo.png"
+                alt="LinkVision - AI Surveillance"
                 className="h-[50px] md:h-[59px] w-auto"
               />
             </div>
@@ -33,7 +33,11 @@ export function Header() {
 
           <nav className="hidden md:flex items-center gap-1">
             {navItems.map((item) => (
-              <Link key={item.path} href={item.path} data-testid={`link-nav-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
+              <Link
+                key={item.path}
+                href={item.path}
+                data-testid={`link-nav-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
+              >
                 <Button
                   variant="ghost"
                   className={`text-white hover:text-white ${
@@ -67,7 +71,11 @@ export function Header() {
           <div className="md:hidden py-4 border-t border-[#C800FF]/20">
             <nav className="flex flex-col gap-2">
               {navItems.map((item) => (
-                <Link key={item.path} href={item.path} data-testid={`link-mobile-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
+                <Link
+                  key={item.path}
+                  href={item.path}
+                  data-testid={`link-mobile-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
+                >
                   <Button
                     variant="ghost"
                     className={`w-full justify-start text-white hover:text-white ${
@@ -80,7 +88,10 @@ export function Header() {
                 </Link>
               ))}
               <Link href="/contact" data-testid="link-mobile-cta">
-                <Button className="w-full bg-gradient-linkvision text-white border-0 mt-2" onClick={() => setMobileMenuOpen(false)}>
+                <Button
+                  className="w-full bg-gradient-linkvision text-white border-0 mt-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   Get Started
                 </Button>
               </Link>
