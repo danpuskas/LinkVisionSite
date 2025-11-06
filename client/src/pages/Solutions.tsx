@@ -2,7 +2,6 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Sun, Camera, Cloud, Shield, Wifi, Battery, CheckCircle2 } from "lucide-react";
-import solutionsBackgroundImage from "@assets/stock_images/modern_cctv_security_5d4b0c0d.jpg";
 
 export default function Products() {
   const products = [
@@ -100,7 +99,7 @@ export default function Products() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src={solutionsBackgroundImage} 
+            src="/solar-camera-bg.jpg" 
             alt="" 
             className="w-full h-full object-cover opacity-98"
           />
