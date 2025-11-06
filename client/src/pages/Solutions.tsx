@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Sun, Camera, Cloud, Shield, Wifi, Battery, CheckCircle2 } from "lucide-react";
+import solutionsBackgroundImage from "@assets/stock_images/modern_cctv_security_5d4b0c0d.jpg";
 
 export default function Products() {
   const products = [
@@ -96,13 +97,23 @@ export default function Products() {
 
   return (
     <div className="min-h-screen bg-[#182863]">
-      <section className="py-20 bg-gradient-to-b from-[#1a2f6f] to-[#182863]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src={solutionsBackgroundImage} 
+            alt="" 
+            className="w-full h-full object-cover opacity-98"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#182863]/40 via-[#182863]/50 to-[#182863]/70" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#C800FF]/10 via-transparent to-[#B100FF]/10" />
+        </div>
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h1 className="font-display font-bold text-5xl md:text-6xl text-white mb-6">
+            <h1 className="font-display font-bold text-5xl md:text-6xl text-white mb-6 drop-shadow-2xl">
               Solutions
             </h1>
-            <p className="text-xl text-white/80">
+            <p className="text-xl text-white/90 drop-shadow-lg">
               Cutting-edge solar-powered surveillance solutions designed for Australian conditions
             </p>
           </div>
@@ -111,7 +122,7 @@ export default function Products() {
             {products.map((product, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f] border-2 border-[#C800FF]/30 hover-elevate"
+                className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover-elevate"
                 data-testid={`card-product-${index}`}
               >
                 <CardHeader>
