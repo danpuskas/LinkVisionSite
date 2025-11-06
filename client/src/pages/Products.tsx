@@ -100,7 +100,7 @@ export default function Products() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h1 className="font-display font-bold text-5xl md:text-6xl text-white mb-6">
-              Our Solutions
+              Solutions
             </h1>
             <p className="text-xl text-white/80">
               Cutting-edge solar-powered surveillance solutions designed for Australian conditions
