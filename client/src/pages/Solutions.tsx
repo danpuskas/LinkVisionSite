@@ -99,9 +99,9 @@ export default function Products() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/solar-camera-bg.jpg" 
+            src="/solutions-camera-bg.jpg" 
             alt="" 
-            className="w-full h-full object-cover opacity-98 scale-75"
+            className="w-full h-full object-cover opacity-98"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#182863]/40 via-[#182863]/50 to-[#182863]/70" />
           <div className="absolute inset-0 bg-gradient-to-br from-[#C800FF]/10 via-transparent to-[#B100FF]/10" />
