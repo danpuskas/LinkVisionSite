@@ -41,12 +41,13 @@ export default function Solutions() {
     {
       icon: Factory,
       title: "Industrial & Civil Construction",
-      description: "Protect and Monitor",
+      description: "Protect and Monitor expansive areas all from the same screen",
       benefits: [
-        "Industrial factories, refineries, power plants, warehouses",
-        "Civil projects such as roads, bridges, dams, water systems",
+        "Protect industrial machinery and equipment",
+        "Monitor entry and exit construction ramps",
         "Increase worker safety compliance",
-        "Reduce on-site theft by 85%",
+        "Verify trucks and vehicles number plates",
+        "Monitor service vehicles and deliveries"
       ],
       caseStudy: "Mining operation in Western Australia",
     },

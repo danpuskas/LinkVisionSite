@@ -54,7 +54,7 @@ export default function CaseStudies() {
     {
       icon: Home,
       industry: "Residential",
-      title: "Luxury Acreage Property",
+      title: "Key Stats on Theft & Vandalism in Residential Construction",
       challenge: "15-acre rural property with long driveway and multiple outbuildings needed surveillance without running power cables.",
       solution: "8 solar CCTV cameras strategically placed to cover entry points, driveway, barn, and perimeter. Mobile app integration for remote monitoring during travel.",
       results: [
