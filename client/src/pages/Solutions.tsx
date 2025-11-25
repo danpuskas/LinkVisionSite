@@ -129,6 +129,15 @@ export default function Products() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex flex-col h-full space-y-6">
+                  {index === 0 && (
+                    <div className="flex justify-center mb-2">
+                      <img 
+                        src="/onevision-camera.jpg" 
+                        alt="OneVision Camera" 
+                        className="h-32 object-cover rounded-lg opacity-90"
+                      />
+                    </div>
+                  )}
                   <div>
                     <h4 className="text-white font-semibold mb-3">Features</h4>
                     <ul className="space-y-2">
