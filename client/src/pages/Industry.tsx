@@ -41,7 +41,7 @@ export default function Solutions() {
     {
       icon: Factory,
       title: "Industrial & Civil Construction",
-      description: "Protect and Monitor expansive areas all from the same screen",
+      description: "Protect and Monitor expansive areas all from the one screen",
       benefits: [
         "Protect industrial machinery and equipment",
         "Monitor entry and exit construction ramps",
