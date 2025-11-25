@@ -116,7 +116,7 @@ export default function Products() {
             {products.map((product, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover-elevate"
+                className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover-elevate flex flex-col"
                 data-testid={`card-product-${index}`}
               >
                 <CardHeader>
