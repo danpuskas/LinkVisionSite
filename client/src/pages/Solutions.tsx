@@ -146,7 +146,7 @@ export default function Products() {
                         <img 
                           src="/onevision-camera.jpg" 
                           alt="OneVision Camera" 
-                          className="h-32 w-32 object-cover rounded-lg opacity-90"
+                          className="h-48 w-48 object-cover rounded-lg opacity-90"
                         />
                       </div>
                     )}
