@@ -47,7 +47,7 @@ export default function Products() {
     },
     {
       name: "Free Vision",
-      category: "Software & Services",
+      category: "Premium",
       price: "$299/mo",
       image: "🤖",
       features: [
