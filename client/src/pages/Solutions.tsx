@@ -112,11 +112,11 @@ export default function Products() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto auto-rows-fr">
             {products.map((product, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover-elevate flex flex-col"
+                className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover-elevate flex flex-col h-full"
                 data-testid={`card-product-${index}`}
               >
                 <CardHeader>
