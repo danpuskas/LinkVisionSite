@@ -165,14 +165,16 @@ export default function Products() {
                     </div>
                   </div>
 
-                  <Link href="/contact">
-                    <Button
-                      className="w-full bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30"
-                      data-testid={`button-product-${index}`}
-                    >
-                      Request Quote
-                    </Button>
-                  </Link>
+                  <div className="pt-4 border-t border-white/10">
+                    <Link href="/contact">
+                      <Button
+                        className="w-full bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30"
+                        data-testid={`button-product-${index}`}
+                      >
+                        Request Quote
+                      </Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             ))}
