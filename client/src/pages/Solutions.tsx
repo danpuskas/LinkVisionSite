@@ -6,7 +6,7 @@ import { Sun, Camera, Cloud, Shield, Wifi, Battery, CheckCircle2 } from "lucide-
 export default function Products() {
   const products = [
     {
-      name: "SolarCam Pro 4K",
+      name: "OneVision",
       category: "Premium Solar CCTV",
       price: "$1,499",
       image: "🌞",
@@ -26,7 +26,7 @@ export default function Products() {
       },
     },
     {
-      name: "SolarCam Standard",
+      name: "UltraWide Vision",
       category: "Affordable Solar CCTV",
       price: "$899",
       image: "📹",
@@ -46,7 +46,7 @@ export default function Products() {
       },
     },
     {
-      name: "AI Analytics Suite",
+      name: "Free Vision",
       category: "Software & Services",
       price: "$299/mo",
       image: "🤖",
@@ -131,12 +131,6 @@ export default function Products() {
                   <CardTitle className="text-white font-display text-3xl">
                     {product.name}
                   </CardTitle>
-                  <div className="text-4xl font-display font-bold text-white mt-2">
-                    {product.price}
-                    {product.price !== "Custom" && product.price.includes("/") === false && (
-                      <span className="text-lg text-white/60 ml-2">AUD</span>
-                    )}
-                  </div>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div>
