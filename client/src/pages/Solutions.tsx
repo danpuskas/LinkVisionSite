@@ -35,7 +35,8 @@ export default function Products() {
         "Motion Detection",
         "Night Vision up to 20m",
         "Weatherproof IP65 Rating",
-        "1-Year\nWarranty",
+        "Remote Mobile App Access",
+        "1-Year Warranty",
       ],
       specs: {
         resolution: "1080p (1920×1080)",
