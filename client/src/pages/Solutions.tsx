@@ -129,25 +129,27 @@ export default function Products() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex flex-col h-full space-y-6">
-                  {index === 0 && (
-                    <div className="flex justify-center mb-2">
-                      <img 
-                        src="/onevision-camera.jpg" 
-                        alt="OneVision Camera" 
-                        className="h-32 object-cover rounded-lg opacity-90"
-                      />
+                  <div className="flex gap-4 items-start">
+                    <div className="flex-1">
+                      <h4 className="text-white font-semibold mb-3">Features</h4>
+                      <ul className="space-y-2">
+                        {product.features.map((feature, idx) => (
+                          <li key={idx} className="flex items-start gap-2">
+                            <CheckCircle2 className="w-5 h-5 text-[#C800FF] flex-shrink-0 mt-0.5" />
+                            <span className="text-white/90">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                  )}
-                  <div>
-                    <h4 className="text-white font-semibold mb-3">Features</h4>
-                    <ul className="space-y-2">
-                      {product.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-[#C800FF] flex-shrink-0 mt-0.5" />
-                          <span className="text-white/90">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    {index === 0 && (
+                      <div className="flex-shrink-0">
+                        <img 
+                          src="/onevision-camera.jpg" 
+                          alt="OneVision Camera" 
+                          className="h-32 w-32 object-cover rounded-lg opacity-90"
+                        />
+                      </div>
+                    )}
                   </div>
 
                   <div className="mt-auto pt-4 border-t border-white/10">
