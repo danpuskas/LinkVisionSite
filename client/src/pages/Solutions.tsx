@@ -8,8 +8,6 @@ export default function Products() {
     {
       name: "OneVision",
       category: "Premium Solar CCTV",
-      price: "$1,499",
-      image: "🌞",
       features: [
         "4K Ultra HD Resolution",
         "100W Solar Panel",
@@ -28,8 +26,6 @@ export default function Products() {
     {
       name: "UltraWide Vision",
       category: "Affordable Solar CCTV",
-      price: "$899",
-      image: "📹",
       features: [
         "1080p Full HD Resolution",
         "60W Solar Panel",
@@ -48,8 +44,6 @@ export default function Products() {
     {
       name: "Free Vision",
       category: "Premium",
-      price: "$299/mo",
-      image: "🤖",
       features: [
         "Advanced AI Object Detection",
         "Facial Recognition",
@@ -68,8 +62,6 @@ export default function Products() {
     {
       name: "Enterprise Command Center",
       category: "Complete Solution",
-      price: "Custom",
-      image: "🏢",
       features: [
         "Unlimited Camera Support",
         "Centralized Management",
@@ -88,10 +80,10 @@ export default function Products() {
   ];
 
   const accessories = [
-    { icon: Battery, name: "Extended Battery Pack", price: "$299" },
-    { icon: Sun, name: "120W Solar Panel Upgrade", price: "$199" },
-    { icon: Wifi, name: "4G LTE Module", price: "$149" },
-    { icon: Shield, name: "Vandal-proof Housing", price: "$99" },
+    { icon: Battery, name: "Extended Battery Pack" },
+    { icon: Sun, name: "120W Solar Panel Upgrade" },
+    { icon: Wifi, name: "4G LTE Module" },
+    { icon: Shield, name: "Vandal-proof Housing" },
   ];
 
   return (
