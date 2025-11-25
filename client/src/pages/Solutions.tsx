@@ -127,7 +127,7 @@ export default function Products() {
                     {product.name}
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-6">
+                <CardContent className="flex flex-col h-full space-y-6">
                   <div>
                     <h4 className="text-white font-semibold mb-3">Features</h4>
                     <ul className="space-y-2">
@@ -140,7 +140,7 @@ export default function Products() {
                     </ul>
                   </div>
 
-                  <div className="pt-4 border-t border-white/10">
+                  <div className="mt-auto pt-4 border-t border-white/10">
                     <Link href="/contact">
                       <Button
                         className="w-full bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30"
