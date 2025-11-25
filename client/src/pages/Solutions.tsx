@@ -7,19 +7,22 @@ export default function Products() {
   const products = [
     {
       name: "OneVision",
-      category: "Premium Solar CCTV",
+      category: "The new benchmark in standard in AI Surveillance",
       features: [
         "4K Ultra HD Resolution",
-        "100W Solar Panel",
+        "Colour Night Vision",
         "AI-Powered Detection",
-        "Night Vision up to 30m",
-        "Weatherproof IP67 Rating",
-        "2-Year Warranty",
+        "One Year Cloud Storage ",
+        "24/7 back to base monitoring",
+        "4G Connectivity",
+        "100% Solar Powered",
+        "Long Lasting Lithium Battery",
+        "Built-in timelapse",
       ],
       specs: {
         resolution: "4K (3840×2160)",
         power: "Solar + Battery Backup",
-        storage: "Cloud + Local SD Card",
+        storage: "Cloud Backup for one year",
         connectivity: "4G LTE / WiFi",
       },
     },
@@ -137,20 +140,6 @@ export default function Products() {
                     </ul>
                   </div>
 
-                  <div>
-                    <h4 className="text-white font-semibold mb-3">Specifications</h4>
-                    <div className="grid grid-cols-2 gap-3">
-                      {Object.entries(product.specs).map(([key, value]) => (
-                        <div key={key} className="text-sm">
-                          <div className="text-white/60 capitalize">
-                            {key.replace(/([A-Z])/g, " $1").trim()}
-                          </div>
-                          <div className="text-white font-medium">{value}</div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
                   <div className="pt-4 border-t border-white/10">
                     <Link href="/contact">
                       <Button
@@ -193,9 +182,6 @@ export default function Products() {
                   <CardTitle className="text-white text-lg">
                     {accessory.name}
                   </CardTitle>
-                  <div className="text-2xl font-display font-bold text-white mt-2">
-                    {accessory.price}
-                  </div>
                 </CardHeader>
                 <CardContent>
                   <Link href="/contact">
