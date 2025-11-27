@@ -120,7 +120,7 @@ export default function Products() {
 
           <div className="space-y-8 max-w-6xl mx-auto">
             {products.map((product, index) => (
-              <div key={index} className={index === 0 || index === 1 ? "flex gap-8" : ""}>
+              <div key={index} className="flex gap-8">
                 <Card
                   className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate flex flex-col h-full flex-1 transition-colors duration-300"
                   data-testid={`card-product-${index}`}
@@ -161,18 +161,16 @@ export default function Products() {
                   </CardContent>
                 </Card>
 
-                {(index === 0 || index === 1) && (
-                  <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate flex-1 flex items-center justify-center transition-colors duration-300 relative overflow-hidden">
-                    <img 
-                      src={index === 0 ? "/camera-tower-cropped.jpg" : "/camera-tower-cropped.jpg"} 
-                      alt={index === 0 ? "OneVision Camera Tower" : "WideVision Camera Tower"} 
-                      className="h-full w-full object-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <span className="text-white font-display text-3xl font-bold drop-shadow-lg">{index === 0 ? "OneVision" : "WideVision"}</span>
-                    </div>
-                  </Card>
-                )}
+                <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate flex-1 flex items-center justify-center transition-colors duration-300 relative overflow-hidden">
+                  <img 
+                    src="/camera-tower-cropped.jpg" 
+                    alt={`${product.name} Camera Tower`} 
+                    className="h-full w-full object-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="text-white font-display text-3xl font-bold drop-shadow-lg">{product.name}</span>
+                  </div>
+                </Card>
               </div>
             ))}
           </div>
