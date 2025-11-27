@@ -6,7 +6,7 @@ import { Sun, Camera, Cloud, Shield, Wifi, Battery, CheckCircle2 } from "lucide-
 export default function Products() {
   const products = [
     {
-      name: "OneVision - One Camera",
+      name: "OneVision",
       category: "The new standard for AI Surveillance",
       features: [
         "4K Ultra HD Resolution",
@@ -28,10 +28,11 @@ export default function Products() {
       },
     },
     {
-      name: "UltraWide Vision - One Camera Two Lenses to provide a 180 Degree Panoramic View",
+      name: "UltraWide Vision",
       category: "Affordable Solar CCTV",
       features: [
-        "4K Ultra HD Resolution",
+          "4K Ultra HD Resolution",
+          "One Camera Two Lenses to provide a 180 Degree Panoramic View",
           "IR Black & White and Colour Night Vision",
           "AI-Powered Detection",
           "One Year Cloud Storage ",
