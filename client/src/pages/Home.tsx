@@ -233,7 +233,7 @@ export default function Home() {
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className="bg-[#182863] border-2 border-[#C800FF]/30 hover-elevate"
+                className="bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate transition-colors duration-300"
                 data-testid={`card-feature-${index}`}
               >
                 <CardHeader>
