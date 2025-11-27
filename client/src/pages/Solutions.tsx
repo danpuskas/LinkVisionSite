@@ -29,7 +29,7 @@ export default function Products() {
       },
     },
     {
-      name: "UltraWide Vision",
+      name: "WideVision",
       category: "Capture More",
       features: [
           "4K Ultra HD Resolution",
@@ -51,8 +51,8 @@ export default function Products() {
       },
     },
     {
-      name: "Free Vision",
-      category: "Premium",
+      name: "FreeVision",
+      category: "Move and Zoom In on Whats Important",
       features: [
         "Advanced AI Object Detection",
         "Facial Recognition",
@@ -111,7 +111,7 @@ export default function Products() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h1 className="font-display font-bold text-5xl md:text-6xl text-white mb-6 drop-shadow-2xl">
-              Solutions
+              Industry Solutions
             </h1>
             <p className="text-xl text-white/90 drop-shadow-lg">
               Cutting-edge solar-powered surveillance solutions designed for Australian conditions
