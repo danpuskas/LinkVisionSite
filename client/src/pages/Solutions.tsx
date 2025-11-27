@@ -20,6 +20,7 @@ export default function Products() {
         "100% Solar Powered",
         "Long Lasting Lithium Battery",
         "Built-in timelapse",
+        "2 Way Audio",
       ],
       specs: {
         resolution: "4K (3840×2160)",
@@ -42,6 +43,7 @@ export default function Products() {
           "100% Solar Powered",
           "Long Lasting Lithium Battery",
           "Built-in timelapse",
+          "2 Way Audio"
       ],
       specs: {
         resolution: "1080p (1920×1080)",
@@ -62,6 +64,7 @@ export default function Products() {
         "Behavioral Analytics",
         "Real-time Alerts",
         "Custom Alert Zones",
+        "2 Way Audio",
       ],
       specs: {
         deployment: "Cloud-based",
@@ -76,10 +79,9 @@ export default function Products() {
       features: [
         "Unlimited Camera Support",
         "Centralized Management",
+        "Ulimited Users",
         "Multi-site Monitoring",
         "Advanced Reporting",
-        "Dedicated Support Team",
-        "Custom Integration",
       ],
       specs: {
         deployment: "On-premise or Cloud",
