@@ -131,6 +131,15 @@ export default function Products() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex flex-col h-full space-y-6">
+                  {index === 0 && (
+                    <div className="flex-shrink-0">
+                      <img 
+                        src="/onevision-camera.jpg" 
+                        alt="OneVision Camera" 
+                        className="h-96 w-96 object-cover rounded-lg opacity-90"
+                      />
+                    </div>
+                  )}
                   <div className="flex gap-4 items-start">
                     <div className="flex-1">
                       <h4 className="text-white font-semibold mb-3">Features</h4>
@@ -143,15 +152,6 @@ export default function Products() {
                         ))}
                       </ul>
                     </div>
-                    {index === 0 && (
-                      <div className="flex-shrink-0">
-                        <img 
-                          src="/onevision-camera.jpg" 
-                          alt="OneVision Camera" 
-                          className="h-96 w-96 object-cover rounded-lg opacity-90"
-                        />
-                      </div>
-                    )}
                   </div>
 
                   <div className="mt-auto pt-4 border-t border-white/10">
