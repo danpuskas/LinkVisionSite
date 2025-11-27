@@ -151,7 +151,7 @@ export default function Products() {
                         <img 
                           src="/camera-tower-cropped.jpg" 
                           alt="OneVision Camera Tower" 
-                          className="h-full w-96 object-cover rounded-lg opacity-90"
+                          className="h-full w-screen object-cover rounded-lg opacity-90"
                         />
                       </div>
                     )}
