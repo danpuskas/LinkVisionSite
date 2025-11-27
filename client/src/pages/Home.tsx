@@ -77,17 +77,17 @@ export default function Home() {
     {
       icon: Cloud,
       title: "Cloud Storage",
-      description: "Secure cloud storage with instant access to footage from anywhere",
+      description: "Secure and encrypted cloud storage with instant access to footage from anywhere",
     },
     {
       icon: Hammer,
       title: "Ruggedised",
-      description: "Weather-resistant and tamper-proof for Australian conditions",
+      description: "Designed and built rugged with quality components for harsh Australian conditions",
     },
     {
       icon: Eye,
       title: "4K Resolution",
-      description: "Crystal clear 4K video captures every detail, day or night",
+      description: "Crystal clear 4K video captures every detail, day or night with colour night vision",
     },
     {
       icon: Zap,

@@ -58,6 +58,7 @@ export default function Products() {
         "PTZ (Pan-Tilt-Zoom) Capability",
         "Facial Recognition",
         "License Plate Recognition",
+        "PPE Detection",
         "Behavioral Analytics",
         "Real-time Alerts",
         "Custom Alert Zones",

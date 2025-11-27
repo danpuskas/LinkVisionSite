@@ -46,7 +46,7 @@ export default function Solutions() {
         "Protect industrial machinery and equipment",
         "Monitor entry and exit construction ramps",
         "Increase worker safety compliance",
-        "Verify trucks and vehicles number plates",
+        "Verify truck and vehicle number plates",
         "Monitor service vehicles and deliveries"
       ],
       caseStudy: "Mining operation in Western Australia",
@@ -72,6 +72,7 @@ export default function Solutions() {
         "Loading dock monitoring",
         "Forklift safety compliance",
         "Perimeter breach detection",
+        "Laydown area monitoring"
       ],
       caseStudy: "Distribution center in Queensland",
     },
