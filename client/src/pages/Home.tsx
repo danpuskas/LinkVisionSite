@@ -21,6 +21,7 @@ import {
   Zap,
   Clock,
   Play,
+  Hammer,
 } from "lucide-react";
 
 export default function Home() {
@@ -79,8 +80,8 @@ export default function Home() {
       description: "Secure cloud storage with instant access to footage from anywhere",
     },
     {
-      icon: Shield,
-      title: "Military Grade",
+      icon: Hammer,
+      title: "Ruggedised",
       description: "Weather-resistant and tamper-proof for Australian conditions",
     },
     {
