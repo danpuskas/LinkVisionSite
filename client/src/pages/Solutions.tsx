@@ -69,8 +69,8 @@ export default function Products() {
       },
     },
     {
-      name: "Enterprise Command Center",
-      category: "Complete Solution",
+      name: "Solar Powered or Just Powered",
+      category: "Custom Solutions",
       features: [
         "Unlimited Camera Support",
         "Centralized Management",
@@ -120,7 +120,7 @@ export default function Products() {
 
           <div className="space-y-8 max-w-6xl mx-auto">
             {products.map((product, index) => (
-              <div key={index} className={index === 0 ? "flex gap-8" : ""}>
+              <div key={index} className={index === 0 || index === 1 ? "flex gap-8" : ""}>
                 <Card
                   className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate flex flex-col h-full flex-1 transition-colors duration-300"
                   data-testid={`card-product-${index}`}
@@ -194,7 +194,7 @@ export default function Products() {
             {accessories.map((accessory, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate text-center transition-colors duration-300"
+                className="bg-[#1a2f6f] border-2 border-white/10 hover-elevate text-center"
                 data-testid={`card-accessory-${index}`}
               >
                 <CardHeader>

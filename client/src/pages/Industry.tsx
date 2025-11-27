@@ -114,7 +114,7 @@ export default function Solutions() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h1 className="font-display font-bold text-5xl md:text-6xl text-white mb-6 drop-shadow-2xl">
-              Industry
+              Whats Your Industry ?
             </h1>
             <p className="text-xl text-white/90 drop-shadow-lg">
               Tailored solar surveillance systems designed for your specific security challenges
