@@ -110,6 +110,17 @@ export default function Products() {
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <Link href="/industry">
+                <span className="text-xl text-white/70 hover:text-white/90 transition-colors font-display font-semibold">
+                  Industry
+                </span>
+              </Link>
+              <span className="text-xl text-white/70">/</span>
+              <span className="text-xl text-white font-display font-semibold">
+                Solutions
+              </span>
+            </div>
             <h1 className="font-display font-bold text-5xl md:text-6xl text-white mb-6 drop-shadow-2xl">
               Solutions
             </h1>
