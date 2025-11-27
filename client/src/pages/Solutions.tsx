@@ -166,7 +166,7 @@ export default function Products() {
                     <img 
                       src="/camera-tower-cropped.jpg" 
                       alt="OneVision Camera Tower" 
-                      className="h-full w-full object-cover rounded-lg opacity-90"
+                      className="h-full w-full object-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
                     />
                   </Card>
                 )}
