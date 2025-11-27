@@ -120,7 +120,7 @@ export default function Products() {
 
           <div className="space-y-8 max-w-6xl mx-auto">
             {products.map((product, index) => (
-              <div key={index} className="flex gap-8 min-h-96">
+              <div key={index} className="flex gap-8 h-96">
                 <Card
                   className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate flex flex-col h-full flex-1 transition-colors duration-300"
                   data-testid={`card-product-${index}`}
