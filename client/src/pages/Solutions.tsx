@@ -122,7 +122,7 @@ export default function Products() {
             {products.map((product, index) => (
               <div key={index} className={index === 0 ? "flex gap-8" : ""}>
                 <Card
-                  className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/70 hover-elevate flex flex-col h-full flex-1 transition-colors duration-300"
+                  className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate flex flex-col h-full flex-1 transition-colors duration-300"
                   data-testid={`card-product-${index}`}
                 >
                   <CardHeader>
