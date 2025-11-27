@@ -122,7 +122,7 @@ export default function Products() {
             {products.map((product, index) => (
               <div key={index} className={index === 0 ? "flex gap-8" : ""}>
                 <Card
-                  className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover-elevate flex flex-col h-full flex-1"
+                  className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate flex flex-col h-full flex-1 transition-colors duration-300"
                   data-testid={`card-product-${index}`}
                 >
                   <CardHeader>
@@ -162,7 +162,7 @@ export default function Products() {
                 </Card>
 
                 {index === 0 && (
-                  <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover-elevate flex-1 flex items-center justify-center">
+                  <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate flex-1 flex items-center justify-center transition-colors duration-300">
                     <img 
                       src="/camera-tower-cropped.jpg" 
                       alt="OneVision Camera Tower" 
