@@ -11,7 +11,7 @@ export default function Products() {
       features: [
         "4K Ultra HD Resolution",
         "Wide Angle Lens",
-        "IR Black & White and Colour Night Vision",
+        "Colour Night Vision",
         "AI-Powered Detection",
         "One Year Cloud Storage ",
         "Loud Siren Alarm and Strobe Light", 
@@ -22,12 +22,6 @@ export default function Products() {
         "Built-in timelapse",
         "2 Way Audio",
       ],
-      specs: {
-        resolution: "4K (3840×2160)",
-        power: "Solar + Battery Backup",
-        storage: "Cloud Backup for one year",
-        connectivity: "4G LTE / WiFi",
-      },
     },
     {
       name: "WideVision",
@@ -35,7 +29,7 @@ export default function Products() {
       features: [
           "4K Ultra HD Resolution",
           "Dual Lenses providing a 180 Degree Panoramic View",
-          "IR Black & White and Colour Night Vision",
+          "Colour Night Vision",
           "AI-Powered Detection",
           "One Year Cloud Storage ",
           "24/7 back to base monitoring",
@@ -45,12 +39,6 @@ export default function Products() {
           "Built-in timelapse",
           "2 Way Audio"
       ],
-      specs: {
-        resolution: "1080p (1920×1080)",
-        power: "Solar + Battery Backup",
-        storage: "Cloud + Local SD Card",
-        connectivity: "WiFi",
-      },
     },
     {
       name: "FreeVision",
@@ -66,12 +54,6 @@ export default function Products() {
         "Custom Alert Zones",
         "2 Way Audio",
       ],
-      specs: {
-        deployment: "Cloud-based",
-        integration: "All LinkVision Cameras",
-        alerts: "Email, SMS, Push",
-        storage: "Unlimited Cloud Storage",
-      },
     },
     {
       name: "Solar Powered or Just Powered",
@@ -83,12 +65,6 @@ export default function Products() {
         "Multi-site Monitoring",
         "Advanced Reporting",
       ],
-      specs: {
-        deployment: "On-premise or Cloud",
-        support: "24/7 Dedicated Team",
-        training: "Included",
-        customization: "Full API Access",
-      },
     },
   ];
 
