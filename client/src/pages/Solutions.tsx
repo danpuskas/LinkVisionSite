@@ -55,6 +55,7 @@ export default function Products() {
       category: "Move and Zoom In on Whats Important",
       features: [
         "Advanced AI Object Detection",
+        "PTZ (Pan-Tilt-Zoom) Capability",
         "Facial Recognition",
         "License Plate Recognition",
         "Behavioral Analytics",
