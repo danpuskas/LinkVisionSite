@@ -182,7 +182,7 @@ export default function Solutions() {
             {industries.map((industry, index) => (
               <div
                 key={index}
-                className="bg-[#1a2f6f] border border-white/10 rounded-lg p-4 text-center hover-elevate"
+                className="bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 rounded-lg p-4 text-center hover-elevate transition-colors duration-300"
                 data-testid={`industry-${index}`}
               >
                 <span className="text-white font-medium">{industry}</span>
@@ -195,7 +195,7 @@ export default function Solutions() {
       <section className="py-20 bg-[#1a2f6f]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <Card className="bg-[#182863] border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f] transition-colors duration-300">
+            <Card className="bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 transition-colors duration-300">
               <CardContent className="p-12 text-center">
                 <h2 className="font-display font-bold text-4xl text-white mb-4">
                   Don't See Your Industry?
