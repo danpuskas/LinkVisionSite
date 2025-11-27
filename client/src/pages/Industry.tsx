@@ -125,7 +125,7 @@ export default function Solutions() {
             {solutions.map((solution, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate transition-colors duration-300"
+                className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate transition-colors duration-300"
                 data-testid={`card-solution-${index}`}
               >
                 <CardHeader>
@@ -195,7 +195,7 @@ export default function Solutions() {
       <section className="py-20 bg-[#1a2f6f]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <Card className="bg-[#182863] border-2 border-[#C800FF]/30 hover:border-[#C800FF] transition-colors duration-300">
+            <Card className="bg-[#182863] border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f] transition-colors duration-300">
               <CardContent className="p-12 text-center">
                 <h2 className="font-display font-bold text-4xl text-white mb-4">
                   Don't See Your Industry?
