@@ -28,7 +28,7 @@ export default function Products() {
       },
     },
     {
-      name: "UltraWide Vision",
+      name: "UltraWide Vision - One Camera Two Lenses to provide a 180 Degree Panoramic View",
       category: "Affordable Solar CCTV",
       features: [
         "4K Ultra HD Resolution",
