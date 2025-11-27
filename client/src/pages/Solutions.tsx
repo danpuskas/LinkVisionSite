@@ -162,11 +162,11 @@ export default function Products() {
                 </Card>
 
                 {index === 0 && (
-                  <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover-elevate flex-shrink-0 flex items-center justify-center">
+                  <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover-elevate flex-1 flex items-center justify-center">
                     <img 
                       src="/camera-tower-cropped.jpg" 
                       alt="OneVision Camera Tower" 
-                      className="h-96 w-80 object-cover rounded-lg opacity-90"
+                      className="h-full w-full object-cover rounded-lg opacity-90"
                     />
                   </Card>
                 )}
