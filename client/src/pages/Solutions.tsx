@@ -6,10 +6,11 @@ import { Sun, Camera, Cloud, Shield, Wifi, Battery, CheckCircle2 } from "lucide-
 export default function Products() {
   const products = [
     {
-      name: "OneVision",
+      name: "OneVision - One Camera",
       category: "The new standard for AI Surveillance",
       features: [
         "4K Ultra HD Resolution",
+        "Wide Angle Lens",
         "IR Black & White and Colour Night Vision",
         "AI-Powered Detection",
         "One Year Cloud Storage ",
