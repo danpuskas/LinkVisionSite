@@ -146,8 +146,8 @@ export default function Products() {
                     {index === 0 && (
                       <div className="flex-shrink-0">
                         <img 
-                          src="/onevision-camera.jpg" 
-                          alt="OneVision Camera" 
+                          src="/camera-tower.jpg" 
+                          alt="OneVision Camera Tower" 
                           className="h-96 w-96 object-cover rounded-lg opacity-90"
                         />
                       </div>
