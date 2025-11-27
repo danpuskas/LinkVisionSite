@@ -13,8 +13,8 @@ export default function Products() {
         "Wide Angle Lens",
         "IR Black & White and Colour Night Vision",
         "AI-Powered Detection",
-        "One Year Cloud Storage",
-        "Long Lasting Lithium Battery",
+        "One Year Cloud Storage ",
+        "Loud Siren Alarm and Strobe Light", 
         "24/7 back to base monitoring",
         "4G Connectivity",
         "100% Solar Powered",
@@ -149,9 +149,9 @@ export default function Products() {
                     {index === 0 && (
                       <div className="flex-shrink-0">
                         <img 
-                          src="/camera-tower.jpg" 
+                          src="/camera-tower-cropped.jpg" 
                           alt="OneVision Camera Tower" 
-                          className="h-80 w-full object-cover rounded-lg opacity-90"
+                          className="h-full w-96 object-cover rounded-lg opacity-90"
                         />
                       </div>
                     )}
