@@ -120,98 +120,54 @@ export default function Products() {
 
           <div className="space-y-8 max-w-6xl mx-auto">
             {products.map((product, index) => (
-              <div key={index}>
-                {index === 0 ? (
-                  <Card
-                    className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate transition-colors duration-300"
-                    data-testid={`card-product-${index}`}
-                  >
-                    <div className="flex h-96">
-                      <div className="flex-1 flex flex-col p-6">
-                        <CardHeader className="p-0 mb-6">
-                          <div className="text-sm text-[#C800FF] font-semibold mb-2">
-                            {product.category}
-                          </div>
-                          <CardTitle className="text-white font-display text-3xl">
-                            {product.name}
-                          </CardTitle>
-                        </CardHeader>
-                        <CardContent className="flex-1 flex flex-col space-y-6 p-0">
-                          <div className="flex gap-4 items-start">
-                            <div className="flex-1">
-                              <h4 className="text-white font-semibold mb-3">Features</h4>
-                              <ul className="space-y-2">
-                                {product.features.map((feature, idx) => (
-                                  <li key={idx} className="flex items-start gap-2">
-                                    <CheckCircle2 className="w-5 h-5 text-[#C800FF] flex-shrink-0 mt-0.5" />
-                                    <span className="text-white/90">{feature}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          </div>
-
-                          <div className="mt-auto pt-4 border-t border-white/10">
-                            <Link href="/contact">
-                              <Button
-                                className="w-full bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30"
-                                data-testid={`button-product-${index}`}
-                              >
-                                Request Quote
-                              </Button>
-                            </Link>
-                          </div>
-                        </CardContent>
-                      </div>
-
-                      <div className="flex-1 flex items-center justify-center p-6">
-                        <img 
-                          src="/camera-tower-cropped.jpg" 
-                          alt="OneVision Camera Tower" 
-                          className="h-full w-full object-cover rounded-lg opacity-90"
-                        />
+              <div key={index} className={index === 0 ? "flex gap-8" : ""}>
+                <Card
+                  className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate flex flex-col h-full flex-1 transition-colors duration-300"
+                  data-testid={`card-product-${index}`}
+                >
+                  <CardHeader>
+                    <div className="text-sm text-[#C800FF] font-semibold mb-2">
+                      {product.category}
+                    </div>
+                    <CardTitle className="text-white font-display text-3xl">
+                      {product.name}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-col h-full space-y-6">
+                    <div className="flex gap-4 items-start">
+                      <div className="flex-1">
+                        <h4 className="text-white font-semibold mb-3">Features</h4>
+                        <ul className="space-y-2">
+                          {product.features.map((feature, idx) => (
+                            <li key={idx} className="flex items-start gap-2">
+                              <CheckCircle2 className="w-5 h-5 text-[#C800FF] flex-shrink-0 mt-0.5" />
+                              <span className="text-white/90">{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </div>
-                  </Card>
-                ) : (
-                  <Card
-                    className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate flex flex-col h-full transition-colors duration-300"
-                    data-testid={`card-product-${index}`}
-                  >
-                    <CardHeader>
-                      <div className="text-sm text-[#C800FF] font-semibold mb-2">
-                        {product.category}
-                      </div>
-                      <CardTitle className="text-white font-display text-3xl">
-                        {product.name}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="flex flex-col h-full space-y-6">
-                      <div className="flex gap-4 items-start">
-                        <div className="flex-1">
-                          <h4 className="text-white font-semibold mb-3">Features</h4>
-                          <ul className="space-y-2">
-                            {product.features.map((feature, idx) => (
-                              <li key={idx} className="flex items-start gap-2">
-                                <CheckCircle2 className="w-5 h-5 text-[#C800FF] flex-shrink-0 mt-0.5" />
-                                <span className="text-white/90">{feature}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
 
-                      <div className="mt-auto pt-4 border-t border-white/10">
-                        <Link href="/contact">
-                          <Button
-                            className="w-full bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30"
-                            data-testid={`button-product-${index}`}
-                          >
-                            Request Quote
-                          </Button>
-                        </Link>
-                      </div>
-                    </CardContent>
+                    <div className="mt-auto pt-4 border-t border-white/10">
+                      <Link href="/contact">
+                        <Button
+                          className="w-full bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30"
+                          data-testid={`button-product-${index}`}
+                        >
+                          Request Quote
+                        </Button>
+                      </Link>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {index === 0 && (
+                  <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate flex-1 flex items-center justify-center transition-colors duration-300">
+                    <img 
+                      src="/camera-tower-cropped.jpg" 
+                      alt="OneVision Camera Tower" 
+                      className="h-full w-full object-cover rounded-lg opacity-90"
+                    />
                   </Card>
                 )}
               </div>
