@@ -7,10 +7,10 @@ export default function Products() {
   const products = [
     {
       name: "OneVision",
-      category: "The new benchmark in standard in AI Surveillance",
+      category: "The new standard for AI Surveillance",
       features: [
         "4K Ultra HD Resolution",
-        "Colour Night Vision",
+        "IR Black & White and Colour Night Vision",
         "AI-Powered Detection",
         "One Year Cloud Storage ",
         "24/7 back to base monitoring",
@@ -30,13 +30,15 @@ export default function Products() {
       name: "UltraWide Vision",
       category: "Affordable Solar CCTV",
       features: [
-        "1080p Full HD Resolution",
-        "60W Solar Panel",
-        "Motion Detection",
-        "Night Vision up to 20m",
-        "Weatherproof IP65 Rating",
-        "Remote Mobile App Access",
-        "1-Year Warranty",
+        "4K Ultra HD Resolution",
+          "IR Black & White and Colour Night Vision",
+          "AI-Powered Detection",
+          "One Year Cloud Storage ",
+          "24/7 back to base monitoring",
+          "4G Connectivity",
+          "100% Solar Powered",
+          "Long Lasting Lithium Battery",
+          "Built-in timelapse",
       ],
       specs: {
         resolution: "1080p (1920×1080)",
@@ -113,7 +115,7 @@ export default function Products() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto auto-rows-fr">
+          <div className="grid grid-cols-4 gap-8 max-w-7xl mx-auto auto-rows-fr">
             {products.map((product, index) => (
               <Card
                 key={index}
