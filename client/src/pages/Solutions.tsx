@@ -194,7 +194,7 @@ export default function Products() {
             {accessories.map((accessory, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f] border-2 border-white/10 hover-elevate text-center"
+                className="bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate text-center transition-colors duration-300"
                 data-testid={`card-accessory-${index}`}
               >
                 <CardHeader>
