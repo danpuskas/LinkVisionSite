@@ -146,15 +146,6 @@ export default function Products() {
                         ))}
                       </ul>
                     </div>
-                    {index === 0 && (
-                      <div className="flex-shrink-0">
-                        <img 
-                          src="/camera-tower-cropped.jpg" 
-                          alt="OneVision Camera Tower" 
-                          className="h-full w-80 object-cover rounded-lg opacity-90"
-                        />
-                      </div>
-                    )}
                   </div>
 
                   <div className="mt-auto pt-4 border-t border-white/10">
