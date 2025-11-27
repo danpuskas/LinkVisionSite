@@ -115,7 +115,7 @@ export default function Products() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 max-w-7xl mx-auto auto-rows-fr">
+          <div className="grid grid-cols-1 gap-8 max-w-7xl mx-auto auto-rows-fr">
             {products.map((product, index) => (
               <Card
                 key={index}
