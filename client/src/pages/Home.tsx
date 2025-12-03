@@ -138,18 +138,6 @@ export default function Home() {
 
   const pricingTiers = [
     {
-      name: "Starter",
-      price: "$2,499",
-      description: "Perfect for small properties",
-      features: [
-        "2 Solar CCTV Cameras",
-        "720p HD Resolution",
-        "7 Days Cloud Storage",
-        "Basic AI Detection",
-        "Mobile App Access",
-      ],
-    },
-    {
       name: "Professional",
       price: "$5,999",
       description: "Ideal for businesses",
@@ -161,20 +149,6 @@ export default function Home() {
         "Advanced AI Analytics",
         "Priority Support",
         "Custom Alerts",
-      ],
-    },
-    {
-      name: "Enterprise",
-      price: "Custom",
-      description: "For large installations",
-      features: [
-        "Unlimited Cameras",
-        "4K Ultra HD Resolution",
-        "90 Days Cloud Storage",
-        "Full AI Suite",
-        "Dedicated Support",
-        "Custom Integration",
-        "On-site Installation",
       ],
     },
   ];
@@ -211,7 +185,7 @@ export default function Home() {
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
-              AI-ready solar CCTV and surveillance systems built for Australia.
+              Rapid Deployment AI-Ready Solar Surveillance & Security Systems built for Central Queensland.
               Protect what matters most with cutting-edge technology.
             </p>
             
@@ -236,7 +210,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">
-              Advanced Features
+              Advanced Features as Standard
             </h2>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
               Experience next-generation surveillance with our AI-powered solar CCTV systems
@@ -279,7 +253,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">
-              Simple, Transparent Pricing
+              Why Choose LinkVision
             </h2>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
               Choose the perfect plan for your security needs
