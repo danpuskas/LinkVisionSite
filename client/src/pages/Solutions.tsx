@@ -75,7 +75,6 @@ export default function Products() {
     { icon: Battery, name: "License Plate Recognition" },
     { icon: Sun, name: "People Counting" },
     { icon: Wifi, name: "PPE Analytics" },
-    { icon: Shield, name: "Vandal-proof Housing" },
   ];
 
   return (
@@ -171,11 +170,11 @@ export default function Products() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
             {accessories.map((accessory, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate text-center transition-colors duration-300"
+                className="bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate text-center transition-colors duration-300 w-64"
                 data-testid={`card-accessory-${index}`}
               >
                 <CardHeader>
