@@ -188,8 +188,7 @@ export default function Products() {
                 <CardContent>
                   <Link href="/contact">
                     <Button
-                      variant="outline"
-                      className="w-full border-white/20 bg-white/5 text-white"
+                      className="w-full bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30"
                       data-testid={`button-accessory-${index}`}
                     >
                       Add to Quote
