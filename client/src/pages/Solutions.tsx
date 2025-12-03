@@ -108,7 +108,7 @@ export default function Products() {
                   data-testid={`card-product-${index}`}
                 >
                   <CardHeader>
-                    <div className="text-sm text-[#C800FF] font-semibold mb-2">
+                    <div className="text-sm text-[#C800FF] font-bold mb-2">
                       {product.category}
                     </div>
                     <CardTitle className="text-white font-display text-3xl">
