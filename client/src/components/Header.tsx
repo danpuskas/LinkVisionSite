@@ -40,7 +40,7 @@ export function Header() {
               >
                 <Button
                   variant="ghost"
-                  className={`text-white hover:text-white ${
+                  className={`text-white hover:text-white hover:bg-gradient-linkvision transition-all duration-300 ${
                     location === item.path ? "bg-[#C800FF]/20" : ""
                   }`}
                 >
@@ -50,7 +50,12 @@ export function Header() {
             ))}
           </nav>
 
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-3">
+            <a href="https://cctvconnect.com/sign-in" target="_blank" rel="noopener noreferrer" data-testid="link-login">
+              <Button className="bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30">
+                Login
+              </Button>
+            </a>
             <Link href="/contact" data-testid="link-cta-contact">
               <Button className="bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30">
                 Get Started
@@ -78,7 +83,7 @@ export function Header() {
                 >
                   <Button
                     variant="ghost"
-                    className={`w-full justify-start text-white hover:text-white ${
+                    className={`w-full justify-start text-white hover:text-white hover:bg-gradient-linkvision transition-all duration-300 ${
                       location === item.path ? "bg-[#C800FF]/20" : ""
                     }`}
                     onClick={() => setMobileMenuOpen(false)}
@@ -87,6 +92,14 @@ export function Header() {
                   </Button>
                 </Link>
               ))}
+              <a href="https://cctvconnect.com/sign-in" target="_blank" rel="noopener noreferrer" data-testid="link-mobile-login">
+                <Button
+                  className="w-full bg-gradient-linkvision text-white border-0 mt-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Login
+                </Button>
+              </a>
               <Link href="/contact" data-testid="link-mobile-cta">
                 <Button
                   className="w-full bg-gradient-linkvision text-white border-0 mt-2"
