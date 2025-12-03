@@ -196,7 +196,7 @@ export default function Home() {
                   className="bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30 text-lg px-8 py-6"
                   data-testid="button-hero-cta"
                 >
-                  Get Started Today
+                  HIRE NOW
                 </Button>
               </Link>
             </div>
