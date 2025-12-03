@@ -32,7 +32,7 @@ import resolution4kImg from "@assets/stock_images/4k_high_definition_c_1f24beb1.
 import instantAlertsImg from "@assets/stock_images/mobile_phone_notific_a482655f.jpg";
 import twoWayAudioImg from "@assets/stock_images/microphone_speaker_a_9fa3764b.jpg";
 import monitoringImg from "@assets/MonitoringStation_1764733453498.png";
-import connectivity4gImg from "@assets/stock_images/industrial_ethernet__653de218.jpg";
+import connectivity4gImg from "@assets/4GRouterIndustrial_1764733632211.png";
 
 export default function Home() {
   const { toast } = useToast();
