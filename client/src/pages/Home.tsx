@@ -30,9 +30,9 @@ import cloudStorageImg from "@assets/stock_images/cloud_computing_stor_8c4901fe.
 import ruggedisedImg from "@assets/stock_images/rugged_industrial_di_a9e70d30.jpg";
 import resolution4kImg from "@assets/stock_images/4k_high_definition_c_1f24beb1.jpg";
 import instantAlertsImg from "@assets/stock_images/mobile_phone_notific_a482655f.jpg";
-import twoWayAudioImg from "@assets/stock_images/outdoor_speaker_weat_b93cef92.jpg";
-import monitoringImg from "@assets/stock_images/security_monitoring__a5491c98.jpg";
-import connectivity4gImg from "@assets/stock_images/4g_lte_router_wirele_7a5f64b8.jpg";
+import twoWayAudioImg from "@assets/stock_images/microphone_speaker_a_9fa3764b.jpg";
+import monitoringImg from "@assets/stock_images/security_alarm_monit_d2f16ce8.jpg";
+import connectivity4gImg from "@assets/stock_images/4g_industrial_router_204b0b48.jpg";
 
 export default function Home() {
   const { toast } = useToast();
