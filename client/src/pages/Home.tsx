@@ -125,12 +125,14 @@ export default function Home() {
       title: "24/7 Back to Base Monitoring",
       description: "Professional monitoring centre watches over your property around the clock",
       image: monitoringImg,
+      hoverTextWhite: true,
     },
     {
       icon: Signal,
       title: "4G Connectivity",
       description: "Reliable 4G cellular connection ensures coverage in remote locations",
       image: connectivity4gImg,
+      hoverTextWhite: true,
     },
   ];
 
