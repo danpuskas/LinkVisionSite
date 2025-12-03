@@ -108,6 +108,7 @@ export default function Home() {
       title: "Instant Alerts",
       description: "Real-time notifications sent directly to your mobile device",
       image: instantAlertsImg,
+      bgSize: "contain",
     },
     {
       icon: Volume2,
@@ -244,8 +245,11 @@ export default function Home() {
                 data-testid={`card-feature-${index}`}
               >
                 <div 
-                  className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-300 bg-cover bg-center"
-                  style={{ backgroundImage: `url(${feature.image})` }}
+                  className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-300 bg-no-repeat bg-center"
+                  style={{ 
+                    backgroundImage: `url(${feature.image})`,
+                    backgroundSize: feature.bgSize || 'cover'
+                  }}
                 />
                 <div className="relative z-10">
                   <CardHeader>
