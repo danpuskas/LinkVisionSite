@@ -78,30 +78,35 @@ export default function Home() {
       title: "Solar Powered",
       description: "100% solar energy ensures 24/7 operation without grid dependency",
       image: solarPoweredImg,
+      hoverTextWhite: true,
     },
     {
       icon: Brain,
       title: "AI Detection",
       description: "Advanced AI algorithms detect threats and unusual activity in real-time",
       image: aiDetectionImg,
+      hoverTextWhite: true,
     },
     {
       icon: Cloud,
       title: "Cloud Storage",
       description: "Secure and encrypted cloud storage with instant access to footage from anywhere",
       image: cloudStorageImg,
+      hoverTextWhite: true,
     },
     {
       icon: Hammer,
       title: "Ruggedised",
       description: "Designed and built rugged with quality components for harsh Australian conditions",
       image: ruggedisedImg,
+      hoverTextWhite: true,
     },
     {
       icon: Eye,
       title: "4K Resolution",
       description: "Crystal clear 4K video captures every detail, day or night with colour night vision",
       image: resolution4kImg,
+      hoverTextWhite: true,
     },
     {
       icon: Zap,
@@ -252,12 +257,12 @@ export default function Home() {
                     <div className="w-16 h-16 rounded-lg bg-gradient-linkvision flex items-center justify-center mb-4">
                       <feature.icon className="w-8 h-8 text-white" />
                     </div>
-                    <CardTitle className="text-white group-hover:text-[#B100FF] group-hover:font-bold font-display text-2xl transition-all duration-300">
+                    <CardTitle className={`text-white group-hover:font-bold font-display text-2xl transition-all duration-300 ${feature.hoverTextWhite ? 'group-hover:text-white' : 'group-hover:text-[#B100FF]'}`}>
                       {feature.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-white/80 group-hover:text-[#B100FF] group-hover:font-bold text-base transition-all duration-300">
+                    <CardDescription className={`text-white/80 group-hover:font-bold text-base transition-all duration-300 ${feature.hoverTextWhite ? 'group-hover:text-white' : 'group-hover:text-[#B100FF]'}`}>
                       {feature.description}
                     </CardDescription>
                   </CardContent>
