@@ -53,24 +53,19 @@ export default function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "info@linkvision.au",
-      link: "mailto:info@linkvision.au",
+      value: "info@linkvision.com.au",
+      link: "mailto:info@linkvision.com.au",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+61 3 9000 0000",
-      link: "tel:+61390000000",
-    },
-    {
-      icon: MapPin,
-      label: "Address",
-      value: "Level 10, 123 Collins Street\nMelbourne VIC 3000",
+      value: "0497 865 297",
+      link: "tel:0497 865 297",
     },
     {
       icon: Clock,
       label: "Business Hours",
-      value: "Mon-Fri: 9:00 AM - 6:00 PM\nSat: 10:00 AM - 2:00 PM",
+      value: "Mon-Fri: 9:00 AM - 5:00 PM",
     },
   ];
 

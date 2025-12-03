@@ -114,18 +114,18 @@ export function Footer() {
               <li className="flex items-center gap-2 text-white/80">
                 <Mail size={18} className="text-[#C800FF]" />
                 <a href="mailto:info@linkvision.au" className="hover:text-[#C800FF] transition-colors" data-testid="link-email">
-                  info@linkvision.au
+                  info@linkvision.com.au
                 </a>
               </li>
               <li className="flex items-center gap-2 text-white/80">
                 <Phone size={18} className="text-[#C800FF]" />
-                <a href="tel:+61390000000" className="hover:text-[#C800FF] transition-colors" data-testid="link-phone">
-                  +61 3 9000 0000
+                <a href="tel:0497 865 297" className="hover:text-[#C800FF] transition-colors" data-testid="link-phone">
+                  0497 865 297
                 </a>
               </li>
               <li className="flex items-start gap-2 text-white/80">
                 <MapPin size={18} className="text-[#C800FF] mt-1 flex-shrink-0" />
-                <span>Melbourne, Australia</span>
+                <span>Rockhampton, Australia</span>
               </li>
             </ul>
           </div>
