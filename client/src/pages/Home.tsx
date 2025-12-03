@@ -27,12 +27,12 @@ import {
 import solarPoweredImg from "@assets/stock_images/solar_panel_energy_r_d5b1e442.jpg";
 import aiDetectionImg from "@assets/stock_images/artificial_intellige_f6c2cc87.jpg";
 import cloudStorageImg from "@assets/stock_images/cloud_computing_stor_8c4901fe.jpg";
-import ruggedisedImg from "@assets/stock_images/rugged_outdoor_indus_5b92ab9c.jpg";
+import ruggedisedImg from "@assets/stock_images/rugged_industrial_di_a9e70d30.jpg";
 import resolution4kImg from "@assets/stock_images/4k_high_definition_c_1f24beb1.jpg";
 import instantAlertsImg from "@assets/stock_images/mobile_phone_notific_a482655f.jpg";
-import twoWayAudioImg from "@assets/stock_images/two_way_audio_speake_902719c4.jpg";
+import twoWayAudioImg from "@assets/stock_images/outdoor_speaker_weat_b93cef92.jpg";
 import monitoringImg from "@assets/stock_images/security_monitoring__a5491c98.jpg";
-import connectivity4gImg from "@assets/stock_images/4g_cellular_tower_ne_22be4018.jpg";
+import connectivity4gImg from "@assets/stock_images/4g_lte_router_wirele_7a5f64b8.jpg";
 
 export default function Home() {
   const { toast } = useToast();
