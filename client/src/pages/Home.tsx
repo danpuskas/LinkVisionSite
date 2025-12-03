@@ -141,7 +141,6 @@ export default function Home() {
       name: "Professional",
       price: "$5,999",
       description: "Ideal for businesses",
-      popular: true,
       features: [
         "4 Solar CCTV Cameras",
         "4K Ultra HD Resolution",
@@ -260,24 +259,13 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="flex justify-center max-w-6xl mx-auto">
             {pricingTiers.map((tier, index) => (
               <Card
                 key={index}
-                className={`relative ${
-                  tier.popular
-                    ? "bg-[#1a2f6f] border-2 border-[#C800FF] shadow-xl shadow-[#C800FF]/20"
-                    : "bg-[#182863] border-2 border-white/10"
-                }`}
+                className="bg-[#1a2f6f] border-2 border-[#C800FF] shadow-xl shadow-[#C800FF]/20 w-full max-w-md"
                 data-testid={`card-pricing-${tier.name.toLowerCase()}`}
               >
-                {tier.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <div className="bg-gradient-linkvision text-white px-4 py-1 rounded-full text-sm font-semibold">
-                      Most Popular
-                    </div>
-                  </div>
-                )}
                 <CardHeader>
                   <CardTitle className="text-white font-display text-2xl">
                     {tier.name}
@@ -305,11 +293,7 @@ export default function Home() {
                   </ul>
                   <Link href="/contact">
                     <Button
-                      className={`w-full ${
-                        tier.popular
-                          ? "bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30"
-                          : "bg-white/10 text-white border border-white/20"
-                      }`}
+                      className="w-full bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30"
                       data-testid={`button-pricing-${tier.name.toLowerCase()}`}
                     >
                       Get Started
