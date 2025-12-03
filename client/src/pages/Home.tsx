@@ -249,7 +249,7 @@ export default function Home() {
                 data-testid={`card-feature-${index}`}
               >
                 <div 
-                  className="absolute inset-0 opacity-40 group-hover:opacity-100 transition-opacity duration-300 bg-cover bg-center"
+                  className="absolute inset-0 opacity-40 group-hover:opacity-90 transition-opacity duration-300 bg-cover bg-center"
                   style={{ backgroundImage: `url(${feature.image})` }}
                 />
                 <div className="relative z-10">
