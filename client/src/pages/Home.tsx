@@ -29,7 +29,7 @@ import aiDetectionImg from "@assets/stock_images/artificial_intellige_f6c2cc87.j
 import cloudStorageImg from "@assets/stock_images/cloud_computing_stor_8c4901fe.jpg";
 import ruggedisedImg from "@assets/RuggedTablet_1764736592557.png";
 import resolution4kImg from "@assets/4KCompare_1764740879540.png";
-import instantAlertsImg from "@assets/SmartphoneAppAlert_1764743328959.png";
+import instantAlertsImg from "@assets/iphoneAlert3_1764744194316.png";
 import twoWayAudioImg from "@assets/TwowayAudio_1764739561735.png";
 import monitoringImg from "@assets/MonitoringStation_1764733453498.png";
 import connectivity4gImg from "@assets/4GRouterIndustrial_1764733632211.png";
@@ -108,7 +108,6 @@ export default function Home() {
       title: "Instant Alerts",
       description: "Real-time notifications sent directly to your mobile device",
       image: instantAlertsImg,
-      bgSize: "contain",
     },
     {
       icon: Volume2,
@@ -245,11 +244,8 @@ export default function Home() {
                 data-testid={`card-feature-${index}`}
               >
                 <div 
-                  className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-300 bg-no-repeat bg-center"
-                  style={{ 
-                    backgroundImage: `url(${feature.image})`,
-                    backgroundSize: feature.bgSize || 'cover'
-                  }}
+                  className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-300 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${feature.image})` }}
                 />
                 <div className="relative z-10">
                   <CardHeader>
