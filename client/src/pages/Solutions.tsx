@@ -56,22 +56,25 @@ export default function Products() {
       ],
     },
     {
-      name: "Solar Powered or Just Powered",
+      name: "Solar Powered or Locally Powered",
       category: "Custom Solutions",
       features: [
         "Unlimited Camera Support",
         "Centralized Management",
         "Ulimited Users",
         "Multi-site Monitoring",
-        "Advanced Reporting",
+        "Audit Logs",
+        "License Plate Recognition",
+        "People Counting",
+        "PPE Analytics",
       ],
     },
   ];
 
   const accessories = [
-    { icon: Battery, name: "Extended Battery Pack" },
-    { icon: Sun, name: "120W Solar Panel Upgrade" },
-    { icon: Wifi, name: "4G LTE Module" },
+    { icon: Battery, name: "License Plate Recognition" },
+    { icon: Sun, name: "People Counting" },
+    { icon: Wifi, name: "PPE Analytics" },
     { icon: Shield, name: "Vandal-proof Housing" },
   ];
 
@@ -161,10 +164,10 @@ export default function Products() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-display font-bold text-4xl text-white mb-4">
-              Accessories & Add-ons
+              Analytics Add-ons
             </h2>
             <p className="text-xl text-white/80">
-              Enhance your system with our premium accessories
+              Enhance your system with our premium Analytics Add-ons
             </p>
           </div>
 
@@ -172,7 +175,7 @@ export default function Products() {
             {accessories.map((accessory, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f] border-2 border-white/10 hover-elevate text-center"
+                className="bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate text-center transition-colors duration-300"
                 data-testid={`card-accessory-${index}`}
               >
                 <CardHeader>
