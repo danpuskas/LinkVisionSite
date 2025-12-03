@@ -197,24 +197,7 @@ export default function Home() {
               </Button>
             </div>
 
-            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-display font-bold text-white mb-1">10K+</div>
-                <div className="text-white/70">Installations</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-display font-bold text-white mb-1">99.9%</div>
-                <div className="text-white/70">Uptime</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-display font-bold text-white mb-1">24/7</div>
-                <div className="text-white/70">Monitoring</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-display font-bold text-white mb-1">5 Star</div>
-                <div className="text-white/70">Rating</div>
-              </div>
-            </div>
+         
           </div>
         </div>
       </section>
