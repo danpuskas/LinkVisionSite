@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -19,14 +18,11 @@ import {
   CheckCircle2,
   Eye,
   Zap,
-  Clock,
-  Play,
   Hammer,
 } from "lucide-react";
 
 export default function Home() {
   const { toast } = useToast();
-  const [videoPlaying, setVideoPlaying] = useState(false);
 
   const form = useForm<InsertContactSubmission>({
     resolver: zodResolver(insertContactSubmissionSchema),
@@ -175,7 +171,7 @@ export default function Home() {
               Protect what matters most with cutting-edge technology.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex justify-center mb-8">
               <Link href="/contact">
                 <Button
                   size="lg"
@@ -185,16 +181,6 @@ export default function Home() {
                   Get Started Today
                 </Button>
               </Link>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-white/30 bg-white/5 backdrop-blur-sm text-white hover:bg-white/10 text-lg px-8 py-6"
-                data-testid="button-hero-demo"
-                onClick={() => setVideoPlaying(!videoPlaying)}
-              >
-                <Play className="w-5 h-5 mr-2" />
-                Watch Demo
-              </Button>
             </div>
 
          
