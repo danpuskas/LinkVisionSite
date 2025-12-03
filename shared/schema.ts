@@ -33,6 +33,8 @@ export const insertContactSubmissionSchema = createInsertSchema(contactSubmissio
 }).extend({
   email: z.string().email("Please enter a valid email address"),
   name: z.string().min(2, "Name must be at least 2 characters"),
+  phone: z.string().min(8, "Please enter a valid phone number"),
+  company: z.string().min(2, "Company name must be at least 2 characters"),
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
 

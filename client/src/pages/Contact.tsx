@@ -135,7 +135,7 @@ export default function Contact() {
 
                     <div className="space-y-2">
                       <Label htmlFor="contact-phone" className="text-white">
-                        Phone
+                        Phone *
                       </Label>
                       <Input
                         id="contact-phone"
@@ -144,11 +144,14 @@ export default function Contact() {
                         className="bg-white text-[#182863] border-white/20"
                         data-testid="input-phone"
                       />
+                      {form.formState.errors.phone && (
+                        <p className="text-sm text-red-400">{form.formState.errors.phone.message}</p>
+                      )}
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="contact-company" className="text-white">
-                        Company
+                        Company *
                       </Label>
                       <Input
                         id="contact-company"
@@ -157,6 +160,9 @@ export default function Contact() {
                         className="bg-white text-[#182863] border-white/20"
                         data-testid="input-company"
                       />
+                      {form.formState.errors.company && (
+                        <p className="text-sm text-red-400">{form.formState.errors.company.message}</p>
+                      )}
                     </div>
 
                     <div className="space-y-2">

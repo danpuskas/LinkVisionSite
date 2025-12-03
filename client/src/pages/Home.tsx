@@ -381,7 +381,7 @@ export default function Home() {
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="phone" className="text-white">
-                        Phone
+                        Phone *
                       </Label>
                       <Input
                         id="phone"
@@ -390,10 +390,13 @@ export default function Home() {
                         className="bg-white text-[#182863] border-white/20"
                         data-testid="input-contact-phone"
                       />
+                      {form.formState.errors.phone && (
+                        <p className="text-sm text-red-400">{form.formState.errors.phone.message}</p>
+                      )}
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="company" className="text-white">
-                        Company
+                        Company *
                       </Label>
                       <Input
                         id="company"
@@ -402,6 +405,9 @@ export default function Home() {
                         className="bg-white text-[#182863] border-white/20"
                         data-testid="input-contact-company"
                       />
+                      {form.formState.errors.company && (
+                        <p className="text-sm text-red-400">{form.formState.errors.company.message}</p>
+                      )}
                     </div>
                   </div>
 
