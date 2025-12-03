@@ -96,6 +96,7 @@ export default function Home() {
       title: "Ruggedised",
       description: "Designed and built rugged with quality components for harsh Australian conditions",
       image: ruggedisedImg,
+      bgSize: "70%",
     },
     {
       icon: Eye,
@@ -244,8 +245,11 @@ export default function Home() {
                 data-testid={`card-feature-${index}`}
               >
                 <div 
-                  className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-300 bg-cover bg-center"
-                  style={{ backgroundImage: `url(${feature.image})` }}
+                  className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-300 bg-no-repeat bg-center"
+                  style={{ 
+                    backgroundImage: `url(${feature.image})`,
+                    backgroundSize: feature.bgSize || 'cover'
+                  }}
                 />
                 <div className="relative z-10">
                   <CardHeader>
