@@ -138,9 +138,8 @@ export default function Home() {
 
   const pricingTiers = [
     {
-      name: "Professional",
-      price: "$5,999",
-      description: "Ideal for businesses",
+      name: "",
+      description: "",
       features: [
         "4 Solar CCTV Cameras",
         "4K Ultra HD Resolution",
@@ -273,14 +272,6 @@ export default function Home() {
                   <CardDescription className="text-white/70">
                     {tier.description}
                   </CardDescription>
-                  <div className="mt-4">
-                    <span className="text-5xl font-display font-bold text-white">
-                      {tier.price}
-                    </span>
-                    {tier.price !== "Custom" && (
-                      <span className="text-white/60 ml-2">AUD</span>
-                    )}
-                  </div>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
@@ -306,7 +297,7 @@ export default function Home() {
                 Get in Touch
               </h2>
               <p className="text-xl text-white/80">
-                Ready to secure your property? Contact us today for a free consultation
+                Ready to secure your site? Contact us today for a free consultation
               </p>
             </div>
 
