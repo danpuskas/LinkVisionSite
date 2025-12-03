@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Sun, Camera, Cloud, Shield, Wifi, Battery, CheckCircle2 } from "lucide-react";
+import { Sun, Camera, Cloud, Shield, Wifi, Battery, CheckCircle2, Car, Users, HardHat } from "lucide-react";
 
 export default function Products() {
   const products = [
@@ -72,9 +72,9 @@ export default function Products() {
   ];
 
   const accessories = [
-    { icon: Battery, name: "License Plate Recognition" },
-    { icon: Sun, name: "People Counting" },
-    { icon: Wifi, name: "PPE Analytics" },
+    { icon: Car, name: "License Plate Recognition" },
+    { icon: Users, name: "People Counting" },
+    { icon: HardHat, name: "PPE Analytics" },
   ];
 
   return (
