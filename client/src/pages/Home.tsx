@@ -263,7 +263,7 @@ export default function Home() {
             {pricingTiers.map((tier, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f] border-2 border-[#C800FF] shadow-xl shadow-[#C800FF]/20 w-full max-w-md"
+                className="bg-[#1a2f6f] border-2 border-[#C800FF] shadow-xl shadow-[#C800FF]/20 w-full max-w-xl"
                 data-testid={`card-pricing-${tier.name.toLowerCase()}`}
               >
                 <CardHeader>
