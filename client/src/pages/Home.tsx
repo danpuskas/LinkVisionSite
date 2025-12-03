@@ -19,6 +19,9 @@ import {
   Eye,
   Zap,
   Hammer,
+  Volume2,
+  Headphones,
+  Signal,
 } from "lucide-react";
 
 export default function Home() {
@@ -89,6 +92,21 @@ export default function Home() {
       icon: Zap,
       title: "Instant Alerts",
       description: "Real-time notifications sent directly to your mobile device",
+    },
+    {
+      icon: Volume2,
+      title: "2-Way Audio",
+      description: "Communicate directly through cameras with built-in speakers and microphones",
+    },
+    {
+      icon: Headphones,
+      title: "24/7 Back to Base Monitoring",
+      description: "Professional monitoring centre watches over your property around the clock",
+    },
+    {
+      icon: Signal,
+      title: "4G Connectivity",
+      description: "Reliable 4G cellular connection ensures coverage in remote locations",
     },
   ];
 
