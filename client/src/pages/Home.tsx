@@ -31,8 +31,8 @@ import ruggedisedImg from "@assets/stock_images/rugged_industrial_di_a9e70d30.jp
 import resolution4kImg from "@assets/stock_images/4k_high_definition_c_1f24beb1.jpg";
 import instantAlertsImg from "@assets/stock_images/mobile_phone_notific_a482655f.jpg";
 import twoWayAudioImg from "@assets/stock_images/microphone_speaker_a_9fa3764b.jpg";
-import monitoringImg from "@assets/stock_images/security_guard_watch_f734eb7d.jpg";
-import connectivity4gImg from "@assets/stock_images/wifi_router_black_de_0ad5a13a.jpg";
+import monitoringImg from "@assets/stock_images/man_sitting_control__b424d4e2.jpg";
+import connectivity4gImg from "@assets/stock_images/industrial_ethernet__653de218.jpg";
 
 export default function Home() {
   const { toast } = useToast();
