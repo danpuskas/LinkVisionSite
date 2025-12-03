@@ -24,6 +24,16 @@ import {
   Signal,
 } from "lucide-react";
 
+import solarPoweredImg from "@assets/stock_images/solar_panel_energy_r_d5b1e442.jpg";
+import aiDetectionImg from "@assets/stock_images/artificial_intellige_f6c2cc87.jpg";
+import cloudStorageImg from "@assets/stock_images/cloud_computing_stor_8c4901fe.jpg";
+import ruggedisedImg from "@assets/stock_images/rugged_outdoor_indus_5b92ab9c.jpg";
+import resolution4kImg from "@assets/stock_images/4k_high_definition_c_1f24beb1.jpg";
+import instantAlertsImg from "@assets/stock_images/mobile_phone_notific_a482655f.jpg";
+import twoWayAudioImg from "@assets/stock_images/two_way_audio_speake_902719c4.jpg";
+import monitoringImg from "@assets/stock_images/security_monitoring__a5491c98.jpg";
+import connectivity4gImg from "@assets/stock_images/4g_cellular_tower_ne_22be4018.jpg";
+
 export default function Home() {
   const { toast } = useToast();
 
@@ -67,46 +77,55 @@ export default function Home() {
       icon: Sun,
       title: "Solar Powered",
       description: "100% solar energy ensures 24/7 operation without grid dependency",
+      image: solarPoweredImg,
     },
     {
       icon: Brain,
       title: "AI Detection",
       description: "Advanced AI algorithms detect threats and unusual activity in real-time",
+      image: aiDetectionImg,
     },
     {
       icon: Cloud,
       title: "Cloud Storage",
       description: "Secure and encrypted cloud storage with instant access to footage from anywhere",
+      image: cloudStorageImg,
     },
     {
       icon: Hammer,
       title: "Ruggedised",
       description: "Designed and built rugged with quality components for harsh Australian conditions",
+      image: ruggedisedImg,
     },
     {
       icon: Eye,
       title: "4K Resolution",
       description: "Crystal clear 4K video captures every detail, day or night with colour night vision",
+      image: resolution4kImg,
     },
     {
       icon: Zap,
       title: "Instant Alerts",
       description: "Real-time notifications sent directly to your mobile device",
+      image: instantAlertsImg,
     },
     {
       icon: Volume2,
       title: "2-Way Audio",
       description: "Communicate directly through cameras with built-in speakers and microphones",
+      image: twoWayAudioImg,
     },
     {
       icon: Headphones,
       title: "24/7 Back to Base Monitoring",
       description: "Professional monitoring centre watches over your property around the clock",
+      image: monitoringImg,
     },
     {
       icon: Signal,
       title: "4G Connectivity",
       description: "Reliable 4G cellular connection ensures coverage in remote locations",
+      image: connectivity4gImg,
     },
   ];
 
@@ -221,22 +240,28 @@ export default function Home() {
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#182863]/90 hover-elevate transition-colors duration-300"
+                className="group relative overflow-hidden bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] transition-colors duration-300"
                 data-testid={`card-feature-${index}`}
               >
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-lg bg-gradient-linkvision flex items-center justify-center mb-4">
-                    <feature.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <CardTitle className="text-white font-display text-2xl">
-                    {feature.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-white/80 text-base">
-                    {feature.description}
-                  </CardDescription>
-                </CardContent>
+                <div 
+                  className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-300 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${feature.image})` }}
+                />
+                <div className="relative z-10">
+                  <CardHeader>
+                    <div className="w-16 h-16 rounded-lg bg-gradient-linkvision flex items-center justify-center mb-4">
+                      <feature.icon className="w-8 h-8 text-white" />
+                    </div>
+                    <CardTitle className="text-white font-display text-2xl">
+                      {feature.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-white/80 text-base">
+                      {feature.description}
+                    </CardDescription>
+                  </CardContent>
+                </div>
               </Card>
             ))}
           </div>
