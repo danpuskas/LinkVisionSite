@@ -139,7 +139,6 @@ export default function Home() {
   const pricingTiers = [
     {
       name: "",
-      description: "",
       features: [
         "4 Solar CCTV Cameras",
         "4K Ultra HD Resolution",
@@ -269,16 +268,13 @@ export default function Home() {
                   <CardTitle className="text-white font-display text-2xl">
                     {tier.name}
                   </CardTitle>
-                  <CardDescription className="text-white/70">
-                    {tier.description}
-                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
                     {tier.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-3">
                         <CheckCircle2 className="w-5 h-5 text-[#C800FF] flex-shrink-0 mt-0.5" />
-                        <span className="text-white/90">{feature}</span>
+                        <span className="text-white/90 font-bold">{feature}</span>
                       </li>
                     ))}
                   </ul>
