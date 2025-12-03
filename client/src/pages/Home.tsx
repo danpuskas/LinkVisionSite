@@ -25,7 +25,7 @@ import {
 } from "lucide-react";
 
 import solarPoweredImg from "@assets/stock_images/solar_panel_energy_r_d5b1e442.jpg";
-import aiDetectionImg from "@assets/stock_images/artificial_intellige_f6c2cc87.jpg";
+import aiDetectionImg from "@assets/AIChipset_1764746384026.png";
 import cloudStorageImg from "@assets/stock_images/cloud_computing_stor_8c4901fe.jpg";
 import ruggedisedImg from "@assets/RuggedTablet_1764736592557.png";
 import resolution4kImg from "@assets/4KCompare_1764740879540.png";
