@@ -27,7 +27,7 @@ import {
 import solarPoweredImg from "@assets/stock_images/solar_panel_energy_r_d5b1e442.jpg";
 import aiDetectionImg from "@assets/stock_images/artificial_intellige_f6c2cc87.jpg";
 import cloudStorageImg from "@assets/stock_images/cloud_computing_stor_8c4901fe.jpg";
-import ruggedisedImg from "@assets/RuggedTablet_1764733805636.png";
+import ruggedisedImg from "@assets/RuggedTablet_1764736592557.png";
 import resolution4kImg from "@assets/stock_images/4k_high_definition_c_1f24beb1.jpg";
 import instantAlertsImg from "@assets/stock_images/mobile_phone_notific_a482655f.jpg";
 import twoWayAudioImg from "@assets/stock_images/microphone_speaker_a_9fa3764b.jpg";
