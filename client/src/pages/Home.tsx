@@ -252,12 +252,12 @@ export default function Home() {
                     <div className="w-16 h-16 rounded-lg bg-gradient-linkvision flex items-center justify-center mb-4">
                       <feature.icon className="w-8 h-8 text-white" />
                     </div>
-                    <CardTitle className="text-white group-hover:text-[#B100FF] font-display text-2xl transition-colors duration-300">
+                    <CardTitle className="text-white group-hover:text-[#B100FF] group-hover:font-bold font-display text-2xl transition-all duration-300">
                       {feature.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-white/80 group-hover:text-[#B100FF] text-base transition-colors duration-300">
+                    <CardDescription className="text-white/80 group-hover:text-[#B100FF] group-hover:font-bold text-base transition-all duration-300">
                       {feature.description}
                     </CardDescription>
                   </CardContent>
