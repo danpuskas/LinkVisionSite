@@ -263,7 +263,7 @@ export default function Home() {
             {pricingTiers.map((tier, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f] border-2 border-[#C800FF] shadow-xl shadow-[#C800FF]/20 w-full max-w-[800px]"
+                className="bg-[#1a2f6f] border-2 border-[#C800FF] shadow-xl shadow-[#C800FF]/20 w-full max-w-[1000px]"
                 data-testid={`card-pricing-${tier.name.toLowerCase()}`}
               >
                 <CardHeader>
@@ -283,7 +283,7 @@ export default function Home() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3 mb-6">
+                  <ul className="space-y-3">
                     {tier.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-3">
                         <CheckCircle2 className="w-5 h-5 text-[#C800FF] flex-shrink-0 mt-0.5" />
@@ -291,14 +291,6 @@ export default function Home() {
                       </li>
                     ))}
                   </ul>
-                  <Link href="/contact">
-                    <Button
-                      className="w-full bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30"
-                      data-testid={`button-pricing-${tier.name.toLowerCase()}`}
-                    >
-                      Get Started
-                    </Button>
-                  </Link>
                 </CardContent>
               </Card>
             ))}
