@@ -106,7 +106,7 @@ export default function CaseStudies() {
   return (
     <div className="min-h-screen bg-[#182863] relative">
       <div 
-        className="absolute inset-0 opacity-70 bg-cover bg-center bg-no-repeat pointer-events-none"
+        className="absolute inset-0 opacity-80 bg-cover bg-center bg-no-repeat pointer-events-none"
         style={{ backgroundImage: `url(${constructionBg})` }}
       />
       <section className="py-20 bg-gradient-to-b from-[#1a2f6f]/80 to-[#182863]/80 relative z-10">
