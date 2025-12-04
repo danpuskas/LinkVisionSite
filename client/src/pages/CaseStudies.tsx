@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2, Factory, Home, ShoppingBag, TrendingUp, CheckCircle2 } from "lucide-react";
-import constructionBg from "@assets/stock_images/large_excavator_civi_bb1de279.jpg";
+import constructionBg from "@assets/excavator_Case_Study_1764841778705.png";
 
 export default function CaseStudies() {
   const cases = [
