@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2, Factory, Home, ShoppingBag, TrendingUp, CheckCircle2 } from "lucide-react";
+import constructionBg from "@assets/stock_images/civil_construction_s_5166981c.jpg";
 
 export default function CaseStudies() {
   const cases = [
@@ -103,8 +104,12 @@ export default function CaseStudies() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#182863]">
-      <section className="py-20 bg-gradient-to-b from-[#1a2f6f] to-[#182863]">
+    <div className="min-h-screen bg-[#182863] relative">
+      <div 
+        className="absolute inset-0 opacity-20 bg-cover bg-center bg-no-repeat pointer-events-none"
+        style={{ backgroundImage: `url(${constructionBg})` }}
+      />
+      <section className="py-20 bg-gradient-to-b from-[#1a2f6f]/80 to-[#182863]/80 relative z-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h1 className="font-display font-bold text-5xl md:text-6xl text-white mb-6">
@@ -217,7 +222,7 @@ export default function CaseStudies() {
         </div>
       </section>
 
-      <section className="py-20 bg-[#182863]">
+      <section className="py-20 bg-[#182863]/80 relative z-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <div className="grid md:grid-cols-4 gap-8 mb-12">
