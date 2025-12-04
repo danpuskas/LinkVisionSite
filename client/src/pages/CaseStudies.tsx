@@ -53,26 +53,29 @@ export default function CaseStudies() {
     },
     {
       icon: Home,
-      industry: "Residential",
-      title: "Key Stats on Theft & Vandalism in Residential Construction",
-      challenge: "15-acre rural property with long driveway and multiple outbuildings needed surveillance without running power cables.",
-      solution: "8 solar CCTV cameras strategically placed to cover entry points, driveway, barn, and perimeter. Mobile app integration for remote monitoring during travel.",
+      industry: "Residential Construction",
+      title: "Securing Residential Construction Sites Across Australia",
+      overview: "Residential construction is one of Australia's largest industries, contributing billions annually to the economy. Yet, theft and vandalism during the construction phase remain persistent challenges. Industry reports estimate that losses from site crime can account for around 1% of the total cost of a new home, with millions of dollars lost nationwide each year. These incidents not only increase costs but also delay projects and erode client confidence.",
+      challenge: "High-value targets including tools, copper wiring, timber, appliances, and fixtures are frequently stolen. Crimes often occur during the fit-out stage, when homes are complete but unoccupied. Beyond replacement costs, builders face delays, insurance claims, and reputational damage. With thousands of residential projects underway at any given time, the cumulative impact of site crime is significant.",
+      solution: "LinkVision deployed a tailored surveillance solution designed specifically for construction environments: ruggedised surveillance units capable of withstanding harsh outdoor conditions, AI-powered monitoring to detect suspicious activity in real time, cloud-based access enabling builders and project managers to monitor sites remotely, rapid deployment systems that can be installed and relocated easily as projects progress, and integration with deterrents such as lighting and alarms to prevent escalation.",
       results: [
-        "Deterred multiple trespassing attempts",
-        "Captured parcel deliveries remotely",
-        "Peace of mind during overseas trips",
-        "Increased property value",
+        "Incidents reduced by over 60% compared to baseline figures",
+        "Asset recovery improved with several attempted thefts thwarted due to real-time alerts",
+        "Project delays minimized, saving builders both time and money",
+        "Client confidence strengthened with developers reporting improved trust in site security",
       ],
       metrics: {
-        cameras: 8,
-        coverage: "15 acres",
-        satisfaction: "5/5 stars",
+        reduction: "60%+",
+        deployment: "6 months",
+        coverage: "Nationwide",
       },
-      quote: {
-        text: "We can finally travel without worrying. The cameras catch everything, and the AI alerts let us know if something unusual happens. Highly recommended!",
-        author: "David & Emma Johnson",
-        role: "Homeowners",
-      },
+      keyTakeaways: [
+        "Theft and vandalism remain a nationwide issue in residential construction, costing millions annually",
+        "Proactive surveillance is not just a deterrent—it is a cost-saving investment",
+        "LinkVision's solutions provide scalable protection that adapts to the dynamic nature of construction projects",
+        "By reducing crime-related losses, builders can deliver homes on time, on budget, and with greater peace of mind",
+      ],
+      conclusion: "Australia's construction industry faces ongoing challenges from theft and vandalism. LinkVision's advanced surveillance solutions demonstrate how technology can transform site security, reduce losses, and protect investments. By addressing risks at a national level, LinkVision is helping builders and developers safeguard Australia's future homes.",
     },
     {
       icon: ShoppingBag,
@@ -135,6 +138,13 @@ export default function CaseStudies() {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-6">
+                  {'overview' in caseStudy && (
+                    <div>
+                      <h4 className="text-white font-semibold text-lg mb-2">Overview</h4>
+                      <p className="text-white/80">{caseStudy.overview}</p>
+                    </div>
+                  )}
+
                   <div className="grid md:grid-cols-3 gap-6 bg-[#182863] rounded-lg p-6">
                     {Object.entries(caseStudy.metrics).map(([key, value], idx) => (
                       <div key={idx} className="text-center">
@@ -152,7 +162,9 @@ export default function CaseStudies() {
                   </div>
 
                   <div>
-                    <h4 className="text-white font-semibold text-lg mb-2">Our Solution</h4>
+                    <h4 className="text-white font-semibold text-lg mb-2">
+                      {'overview' in caseStudy ? "LinkVision's Approach" : "Our Solution"}
+                    </h4>
                     <p className="text-white/80">{caseStudy.solution}</p>
                   </div>
 
@@ -168,13 +180,36 @@ export default function CaseStudies() {
                     </ul>
                   </div>
 
-                  <div className="bg-[#182863] rounded-lg p-6 border-l-4 border-[#C800FF]">
-                    <p className="text-white/90 text-lg italic mb-4">
-                      "{caseStudy.quote.text}"
-                    </p>
-                    <div className="text-white font-semibold">{caseStudy.quote.author}</div>
-                    <div className="text-white/60">{caseStudy.quote.role}</div>
-                  </div>
+                  {'keyTakeaways' in caseStudy && (
+                    <div>
+                      <h4 className="text-white font-semibold text-lg mb-3">Key Takeaways</h4>
+                      <ul className="space-y-2">
+                        {(caseStudy as any).keyTakeaways.map((takeaway: string, idx: number) => (
+                          <li key={idx} className="flex items-start gap-2">
+                            <CheckCircle2 className="w-5 h-5 text-[#C800FF] flex-shrink-0 mt-0.5" />
+                            <span className="text-white/90">{takeaway}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {'conclusion' in caseStudy && (
+                    <div className="bg-[#182863] rounded-lg p-6 border-l-4 border-[#C800FF]">
+                      <h4 className="text-white font-semibold text-lg mb-2">Conclusion</h4>
+                      <p className="text-white/90">{(caseStudy as any).conclusion}</p>
+                    </div>
+                  )}
+
+                  {'quote' in caseStudy && (
+                    <div className="bg-[#182863] rounded-lg p-6 border-l-4 border-[#C800FF]">
+                      <p className="text-white/90 text-lg italic mb-4">
+                        "{(caseStudy as any).quote.text}"
+                      </p>
+                      <div className="text-white font-semibold">{(caseStudy as any).quote.author}</div>
+                      <div className="text-white/60">{(caseStudy as any).quote.role}</div>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             ))}

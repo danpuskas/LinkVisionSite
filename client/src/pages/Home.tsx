@@ -123,7 +123,7 @@ export default function Home() {
     {
       icon: Headphones,
       title: "24/7 Back to Base Monitoring",
-      description: "Professional monitoring centre watches over your property around the clock",
+      description: "All alarms are video verfied by the control room before dispatching police",
       image: monitoringImg,
       hoverTextWhite: true,
     },
