@@ -27,7 +27,7 @@ import {
 import solarPoweredImg from "@assets/stock_images/solar_panel_energy_r_d5b1e442.jpg";
 import aiDetectionImg from "@assets/AIChipset_1764746384026.png";
 import cloudStorageImg from "@assets/stock_images/cloud_computing_stor_8c4901fe.jpg";
-import ruggedisedImg from "@assets/RuggedTablet_1764736592557.png";
+import ruggedisedImg from "@assets/excavator_Case_Study_1764841778705.png";
 import resolution4kImg from "@assets/4KCompare_1764740879540.png";
 import instantAlertsImg from "@assets/iphoneAlert3_1764744194316.png";
 import twoWayAudioImg from "@assets/TwowayAudio_1764739561735.png";
