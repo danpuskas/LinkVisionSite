@@ -217,7 +217,7 @@ export default function Home() {
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className="group relative overflow-hidden bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] transition-colors duration-300"
+                className="group relative overflow-hidden bg-[#182863] border-2 border-[#C800FF]/30 hover:border-[#C800FF] transition-colors duration-300"
                 data-testid={`card-feature-${index}`}
               >
                 <div 
