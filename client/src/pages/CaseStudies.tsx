@@ -2,7 +2,6 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2, Factory, Home, ShoppingBag, TrendingUp, CheckCircle2 } from "lucide-react";
-import residentialConstructionBg from "@assets/stock_images/residential_construc_cfc2910e.jpg";
 
 export default function CaseStudies() {
   const cases = [
@@ -56,7 +55,6 @@ export default function CaseStudies() {
       icon: Home,
       industry: "Residential Construction",
       title: "Securing Residential Construction Sites Across Australia",
-      backgroundImage: residentialConstructionBg,
       overview: "Residential construction is one of Australia's largest industries, contributing billions annually to the economy. Yet, theft and vandalism during the construction phase remain persistent challenges. Industry reports estimate that losses from site crime can account for around 1% of the total cost of a new home, with millions of dollars lost nationwide each year. These incidents not only increase costs but also delay projects and erode client confidence.",
       challenge: "High-value targets including tools, copper wiring, timber, appliances, and fixtures are frequently stolen. Crimes often occur during the fit-out stage, when homes are complete but unoccupied. Beyond replacement costs, builders face delays, insurance claims, and reputational damage. With thousands of residential projects underway at any given time, the cumulative impact of site crime is significant.",
       solution: "LinkVision deployed a tailored surveillance solution designed specifically for construction environments: ruggedised surveillance units capable of withstanding harsh outdoor conditions, AI-powered monitoring to detect suspicious activity in real time, cloud-based access enabling builders and project managers to monitor sites remotely, rapid deployment systems that can be installed and relocated easily as projects progress, and integration with deterrents such as lighting and alarms to prevent escalation.",
@@ -121,16 +119,9 @@ export default function CaseStudies() {
             {cases.map((caseStudy, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f] border-2 border-[#C800FF]/30 relative overflow-hidden"
+                className="bg-[#1a2f6f] border-2 border-[#C800FF]/30"
                 data-testid={`card-case-${index}`}
               >
-                {'backgroundImage' in caseStudy && (
-                  <div 
-                    className="absolute inset-0 bg-cover bg-center opacity-30"
-                    style={{ backgroundImage: `url(${(caseStudy as any).backgroundImage})` }}
-                  />
-                )}
-                <div className="relative z-10">
                 <CardHeader>
                   <div className="flex items-start gap-4 mb-4">
                     <div className="w-16 h-16 rounded-lg bg-gradient-linkvision flex items-center justify-center flex-shrink-0">
@@ -220,7 +211,6 @@ export default function CaseStudies() {
                     </div>
                   )}
                 </CardContent>
-                </div>
               </Card>
             ))}
           </div>
