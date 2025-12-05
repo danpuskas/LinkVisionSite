@@ -139,12 +139,10 @@ export default function Home() {
   const pricingTiers = [
     {
       features: [
-        "4 Solar CCTV Cameras",
-        "4K Ultra HD Resolution",
-        "30 Days Cloud Storage",
-        "Advanced AI Analytics",
-        "Priority Support",
-        "Custom Alerts",
+        "Rapid deployment and activation — our team delivers, installs, and gets your system online quickly",
+        "Flexible coverage — cameras are repositioned as your site or farm layout evolves",
+        "24/7 Monitoring — real operators oversee every alarm from our Australian control room.",
+        "Verified emergency response — incidents are confirmed before immediate police callouts, reducing false alarms.",
       ],
     },
   ];
@@ -173,10 +171,10 @@ export default function Home() {
             </div>
             
             <h1 className="font-display font-bold text-4xl md:text-6xl text-white mb-6 leading-tight">
-              Intelligent Security
+              
               <br />
               <span className="bg-gradient-to-r from-[#C800FF] to-[#B100FF] bg-clip-text text-transparent">
-                Powered by the Sun
+                
               </span>
             </h1>
             
@@ -206,7 +204,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">
-              Advanced Features as Standard
+              Standard Features
             </h2>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
               Experience next-generation surveillance with our AI-powered solar CCTV systems
@@ -252,7 +250,7 @@ export default function Home() {
               Why Choose LinkVision
             </h2>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              Choose the perfect plan for your security needs
+              
             </p>
           </div>
 

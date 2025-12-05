@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Facebook } from "lucide-react";
 
 export function Footer() {
   return (
@@ -26,15 +26,6 @@ export function Footer() {
                 data-testid="link-social-linkedin"
               >
                 <Linkedin size={20} />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-md bg-white/10 flex items-center justify-center hover-elevate active-elevate-2"
-                data-testid="link-social-twitter"
-              >
-                <Twitter size={20} />
               </a>
               <a
                 href="https://facebook.com"
