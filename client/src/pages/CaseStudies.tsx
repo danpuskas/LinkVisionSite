@@ -175,7 +175,7 @@ export default function CaseStudies() {
 
           <div className="space-y-12 max-w-5xl mx-auto">
             {cases.map((caseStudy, index) => (
-              <div key={index} id={caseStudy.id} className="scroll-mt-8">
+              <div key={index} id={caseStudy.id} className="scroll-mt-24">
                 <Card
                   className="bg-[#1a2f6f] border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate transition-colors duration-300"
                   data-testid={`card-case-${index}`}
