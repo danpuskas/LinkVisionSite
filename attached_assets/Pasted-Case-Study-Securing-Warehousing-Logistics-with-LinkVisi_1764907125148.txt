@@ -1,0 +1,86 @@
+Case Study: Securing Warehousing & Logistics with LinkVision’s OneVision, WideVision, and FreeVision
+Industry Context – Australia
+Warehousing and logistics sites across Australia are facing rising theft, vandalism, and operational disruptions:
+
+595,660 theft incidents in 2024, the highest in 21 years.
+
+Retail and logistics accounted for 45% of thefts, with laydown yards and depots particularly vulnerable.
+
+Fuel, copper, and pallet theft are increasing in industrial zones.
+
+Labour shortages make manned patrols costly and difficult to sustain.
+
+These challenges highlight the need for autonomous, layered surveillance that can scale across warehouse perimeters, laydown yards, and transport hubs.
+
+Regional Context – Central Queensland
+Central QLD is a logistics hub supporting mining, agriculture, and transport corridors through Rockhampton, Gladstone, Emerald, and Mackay. Warehouses and depots here face unique pressures:
+
+Remote locations with limited 4G coverage and no fixed CCTV infrastructure.
+
+High‑value assets such as mining spares, agricultural machinery, fuel, and bulk commodities stored in laydown yards.
+
+Vehicle traffic: hundreds of subcontractor, service, and delivery vehicles moving through sites daily.
+
+Rising theft incidents: regional police reports note increased fuel siphoning, copper cable theft, and machinery vandalism.
+
+Labour shortages make manned patrols difficult to sustain across multiple remote depots.
+
+LinkVision’s Three‑Tier Solution
+🔹 OneVision
+Fixed surveillance units for continuous monitoring of entry points, gates, and choke zones.
+
+Ensures access control and logs every vehicle and person entering.
+
+Provides baseline coverage across high‑traffic warehouse areas.
+
+🔹 WideVision (180° Panoramic View)
+Panoramic coverage for wide‑open spaces such as laydown yards, container stacks, and warehouse perimeters.
+
+Eliminates blind spots with a single unit covering 180°.
+
+Ideal for logistics hubs where goods are stored outdoors or across large open areas.
+
+🔹 FreeVision
+25× optical zoom with 500M+ clarity distance.
+
+Long‑range monitoring across depots, transport corridors, and expansive yards.
+
+Night vision: 100 m IR and 30 m white light coverage.
+
+Enables active tracking of vehicles or individuals across large sites.
+
+Unified System Benefits
+Fleet deployment: All three solutions deployed together, scaled to site size.
+
+Single platform: OneVision, WideVision, and FreeVision feed into a unified cloud system for centralised monitoring.
+
+Licence Plate Recognition (LPR) Analytics: Tracks subcontractor, service, and delivery vehicles.
+
+Smart deterrence: Alarms, lighting, and voice‑down features integrated across the fleet.
+
+Patrol replacement: Continuous monitoring reduces or eliminates the need for manned patrols.
+
+Scalable coverage: From entry gates to panoramic yard coverage to long‑range monitoring, every angle is secured.
+
+Results
+60–70% reduction in theft and vandalism incidents across monitored warehouses and depots.
+
+Improved accountability with LPR logs and unified reporting.
+
+Operational continuity protected, avoiding costly downtime.
+
+Insurance confidence strengthened, with verifiable compliance and access records.
+
+Lower labour costs, with reduced reliance on manned patrols.
+
+Key Points
+Warehousing and logistics sites across Australia are prime targets for theft and vandalism.
+
+Central QLD faces unique regional challenges: remote depots, high‑value outdoor storage, and rising theft incidents.
+
+Conventional CCTV and patrols are costly and impractical across multiple sites.
+
+LinkVision’s OneVision, WideVision, and FreeVision deliver a layered, unified system that scales across warehouses, depots, and logistics hubs.
+
+Conclusion
+By combining OneVision, WideVision, and FreeVision, LinkVision delivers a comprehensive surveillance solution for warehousing and logistics. From entry gates to panoramic yard coverage to long‑range monitoring, every angle is secured. This layered approach reduces theft, eliminates blind spots, and replaces costly patrols with autonomous, fleet‑based oversight — a proven solution for both Australia’s national logistics sector and the unique challenges of Central Queensland.
