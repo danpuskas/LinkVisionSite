@@ -170,14 +170,6 @@ export default function Home() {
               />
             </div>
             
-            <h1 className="font-display font-bold text-4xl md:text-6xl text-white mb-6 leading-tight">
-              
-              <br />
-              <span className="bg-gradient-to-r from-[#C800FF] to-[#B100FF] bg-clip-text text-transparent">
-                
-              </span>
-            </h1>
-            
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
               Rapid Deployment AI-Ready Solar Surveillance & Security Systems built for Central Queensland.
               Protect what matters most with cutting-edge technology.

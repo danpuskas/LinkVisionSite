@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -14,10 +13,6 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
 export default function Contact() {
   const { toast } = useToast();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const form = useForm<InsertContactSubmission>({
     resolver: zodResolver(insertContactSubmissionSchema),
@@ -83,7 +78,7 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-xl text-white/80">
-              Ready to secure your property? Our team is here to help you find the perfect solution
+              Ready to secure your site? Our team is here to help you find the perfect solution
             </p>
           </div>
 
