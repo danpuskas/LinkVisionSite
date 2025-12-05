@@ -7,9 +7,7 @@ import {
   Factory,
   HardHat,
   Warehouse,
-  School,
   CheckCircle2,
-  ArrowRight,
 } from "lucide-react";
 
 export default function Solutions() {
@@ -24,7 +22,7 @@ export default function Solutions() {
         "Remotely monitor weather and ground conditions",
         "Reduce insurance premiums",
       ],
-      caseStudy: "See how the Johnson family secured their acreage property",
+      caseStudyId: "residential-construction",
     },
     {
       icon: Building2,
@@ -36,7 +34,7 @@ export default function Solutions() {
         "24/7 Control Room Monitored",
         "Reduce theft and vandalism",
       ],
-      caseStudy: "Melbourne CBD office building case study",
+      caseStudyId: "commercial-construction",
     },
     {
       icon: Factory,
@@ -49,7 +47,7 @@ export default function Solutions() {
         "Verify truck and vehicle number plates",
         "Monitor service vehicles and deliveries"
       ],
-      caseStudy: "Mining operation in Western Australia",
+      caseStudyId: "industrial-civil-construction",
     },
     {
       icon: HardHat,
@@ -61,7 +59,7 @@ export default function Solutions() {
         "Worker safety compliance",
         "Reduce or eliminate security patrols",
       ],
-      caseStudy: "Mining operation in Western Australia",
+      caseStudyId: "mining-resources",
     },
     {
       icon: Warehouse,
@@ -74,19 +72,7 @@ export default function Solutions() {
         "Perimeter breach detection",
         "Laydown area monitoring"
       ],
-      caseStudy: "Distribution center in Queensland",
-    },
-    {
-      icon: School,
-      title: "Education Facilities",
-      description: "Safe learning environments with comprehensive monitoring",
-      benefits: [
-        "Campus-wide surveillance",
-        "Playground and parking monitoring",
-        "Emergency response support",
-        "Visitor tracking",
-      ],
-      caseStudy: "Primary school security upgrade",
+      caseStudyId: "warehouse-logistics",
     },
   ];
 
@@ -122,48 +108,77 @@ export default function Solutions() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {solutions.map((solution, index) => (
-              <Card
-                key={index}
-                className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate transition-colors duration-300"
-                data-testid={`card-solution-${index}`}
-              >
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-lg bg-gradient-linkvision flex items-center justify-center mb-4">
-                    <solution.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <CardTitle className="text-white font-display text-2xl">
-                    {solution.title}
-                  </CardTitle>
-                  <CardDescription className="text-white/70 text-base">
-                    {solution.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div>
-                    <h4 className="text-white font-semibold mb-3">Key Benefits</h4>
-                    <ul className="space-y-2">
-                      {solution.benefits.map((benefit, idx) => (
-                        <li key={idx} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-[#C800FF] flex-shrink-0 mt-0.5" />
-                          <span className="text-white/90 text-sm">{benefit}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="pt-4 border-t border-white/10">
-                    <Link href="/case-studies">
-                      <button className="flex items-center gap-2 text-[#C800FF] hover:text-[#B100FF] transition-colors text-sm font-medium group">
-                        {solution.caseStudy}
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      </button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {solutions.slice(0, 3).map((solution, index) => (
+                <Link key={index} href={`/case-studies#${solution.caseStudyId}`}>
+                  <Card
+                    className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate transition-colors duration-300 cursor-pointer h-full"
+                    data-testid={`card-solution-${index}`}
+                  >
+                    <CardHeader>
+                      <div className="w-16 h-16 rounded-lg bg-gradient-linkvision flex items-center justify-center mb-4">
+                        <solution.icon className="w-8 h-8 text-white" />
+                      </div>
+                      <CardTitle className="text-white font-display text-2xl">
+                        {solution.title}
+                      </CardTitle>
+                      <CardDescription className="text-white/70 text-base">
+                        {solution.description}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div>
+                        <h4 className="text-white font-semibold mb-3">Key Benefits</h4>
+                        <ul className="space-y-2">
+                          {solution.benefits.map((benefit, idx) => (
+                            <li key={idx} className="flex items-start gap-2">
+                              <CheckCircle2 className="w-5 h-5 text-[#C800FF] flex-shrink-0 mt-0.5" />
+                              <span className="text-white/90 text-sm">{benefit}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
+              {solutions.slice(3).map((solution, index) => (
+                <Link key={index + 3} href={`/case-studies#${solution.caseStudyId}`}>
+                  <Card
+                    className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate transition-colors duration-300 cursor-pointer h-full"
+                    data-testid={`card-solution-${index + 3}`}
+                  >
+                    <CardHeader>
+                      <div className="w-16 h-16 rounded-lg bg-gradient-linkvision flex items-center justify-center mb-4">
+                        <solution.icon className="w-8 h-8 text-white" />
+                      </div>
+                      <CardTitle className="text-white font-display text-2xl">
+                        {solution.title}
+                      </CardTitle>
+                      <CardDescription className="text-white/70 text-base">
+                        {solution.description}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div>
+                        <h4 className="text-white font-semibold mb-3">Key Benefits</h4>
+                        <ul className="space-y-2">
+                          {solution.benefits.map((benefit, idx) => (
+                            <li key={idx} className="flex items-start gap-2">
+                              <CheckCircle2 className="w-5 h-5 text-[#C800FF] flex-shrink-0 mt-0.5" />
+                              <span className="text-white/90 text-sm">{benefit}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>

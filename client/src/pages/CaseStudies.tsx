@@ -7,6 +7,7 @@ import constructionBg from "@assets/excavator_Case_Study4K_1764902546352.png";
 export default function CaseStudies() {
   const cases = [
     {
+      id: "residential-construction",
       icon: Home,
       industry: "Residential Construction",
       title: "Securing Residential Construction Sites Across Australia",
@@ -33,6 +34,7 @@ export default function CaseStudies() {
       conclusion: "Australia's residential construction industry faces ongoing challenges from theft and vandalism. LinkVision's advanced surveillance solutions demonstrate how technology can transform site security, reduce losses, and protect investments. By addressing risks at a national level, LinkVision is helping builders and developers safeguard Australia's future homes.",
     },
     {
+      id: "commercial-construction",
       icon: Building2,
       industry: "Commercial Construction",
       title: "Protecting Commercial Construction Sites Across Australia",
@@ -60,6 +62,7 @@ export default function CaseStudies() {
       conclusion: "Commercial construction in Australia demands proactive risk management. LinkVision's integrated surveillance and PPE analytics system reduces theft, deters vandalism, and ensures compliance is documented in real time. The result is fewer losses, stronger accountability, and greater confidence in project delivery.",
     },
     {
+      id: "industrial-civil-construction",
       icon: HardHat,
       industry: "Industrial and Civil Construction",
       title: "Securing Industrial and Civil Construction Sites Across Australia",
@@ -87,6 +90,7 @@ export default function CaseStudies() {
       conclusion: "Industrial and civil construction projects demand scalable, autonomous risk management. LinkVision's integrated system — combining solar-powered fleet deployment, PPE analytics, and licence plate recognition for all vehicles including service and delivery fleets — reduces theft, deters vandalism, and ensures compliance is documented in real time. The result is fewer losses, stronger accountability, and greater confidence in project delivery across Australia's largest builds.",
     },
     {
+      id: "mining-resources",
       icon: Factory,
       industry: "Mining & Resources",
       title: "Custom Surveillance Solutions for Mining & Resource Sites",
@@ -114,6 +118,7 @@ export default function CaseStudies() {
       conclusion: "Mining and resource sites demand custom, scalable surveillance solutions. LinkVision's stand-alone solar-powered fleet with FreeVision optics, LPR analytics, and flexible connectivity (4G or Starlink) secures expansive lease areas, reduces losses, and ensures unified oversight across kilometres of terrain. By tailoring deployments to each site's unique challenges, LinkVision provides a proven, cost-effective solution for Australia's largest mines.",
     },
     {
+      id: "warehouse-logistics",
       icon: Warehouse,
       industry: "Warehouse and Logistics",
       title: "Securing Warehouse and Distribution Centres",
@@ -157,101 +162,102 @@ export default function CaseStudies() {
 
           <div className="space-y-12 max-w-5xl mx-auto">
             {cases.map((caseStudy, index) => (
-              <Card
-                key={index}
-                className="bg-[#1a2f6f] border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate transition-colors duration-300"
-                data-testid={`card-case-${index}`}
-              >
-                <CardHeader>
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="w-16 h-16 rounded-lg bg-gradient-linkvision flex items-center justify-center flex-shrink-0">
-                      <caseStudy.icon className="w-8 h-8 text-white" />
-                    </div>
-                    <div>
-                      <div className="text-sm text-[#C800FF] font-semibold mb-1">
-                        {caseStudy.industry}
+              <div key={index} id={caseStudy.id} className="scroll-mt-8">
+                <Card
+                  className="bg-[#1a2f6f] border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate transition-colors duration-300"
+                  data-testid={`card-case-${index}`}
+                >
+                  <CardHeader>
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="w-16 h-16 rounded-lg bg-gradient-linkvision flex items-center justify-center flex-shrink-0">
+                        <caseStudy.icon className="w-8 h-8 text-white" />
                       </div>
-                      <CardTitle className="text-white font-display text-3xl">
-                        {caseStudy.title}
-                      </CardTitle>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  {'overview' in caseStudy && (
-                    <div>
-                      <h4 className="text-white font-semibold text-lg mb-2">Overview</h4>
-                      <p className="text-white/80">{caseStudy.overview}</p>
-                    </div>
-                  )}
-
-                  <div className="grid md:grid-cols-3 gap-6 bg-[#182863] rounded-lg p-6">
-                    {Object.entries(caseStudy.metrics).map(([key, value], idx) => (
-                      <div key={idx} className="text-center">
-                        <div className="text-3xl font-display font-bold text-white mb-1">
-                          {value}
+                      <div>
+                        <div className="text-sm text-[#C800FF] font-semibold mb-1">
+                          {caseStudy.industry}
                         </div>
-                        <div className="text-white/60 capitalize">{key}</div>
+                        <CardTitle className="text-white font-display text-3xl">
+                          {caseStudy.title}
+                        </CardTitle>
                       </div>
-                    ))}
-                  </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    {'overview' in caseStudy && (
+                      <div>
+                        <h4 className="text-white font-semibold text-lg mb-2">Overview</h4>
+                        <p className="text-white/80">{caseStudy.overview}</p>
+                      </div>
+                    )}
 
-                  <div>
-                    <h4 className="text-white font-semibold text-lg mb-2">The Challenge</h4>
-                    <p className="text-white/80">{caseStudy.challenge}</p>
-                  </div>
-
-                  <div>
-                    <h4 className="text-white font-semibold text-lg mb-2">
-                      {'overview' in caseStudy ? "LinkVision's Approach" : "Our Solution"}
-                    </h4>
-                    <p className="text-white/80">{caseStudy.solution}</p>
-                  </div>
-
-                  <div>
-                    <h4 className="text-white font-semibold text-lg mb-3">Results</h4>
-                    <ul className="grid md:grid-cols-2 gap-3">
-                      {caseStudy.results.map((result, idx) => (
-                        <li key={idx} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-[#C800FF] flex-shrink-0 mt-0.5" />
-                          <span className="text-white/90">{result}</span>
-                        </li>
+                    <div className="grid md:grid-cols-3 gap-6 bg-[#182863] rounded-lg p-6">
+                      {Object.entries(caseStudy.metrics).map(([key, value], idx) => (
+                        <div key={idx} className="text-center">
+                          <div className="text-3xl font-display font-bold text-white mb-1">
+                            {value}
+                          </div>
+                          <div className="text-white/60 capitalize">{key}</div>
+                        </div>
                       ))}
-                    </ul>
-                  </div>
+                    </div>
 
-                  {'keyTakeaways' in caseStudy && (
                     <div>
-                      <h4 className="text-white font-semibold text-lg mb-3">Key Takeaways</h4>
-                      <ul className="space-y-2">
-                        {(caseStudy as any).keyTakeaways.map((takeaway: string, idx: number) => (
+                      <h4 className="text-white font-semibold text-lg mb-2">The Challenge</h4>
+                      <p className="text-white/80">{caseStudy.challenge}</p>
+                    </div>
+
+                    <div>
+                      <h4 className="text-white font-semibold text-lg mb-2">
+                        {'overview' in caseStudy ? "LinkVision's Approach" : "Our Solution"}
+                      </h4>
+                      <p className="text-white/80">{caseStudy.solution}</p>
+                    </div>
+
+                    <div>
+                      <h4 className="text-white font-semibold text-lg mb-3">Results</h4>
+                      <ul className="grid md:grid-cols-2 gap-3">
+                        {caseStudy.results.map((result, idx) => (
                           <li key={idx} className="flex items-start gap-2">
                             <CheckCircle2 className="w-5 h-5 text-[#C800FF] flex-shrink-0 mt-0.5" />
-                            <span className="text-white/90">{takeaway}</span>
+                            <span className="text-white/90">{result}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
-                  )}
 
-                  {'conclusion' in caseStudy && (
-                    <div className="bg-[#182863] rounded-lg p-6 border-l-4 border-[#C800FF]">
-                      <h4 className="text-white font-semibold text-lg mb-2">Conclusion</h4>
-                      <p className="text-white/90">{(caseStudy as any).conclusion}</p>
-                    </div>
-                  )}
+                    {'keyTakeaways' in caseStudy && (
+                      <div>
+                        <h4 className="text-white font-semibold text-lg mb-3">Key Takeaways</h4>
+                        <ul className="space-y-2">
+                          {(caseStudy as any).keyTakeaways.map((takeaway: string, idx: number) => (
+                            <li key={idx} className="flex items-start gap-2">
+                              <CheckCircle2 className="w-5 h-5 text-[#C800FF] flex-shrink-0 mt-0.5" />
+                              <span className="text-white/90">{takeaway}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
 
-                  {'quote' in caseStudy && (
-                    <div className="bg-[#182863] rounded-lg p-6 border-l-4 border-[#C800FF]">
-                      <p className="text-white/90 text-lg italic mb-4">
-                        "{(caseStudy as any).quote.text}"
-                      </p>
-                      <div className="text-white font-semibold">{(caseStudy as any).quote.author}</div>
-                      <div className="text-white/60">{(caseStudy as any).quote.role}</div>
-                    </div>
-                  )}
-                </CardContent>
-              </Card>
+                    {'conclusion' in caseStudy && (
+                      <div className="bg-[#182863] rounded-lg p-6 border-l-4 border-[#C800FF]">
+                        <h4 className="text-white font-semibold text-lg mb-2">Conclusion</h4>
+                        <p className="text-white/90">{(caseStudy as any).conclusion}</p>
+                      </div>
+                    )}
+
+                    {'quote' in caseStudy && (
+                      <div className="bg-[#182863] rounded-lg p-6 border-l-4 border-[#C800FF]">
+                        <p className="text-white/90 text-lg italic mb-4">
+                          "{(caseStudy as any).quote.text}"
+                        </p>
+                        <div className="text-white font-semibold">{(caseStudy as any).quote.author}</div>
+                        <div className="text-white/60">{(caseStudy as any).quote.role}</div>
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+              </div>
             ))}
           </div>
         </div>
