@@ -1,11 +1,37 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building2, Factory, Home, ShoppingBag, TrendingUp, CheckCircle2 } from "lucide-react";
+import { Building2, Factory, Home, HardHat, Warehouse, CheckCircle2 } from "lucide-react";
 import constructionBg from "@assets/excavator_Case_Study2KVertical_1764897645664.png";
 
 export default function CaseStudies() {
   const cases = [
+    {
+      icon: Home,
+      industry: "Residential Construction",
+      title: "Securing Residential Construction Sites Across Australia",
+      overview: "Residential construction is one of Australia's largest industries, contributing billions annually to the economy. Yet, theft and vandalism during the construction phase remain persistent challenges. Industry reports estimate that losses from site crime can account for around 1% of the total cost of a new home, with millions of dollars lost nationwide each year. These incidents not only increase costs but also delay projects and erode client confidence.",
+      challenge: "High-value targets including tools, copper wiring, timber, appliances, and fixtures are frequently stolen. Crimes often occur during the fit-out stage, when homes are complete but unoccupied. Beyond replacement costs, builders face delays, insurance claims, and reputational damage. With thousands of residential projects underway at any given time, the cumulative impact of site crime is significant.",
+      solution: "LinkVision deployed a tailored surveillance solution designed specifically for construction environments: ruggedised surveillance units capable of withstanding harsh outdoor conditions, AI-powered monitoring to detect suspicious activity in real time, cloud-based access enabling builders and project managers to monitor sites remotely, rapid deployment systems that can be installed and relocated easily as projects progress, and integration with deterrents such as lighting and alarms to prevent escalation.",
+      results: [
+        "Incidents reduced by over 60% compared to baseline figures",
+        "Asset recovery improved with several attempted thefts thwarted due to real-time alerts",
+        "Project delays minimized, saving builders both time and money",
+        "Client confidence strengthened with developers reporting improved trust in site security",
+      ],
+      metrics: {
+        reduction: "60%+",
+        deployment: "6 months",
+        coverage: "Nationwide",
+      },
+      keyTakeaways: [
+        "Theft and vandalism remain a nationwide issue in residential construction, costing millions annually",
+        "Proactive surveillance is not just a deterrent—it is a cost-saving investment",
+        "LinkVision's solutions provide scalable protection that adapts to the dynamic nature of construction projects",
+        "By reducing crime-related losses, builders can deliver homes on time, on budget, and with greater peace of mind",
+      ],
+      conclusion: "Australia's residential construction industry faces ongoing challenges from theft and vandalism. LinkVision's advanced surveillance solutions demonstrate how technology can transform site security, reduce losses, and protect investments. By addressing risks at a national level, LinkVision is helping builders and developers safeguard Australia's future homes.",
+    },
     {
       icon: Building2,
       industry: "Commercial Construction",
@@ -34,6 +60,33 @@ export default function CaseStudies() {
       conclusion: "Commercial construction in Australia demands proactive risk management. LinkVision's integrated surveillance and PPE analytics system reduces theft, deters vandalism, and ensures compliance is documented in real time. The result is fewer losses, stronger accountability, and greater confidence in project delivery.",
     },
     {
+      icon: HardHat,
+      industry: "Industrial and Civil Construction",
+      title: "Securing Industrial and Civil Construction Sites Across Australia",
+      overview: "Industrial and civil construction projects are expansive, resource-intensive, and often located in remote or open environments. These sites face persistent risks from theft, vandalism, and compliance gaps. National reports estimate annual losses exceeding $100 million from construction-related crime, with copper, fuel, and heavy machinery among the most stolen assets. At the same time, PPE compliance remains a critical issue, with audits showing up to 30% of workers non-compliant during shifts. Insurers and regulators increasingly demand verifiable records of PPE usage, while civil projects also require robust vehicle access oversight.",
+      challenge: "High-value theft of excavators, generators, and wiring are prime targets. Vandalism delays can stall projects for weeks. Dozens of subcontractor, service, and delivery vehicles enter and exit daily, complicating accountability. Manual PPE checks fail to capture transient violations, leaving contractors exposed. Projects spanning kilometres require scalable surveillance coverage.",
+      solution: "LinkVision deployed a fleet of stand-alone solar-powered surveillance units, scaled to match the size and complexity of each project. Key features included: fleet deployment with multiple ruggedised units positioned across perimeters, laydown areas, and entry points; solar-powered autonomy operating independently without grid power; cloud-based monitoring for remote oversight; smart deterrence with alarms, lighting, and voice-down systems; PPE Analytics Add-on for automated detection of helmet, vest, and boot usage; and Licence Plate Recognition Analytics Add-on to capture and verify vehicle plates, log entry/exit times, and generate reports for subcontractor, service, and delivery vehicle accountability.",
+      results: [
+        "65% reduction in theft and vandalism incidents within 90 days",
+        "PPE compliance visibility with >95% detection accuracy",
+        "Vehicle accountability enhanced with licence plate logs reducing unauthorised access",
+        "Operational continuity protected with fewer crime-related delays",
+        "Insurance premiums lowered with verifiable compliance and vehicle access records",
+      ],
+      metrics: {
+        reduction: "65%",
+        accuracy: ">95%",
+        coverage: "Scalable",
+      },
+      keyTakeaways: [
+        "Industrial and civil projects face annual crime-related losses exceeding $100 million",
+        "PPE compliance gaps affect up to 30% of workers daily, exposing contractors to risk",
+        "Vehicle access control is critical — licence plate recognition analytics provide accountability for all vehicles",
+        "LinkVision's fleet of stand-alone solar-powered units ensures scalable coverage for projects of any size",
+      ],
+      conclusion: "Industrial and civil construction projects demand scalable, autonomous risk management. LinkVision's integrated system — combining solar-powered fleet deployment, PPE analytics, and licence plate recognition for all vehicles including service and delivery fleets — reduces theft, deters vandalism, and ensures compliance is documented in real time. The result is fewer losses, stronger accountability, and greater confidence in project delivery across Australia's largest builds.",
+    },
+    {
       icon: Factory,
       industry: "Mining & Resources",
       title: "Remote Mining Site in WA",
@@ -57,52 +110,26 @@ export default function CaseStudies() {
       },
     },
     {
-      icon: Home,
-      industry: "Residential Construction",
-      title: "Securing Residential Construction Sites Across Australia",
-      overview: "Residential construction is one of Australia's largest industries, contributing billions annually to the economy. Yet, theft and vandalism during the construction phase remain persistent challenges. Industry reports estimate that losses from site crime can account for around 1% of the total cost of a new home, with millions of dollars lost nationwide each year. These incidents not only increase costs but also delay projects and erode client confidence.",
-      challenge: "High-value targets including tools, copper wiring, timber, appliances, and fixtures are frequently stolen. Crimes often occur during the fit-out stage, when homes are complete but unoccupied. Beyond replacement costs, builders face delays, insurance claims, and reputational damage. With thousands of residential projects underway at any given time, the cumulative impact of site crime is significant.",
-      solution: "LinkVision deployed a tailored surveillance solution designed specifically for construction environments: ruggedised surveillance units capable of withstanding harsh outdoor conditions, AI-powered monitoring to detect suspicious activity in real time, cloud-based access enabling builders and project managers to monitor sites remotely, rapid deployment systems that can be installed and relocated easily as projects progress, and integration with deterrents such as lighting and alarms to prevent escalation.",
+      icon: Warehouse,
+      industry: "Warehouse and Logistics",
+      title: "Securing Warehouse and Distribution Centres",
+      challenge: "Large warehouse and logistics facilities face constant security challenges with high-value inventory, multiple access points, and 24/7 operations. Traditional security systems struggle with expansive outdoor areas and loading docks.",
+      solution: "LinkVision deployed comprehensive solar-powered surveillance across warehouse perimeters, loading docks, and parking areas. AI-powered analytics monitor vehicle movements, detect unauthorized access, and provide real-time alerts to security teams.",
       results: [
-        "Incidents reduced by over 60% compared to baseline figures",
-        "Asset recovery improved with several attempted thefts thwarted due to real-time alerts",
-        "Project delays minimized, saving builders both time and money",
-        "Client confidence strengthened with developers reporting improved trust in site security",
+        "Significant reduction in theft and shrinkage",
+        "Enhanced loading dock security with 24/7 monitoring",
+        "Improved driver and vehicle accountability",
+        "Streamlined incident investigation with cloud-based footage access",
       ],
       metrics: {
-        reduction: "60%+",
-        deployment: "6 months",
-        coverage: "Nationwide",
-      },
-      keyTakeaways: [
-        "Theft and vandalism remain a nationwide issue in residential construction, costing millions annually",
-        "Proactive surveillance is not just a deterrent—it is a cost-saving investment",
-        "LinkVision's solutions provide scalable protection that adapts to the dynamic nature of construction projects",
-        "By reducing crime-related losses, builders can deliver homes on time, on budget, and with greater peace of mind",
-      ],
-      conclusion: "Australia's residential construction industry faces ongoing challenges from theft and vandalism. LinkVision's advanced surveillance solutions demonstrate how technology can transform site security, reduce losses, and protect investments. By addressing risks at a national level, LinkVision is helping builders and developers safeguard Australia's future homes.",
-    },
-    {
-      icon: ShoppingBag,
-      industry: "Retail",
-      title: "Shopping Center Deployment",
-      challenge: "Multi-tenant shopping center needed upgraded security across parking lots, entries, and common areas while minimizing disruption to tenants.",
-      solution: "32 solar cameras with AI-powered people counting and behavioral analytics. Integrated with existing alarm systems for comprehensive security.",
-      results: [
-        "78% reduction in theft incidents",
-        "Enhanced customer flow insights",
-        "Faster parking violation response",
-        "Improved tenant satisfaction",
-      ],
-      metrics: {
-        cameras: 32,
-        stores: 45,
-        reduction: "78% theft",
+        coverage: "100%",
+        monitoring: "24/7",
+        deployment: "Rapid",
       },
       quote: {
-        text: "The installation was seamless, and the results speak for themselves. Our tenants feel safer, and we've seen a measurable drop in incidents.",
-        author: "Robert Chen",
-        role: "Property Manager",
+        text: "The solar cameras gave us complete visibility across our distribution centre without the complexity of running power to remote areas. Security has never been better.",
+        author: "David Thompson",
+        role: "Logistics Manager",
       },
     },
   ];
@@ -229,25 +256,6 @@ export default function CaseStudies() {
       <section className="py-20 bg-[#182863]/80 relative z-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="grid md:grid-cols-4 gap-8 mb-12">
-              <div>
-                <div className="text-5xl font-display font-bold text-white mb-2">500+</div>
-                <div className="text-white/70">Success Stories</div>
-              </div>
-              <div>
-                <div className="text-5xl font-display font-bold text-white mb-2">95%</div>
-                <div className="text-white/70">Customer Retention</div>
-              </div>
-              <div>
-                <div className="text-5xl font-display font-bold text-white mb-2">4.9/5</div>
-                <div className="text-white/70">Average Rating</div>
-              </div>
-              <div>
-                <div className="text-5xl font-display font-bold text-white mb-2">$5M+</div>
-                <div className="text-white/70">Losses Prevented</div>
-              </div>
-            </div>
-
             <Card className="bg-[#1a2f6f] border-2 border-[#C800FF]/30">
               <CardContent className="p-12">
                 <h2 className="font-display font-bold text-4xl text-white mb-4">

@@ -1,0 +1,54 @@
+Case Study: Securing Industrial and Civil Construction Sites Across Australia
+Industry Context
+Industrial and civil construction projects are expansive, resource‑intensive, and often located in remote or open environments. These sites face persistent risks from theft, vandalism, and compliance gaps. National reports estimate annual losses exceeding $100 million from construction‑related crime, with copper, fuel, and heavy machinery among the most stolen assets.
+
+At the same time, PPE compliance remains a critical issue, with audits showing up to 30% of workers non‑compliant during shifts. Insurers and regulators increasingly demand verifiable records of PPE usage, while civil projects also require robust vehicle access oversight.
+
+The Challenge
+High‑value theft: Excavators, generators, and wiring are prime targets.
+
+Vandalism delays: Damage to machinery or infrastructure can stall projects for weeks.
+
+Vehicle oversight gaps: Dozens of subcontractor, service, and delivery vehicles enter and exit daily, complicating accountability.
+
+PPE compliance: Manual checks fail to capture transient violations, leaving contractors exposed.
+
+Scale: Projects spanning kilometres require scalable surveillance coverage.
+
+LinkVision’s Solution
+LinkVision deployed a fleet of stand‑alone solar‑powered surveillance units, scaled to match the size and complexity of each project. Key features included:
+
+Fleet deployment: Multiple ruggedised units positioned across perimeters, laydown areas, and entry points.
+
+Solar‑powered autonomy: Units operate independently without reliance on grid power, ideal for remote or large‑scale sites.
+
+Cloud‑based monitoring: Remote oversight for managers, insurers, and regulators.
+
+Smart deterrence: Alarms, lighting, and voice‑down systems to disrupt incidents.
+
+PPE Analytics Add‑on: Automated detection of helmet, vest, and boot usage at entry lanes and active work zones.
+
+Licence Plate Recognition Analytics Add‑on: Captures and verifies vehicle plates, logs entry/exit times, and generates reports for subcontractor, service, and delivery vehicle accountability.
+
+Results
+65% reduction in theft and vandalism incidents within the first 90 days.
+
+Improved PPE compliance visibility, with automated detection achieving >95% accuracy.
+
+Vehicle accountability enhanced, with licence plate logs reducing unauthorised access and tracking subcontractor, service, and delivery vehicles.
+
+Operational continuity protected, with fewer delays linked to crime or compliance breaches.
+
+Insurance premiums lowered, supported by verifiable compliance and vehicle access records.
+
+Key Insights
+Industrial and civil projects face annual crime‑related losses exceeding $100 million.
+
+PPE compliance gaps affect up to 30% of workers daily, exposing contractors to risk.
+
+Vehicle access control is critical — licence plate recognition analytics provide accountability for subcontractor, service, and delivery vehicles.
+
+LinkVision’s fleet of stand‑alone solar‑powered units ensures scalable coverage for projects of any size, even in remote areas.
+
+Conclusion
+Industrial and civil construction projects demand scalable, autonomous risk management. LinkVision’s integrated system — combining solar‑powered fleet deployment, PPE analytics, and licence plate recognition for all vehicles including service and delivery fleets — reduces theft, deters vandalism, and ensures compliance is documented in real time. The result is fewer losses, stronger accountability, and greater confidence in project delivery across Australia’s largest builds.
