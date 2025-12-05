@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building2, Factory, Home, HardHat, Warehouse, CheckCircle2 } from "lucide-react";
+import { Building2, Factory, Home, HardHat, Warehouse, Tractor, CheckCircle2 } from "lucide-react";
 import constructionBg from "@assets/excavator_Case_Study4K_1764902546352.png";
 
 export default function CaseStudies() {
@@ -158,6 +158,34 @@ export default function CaseStudies() {
         "LinkVision's OneVision, WideVision, and FreeVision deliver a layered, unified system that scales across warehouses, depots, and logistics hubs",
       ],
       conclusion: "By combining OneVision, WideVision, and FreeVision, LinkVision delivers a comprehensive surveillance solution for warehousing and logistics. From entry gates to panoramic yard coverage to long-range monitoring, every angle is secured. This layered approach reduces theft, eliminates blind spots, and replaces costly patrols with autonomous, fleet-based oversight — a proven solution for both Australia's national logistics sector and the unique challenges of Central Queensland.",
+    },
+    {
+      id: "agriculture-farming",
+      icon: Tractor,
+      industry: "Agriculture & Farming",
+      title: "Tackling Livestock Theft with LinkVision's OneVision, WideVision, and FreeVision",
+      overview: "Livestock theft (stock theft) remains one of the highest-value rural crimes in Australia. Nationally, losses are estimated in the millions annually, with cattle and sheep the most common targets. Many incidents go unreported, meaning the true scale is larger than official figures. Theft often involves moving cattle through saleyards or transport corridors, making recovery difficult. Fuel and machinery theft compound the problem, adding to farm losses. Central Queensland is the heart of Australia's beef industry, with Rockhampton recognised as the Beef Capital of Australia. The region holds a large share of Queensland's 13.3 million cattle. Cattle rustling remains a persistent issue, with losses impacting both small producers and large feedlots. Remote properties make oversight difficult, and trespassers can move stock quickly. Biosecurity risks arise when unauthorised access occurs, threatening herd health and compliance.",
+      challenge: "Remote properties make oversight difficult, and trespassers can move stock quickly. Biosecurity risks arise when unauthorised access occurs, threatening herd health and compliance. Cattle rustling remains a persistent issue, with losses impacting both small producers and large feedlots. Fuel and machinery theft compound the problem, adding to farm losses. Many incidents go unreported, meaning the true scale of livestock theft is larger than official figures suggest.",
+      solution: "LinkVision delivers a three-tier surveillance solution for agriculture and livestock protection. OneVision: Fixed surveillance units at entry gates, cattle yards, and loading ramps, ensuring access control and logging every vehicle and person entering. WideVision (180° Panoramic View): Panoramic coverage for feedlots, paddocks, and livestock enclosures, eliminating blind spots with a single unit covering 180°. Ideal for monitoring fuel depots, feed yards, and outdoor storage zones. FreeVision: 25× optical zoom with 500M+ clarity distance, long-range monitoring across paddocks, cattle yards, and transport corridors, with 100m IR and 30m white light night vision. Enables active tracking of vehicles, livestock movements, or trespassers across large properties. Unified System: All three solutions deploy together into a single cloud platform with Licence Plate Recognition (LPR) Analytics to track contractor, supplier, and transport vehicles. Smart deterrence with alarms, lighting, and voice-down features. Safety oversight monitoring machinery use to reduce accident risks. For large stations without reliable 4G coverage, LinkVision integrates Starlink satellite connectivity, ensuring continuous monitoring even in remote areas.",
+      results: [
+        "Reduced livestock theft incidents across monitored farms and feedlots",
+        "Improved accountability with vehicle logs and unified reporting",
+        "Operational continuity protected, avoiding costly herd losses",
+        "Insurance confidence strengthened, with verifiable compliance and access records",
+        "Enhanced safety oversight, reducing risks from unsafe vehicle use",
+      ],
+      metrics: {
+        coverage: "500M+",
+        panoramic: "180°",
+        connectivity: "4G/Starlink",
+      },
+      keyTakeaways: [
+        "Livestock theft costs Australian farmers millions annually, with Central QLD particularly exposed",
+        "Rockhampton, as the Beef Capital of Australia, highlights the importance of securing cattle yards and feedlots",
+        "LinkVision's OneVision, WideVision, and FreeVision deliver a layered, unified system that scales across farms, cattle stations, and depots",
+        "Starlink integration ensures coverage for large, remote stations where 4G connectivity is limited",
+      ],
+      conclusion: "By combining OneVision, WideVision, and FreeVision, LinkVision delivers a comprehensive surveillance solution for agriculture and livestock protection. From entry gates to panoramic yard coverage to long-range monitoring, every angle is secured. This layered approach reduces theft, protects herds, improves safety oversight, and supports compliance — a proven solution for both Australia's national farming sector and the unique challenges of Central Queensland and Rockhampton.",
     },
   ];
 

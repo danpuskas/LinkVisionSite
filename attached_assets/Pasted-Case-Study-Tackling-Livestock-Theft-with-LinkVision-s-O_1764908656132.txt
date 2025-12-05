@@ -1,0 +1,86 @@
+Case Study: Tackling Livestock Theft with LinkVision’s OneVision, WideVision, and FreeVision
+Industry Context – Australia
+Livestock theft (stock theft) remains one of the highest‑value rural crimes in Australia:
+
+Nationally, losses are estimated in the millions annually, with cattle and sheep the most common targets.
+
+Many incidents go unreported, meaning the true scale is larger than official figures.
+
+Theft often involves moving cattle through saleyards or transport corridors, making recovery difficult.
+
+Fuel and machinery theft compound the problem, adding to farm losses.
+
+Regional Context – Central Queensland & Rockhampton
+Central QLD is the heart of Australia’s beef industry, with Rockhampton recognised as the Beef Capital of Australia.
+
+The region holds a large share of Queensland’s 13.3 million cattle.
+
+Cattle rustling remains a persistent issue, with losses impacting both small producers and large feedlots.
+
+Remote properties make oversight difficult, and trespassers can move stock quickly.
+
+Biosecurity risks arise when unauthorised access occurs, threatening herd health and compliance.
+
+LinkVision’s Three‑Tier Solution
+🔹 OneVision
+Fixed surveillance units at entry gates, cattle yards, and loading ramps.
+
+Ensures access control and logs every vehicle and person entering.
+
+Provides baseline coverage across high‑traffic farm areas.
+
+🔹 WideVision (180° Panoramic View)
+Panoramic coverage for feedlots, paddocks, and livestock enclosures.
+
+Eliminates blind spots with a single unit covering 180°.
+
+Ideal for monitoring fuel depots, feed yards, and outdoor storage zones.
+
+🔹 FreeVision
+25× optical zoom with 500M+ clarity distance.
+
+Long‑range monitoring across paddocks, cattle yards, and transport corridors.
+
+Night vision: 100 m IR and 30 m white light coverage.
+
+Enables active tracking of vehicles, livestock movements, or trespassers across large properties.
+
+Unified System Benefits
+Fleet deployment: All three solutions deployed together, scaled to property size.
+
+Single platform: OneVision, WideVision, and FreeVision feed into a unified cloud system for centralised monitoring.
+
+Licence Plate Recognition (LPR) Analytics: Tracks contractor, supplier, and transport vehicles.
+
+Smart deterrence: Alarms, lighting, and voice‑down features integrated across the fleet.
+
+Livestock protection: Surveillance deters stock theft and supports biosecurity compliance.
+
+Safety oversight: Monitoring of machinery use helps reduce risks that lead to accidents.
+
+Custom solutions: For large stations without reliable 4G coverage, LinkVision integrates Starlink satellite connectivity, ensuring continuous monitoring even in remote areas.
+
+Results
+Reduced livestock theft incidents across monitored farms and feedlots.
+
+Improved accountability with vehicle logs and unified reporting.
+
+Operational continuity protected, avoiding costly herd losses.
+
+Insurance confidence strengthened, with verifiable compliance and access records.
+
+Enhanced safety oversight, reducing risks from unsafe vehicle use.
+
+Key Points
+Livestock theft costs Australian farmers millions annually, with Central QLD particularly exposed.
+
+Rockhampton, as the Beef Capital of Australia, highlights the importance of securing cattle yards and feedlots.
+
+LinkVision’s OneVision, WideVision, and FreeVision deliver a layered, unified system that scales across farms, cattle stations, and depots.
+
+Starlink integration ensures coverage for large, remote stations where 4G connectivity is limited.
+
+Conclusion
+By combining OneVision, WideVision, and FreeVision, LinkVision delivers a comprehensive surveillance solution for agriculture and livestock protection. From entry gates to panoramic yard coverage to long‑range monitoring, every angle is secured. This layered approach reduces theft, protects herds, improves safety oversight, and supports compliance — a proven solution for both Australia’s national farming sector and the unique challenges of Central Queensland and Rockhampton, the Beef Capital of Australia.
+
+Daniel, would you like me to now design this into a Rockhampton‑focused infographic — showing cattle yards, paddocks, and feedlots with the three LinkVision solutions layered in, plus a call‑out for Starlink connectivity on large stations — so it’s client‑ready for beef producers in Central QLD?

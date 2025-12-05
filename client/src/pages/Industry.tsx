@@ -7,6 +7,7 @@ import {
   Factory,
   HardHat,
   Warehouse,
+  Tractor,
   CheckCircle2,
 } from "lucide-react";
 
@@ -74,15 +75,28 @@ export default function Solutions() {
       ],
       caseStudyId: "warehouse-logistics",
     },
+    {
+      icon: Tractor,
+      title: "Agriculture & Farming",
+      description: "Protect livestock, machinery, and rural properties",
+      benefits: [
+        "Livestock theft prevention",
+        "Machinery and fuel protection",
+        "Biosecurity compliance monitoring",
+        "Remote property oversight",
+        "Starlink connectivity for remote stations"
+      ],
+      caseStudyId: "agriculture-farming",
+    },
   ];
 
   const industries = [
-    "Agriculture & Farming",
     "Healthcare Facilities",
     "Hospitality & Hotels",
     "Transportation Hubs",
     "Government Buildings",
     "Sports & Recreation",
+    "Education Facilities",
   ];
 
   return (
@@ -144,7 +158,7 @@ export default function Solutions() {
                 </a>
               ))}
             </div>
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {solutions.slice(3).map((solution, index) => (
                 <a key={index + 3} href={`/case-studies#${solution.caseStudyId}`}>
                   <Card
