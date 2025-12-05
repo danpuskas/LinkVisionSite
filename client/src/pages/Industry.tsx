@@ -111,7 +111,7 @@ export default function Solutions() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {solutions.slice(0, 3).map((solution, index) => (
-                <Link key={index} href={`/case-studies#${solution.caseStudyId}`}>
+                <a key={index} href={`/case-studies#${solution.caseStudyId}`}>
                   <Card
                     className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate transition-colors duration-300 cursor-pointer h-full"
                     data-testid={`card-solution-${index}`}
@@ -141,12 +141,12 @@ export default function Solutions() {
                       </div>
                     </CardContent>
                   </Card>
-                </Link>
+                </a>
               ))}
             </div>
             <div className="grid md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
               {solutions.slice(3).map((solution, index) => (
-                <Link key={index + 3} href={`/case-studies#${solution.caseStudyId}`}>
+                <a key={index + 3} href={`/case-studies#${solution.caseStudyId}`}>
                   <Card
                     className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate transition-colors duration-300 cursor-pointer h-full"
                     data-testid={`card-solution-${index + 3}`}
@@ -176,7 +176,7 @@ export default function Solutions() {
                       </div>
                     </CardContent>
                   </Card>
-                </Link>
+                </a>
               ))}
             </div>
           </div>

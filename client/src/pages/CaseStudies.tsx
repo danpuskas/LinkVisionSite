@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -5,6 +6,18 @@ import { Building2, Factory, Home, HardHat, Warehouse, CheckCircle2 } from "luci
 import constructionBg from "@assets/excavator_Case_Study4K_1764902546352.png";
 
 export default function CaseStudies() {
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    }
+  }, []);
+
   const cases = [
     {
       id: "residential-construction",
