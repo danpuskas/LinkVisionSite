@@ -214,24 +214,6 @@ export default function Solutions() {
         </div>
       </section>
 
-      <section className="py-20 bg-[#182863]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
-            <div>
-              <div className="text-5xl font-display font-bold text-white mb-2">500+</div>
-              <div className="text-white/70">Industries Served</div>
-            </div>
-            <div>
-              <div className="text-5xl font-display font-bold text-white mb-2">10,000+</div>
-              <div className="text-white/70">Cameras Deployed</div>
-            </div>
-            <div>
-              <div className="text-5xl font-display font-bold text-white mb-2">99.9%</div>
-              <div className="text-white/70">Customer Satisfaction</div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
