@@ -2,12 +2,14 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Sun, Camera, Cloud, Shield, Wifi, Battery, CheckCircle2, Car, Users, HardHat } from "lucide-react";
+import oneVisionImage from "@assets/OneVisionOranePole_1764930426921.png";
 
 export default function Products() {
   const products = [
     {
       name: "OneVision",
       category: "The New Standard for AI Surveillance",
+      image: oneVisionImage,
       features: [
         "4K Ultra HD Resolution",
         "Wide Angle Lens",
@@ -26,6 +28,7 @@ export default function Products() {
     {
       name: "WideVision",
       category: "Capture More",
+      image: "/camera-tower-cropped.jpg",
       features: [
           "4K Ultra HD Resolution",
           "Dual Lenses providing a 180 Degree Panoramic View",
@@ -43,6 +46,7 @@ export default function Products() {
     {
       name: "FreeVision",
       category: "Move and Zoom In on Whats Important",
+      image: "/camera-tower-cropped.jpg",
       features: [
         "Advanced AI Object Detection",
         "PTZ (Pan-Tilt-Zoom) Capability",
@@ -56,8 +60,9 @@ export default function Products() {
       ],
     },
     {
-      name: "Solar Powered or Locally Powered",
+      name: "On or Off Grid",
       category: "Custom Solutions",
+      image: "/camera-tower-cropped.jpg",
       features: [
         "Unlimited Camera Support",
         "Centralized Management",
@@ -108,7 +113,7 @@ export default function Products() {
                   data-testid={`card-product-${index}`}
                 >
                   <CardHeader>
-                    <div className="text-sm text-[#C800FF] font-bold mb-2">
+                    <div className="text-xl text-[#C800FF] font-bold mb-2">
                       {product.category}
                     </div>
                     <CardTitle className="text-white font-display text-3xl">
@@ -145,7 +150,7 @@ export default function Products() {
 
                 <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate flex-1 flex items-center justify-center transition-all duration-300 relative overflow-hidden">
                   <img 
-                    src="/camera-tower-cropped.jpg" 
+                    src={product.image} 
                     alt={`${product.name} Camera Tower`} 
                     className="h-full w-full object-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
                   />
