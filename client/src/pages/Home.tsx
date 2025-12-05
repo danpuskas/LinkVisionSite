@@ -140,9 +140,9 @@ export default function Home() {
     {
       features: [
         "Rapid deployment and activation — our team delivers, installs, and gets your system online quickly",
-        "Flexible coverage — cameras are repositioned as your site or farm layout evolves",
-        "24/7 Monitoring — real operators oversee every alarm from our Australian control room.",
-        "Verified emergency response — incidents are confirmed before immediate police callouts, reducing false alarms.",
+        "Flexible coverage — cameras are repositioned as your site layout evolves",
+        "24/7 Monitoring — real operators oversee every alarm from our Australian control room",
+        "Verified emergency response — video incidents are confirmed before immediate police callouts, reducing false alarms",
       ],
     },
   ];

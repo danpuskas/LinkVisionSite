@@ -233,24 +233,21 @@ export default function Contact() {
                   <ul className="space-y-3 text-white/90">
                     <li className="flex gap-2">
                       <span className="text-[#C800FF]">✓</span>
-                      Free consultation and site assessment
+                      Rapid deployment and activation — our team delivers, installs, and gets your system online quickly
                     </li>
                     <li className="flex gap-2">
                       <span className="text-[#C800FF]">✓</span>
-                      Professional installation
+                      Flexible coverage — cameras are repositioned as your site layout evolves
                     </li>
                     <li className="flex gap-2">
                       <span className="text-[#C800FF]">✓</span>
-                      2-year warranty on all equipment
+                      24/7 Monitoring — real operators oversee every alarm from our Australian control room
                     </li>
                     <li className="flex gap-2">
                       <span className="text-[#C800FF]">✓</span>
-                      24/7 customer support
+                      Verified emergency response — video incidents are confirmed before immediate police callouts, reducing false alarms
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-[#C800FF]">✓</span>
-                      Flexible financing options
-                    </li>
+                    
                   </ul>
                 </CardContent>
               </Card>
