@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2, Factory, Home, HardHat, Warehouse, CheckCircle2 } from "lucide-react";
-import constructionBg from "@assets/excavator_Case_Study2KVertical_1764897645664.png";
+import constructionBg from "@assets/excavator_Case_Study4K_1764902546352.png";
 
 export default function CaseStudies() {
   const cases = [
@@ -159,7 +159,7 @@ export default function CaseStudies() {
             {cases.map((caseStudy, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f] border-2 border-[#C800FF]/30"
+                className="bg-[#1a2f6f] border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate transition-colors duration-300"
                 data-testid={`card-case-${index}`}
               >
                 <CardHeader>
@@ -260,7 +260,7 @@ export default function CaseStudies() {
       <section className="py-20 bg-[#182863]/80 relative z-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <Card className="bg-[#1a2f6f] border-2 border-[#C800FF]/30">
+            <Card className="bg-[#1a2f6f] border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate transition-colors duration-300">
               <CardContent className="p-12">
                 <h2 className="font-display font-bold text-4xl text-white mb-4">
                   Ready to Write Your Success Story?
