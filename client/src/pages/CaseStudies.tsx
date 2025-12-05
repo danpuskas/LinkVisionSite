@@ -199,10 +199,10 @@ export default function CaseStudies() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h1 className="font-display font-bold text-5xl md:text-6xl text-white mb-6">
-              Customer Success Stories
+              Industry Case Studies
             </h1>
             <p className="text-xl text-white/80">
-              Real results from real customers across Australia
+              What can LinkVision do for your industry? See Below for some of our most recent case studies.
             </p>
           </div>
 

@@ -90,15 +90,6 @@ export default function Solutions() {
     },
   ];
 
-  const industries = [
-    "Healthcare Facilities",
-    "Hospitality & Hotels",
-    "Transportation Hubs",
-    "Government Buildings",
-    "Sports & Recreation",
-    "Education Facilities",
-  ];
-
   return (
     <div className="min-h-screen bg-[#182863]">
       <section className="relative py-20 overflow-hidden">
@@ -193,31 +184,6 @@ export default function Solutions() {
                 </a>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-[#182863]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-display font-bold text-4xl text-white mb-4">
-              More Industries We Serve
-            </h2>
-            <p className="text-xl text-white/80">
-              Our versatile solar CCTV systems adapt to any environment
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {industries.map((industry, index) => (
-              <div
-                key={index}
-                className="bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 rounded-lg p-4 text-center hover-elevate transition-colors duration-300"
-                data-testid={`industry-${index}`}
-              >
-                <span className="text-white font-medium">{industry}</span>
-              </div>
-            ))}
           </div>
         </div>
       </section>
