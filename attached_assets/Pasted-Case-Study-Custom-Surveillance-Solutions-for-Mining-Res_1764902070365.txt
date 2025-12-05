@@ -1,0 +1,76 @@
+Case Study: Custom Surveillance Solutions for Mining & Resource Sites
+Industry Context
+Australia’s mining operations are among the largest in the world, not only in pit dimensions but in the size of their leases:
+
+Super Pit (Kalgoorlie, WA): ~3.5 km long, 1.5 km wide, 600 m deep, with a lease area exceeding 40 km².
+
+Mount Whaleback (WA): ~5.5 km long pit, with leases covering dozens of square kilometres across the Newman region.
+
+Boddington Gold Mine (WA): ~5 km² pit, but a lease area of over 60 km², including processing plants and tailings dams.
+
+These immense lease areas highlight the challenge of securing assets across tens to hundreds of square kilometres. While safety incidents are widely reported, theft and vandalism remain under‑reported, despite contributing to losses in the hundreds of millions annually when downtime, stolen fuel, copper, and equipment are factored in.
+
+The Challenge
+Scale: Mining leases extend far beyond pits, covering haul roads, fuel depots, and laydown yards.
+
+Connectivity gaps: Remote leases often lack reliable 4G coverage.
+
+Asset risk: Theft of copper, diesel, and machinery parts is significant but under‑reported.
+
+Vehicle oversight: Hundreds of subcontractor, service, and delivery vehicles move across lease areas daily.
+
+Night coverage: Vast open leases require long‑range visibility in low‑light conditions.
+
+Cost: Conventional CCTV wireless links are prohibitively expensive across kilometre‑scale leases.
+
+LinkVision’s Custom Solution
+LinkVision designs tailored surveillance deployments for mining and resource sites, adapting to each lease’s geography, connectivity, and operational needs:
+
+Fleet deployment: Stand‑alone solar‑powered units scaled to cover lease‑wide perimeters, haul roads, and processing zones.
+
+Custom connectivity:
+
+4G networks where coverage exists.
+
+Starlink satellite integration for remote leases without 4G.
+
+Hybrid deployments combining both for seamless monitoring.
+
+Unified system: All units stream into one cloud platform, giving managers a single view of the entire lease.
+
+FreeVision optics:
+
+25× optical zoom (~1.2 km effective clarity).
+
+16× digital zoom (~19 km extended viewing).
+
+100 m IR night vision and 30 m white light coverage.
+
+Licence Plate Recognition (LPR) Analytics: Tracks subcontractor, service, and delivery vehicles across the lease, logging entry/exit times and reducing unauthorised access.
+
+Smart deterrence: Alarms, lighting, and voice‑down features to disrupt incidents.
+
+Custom reporting: PPE compliance, vehicle logs, and incident summaries tailored to insurer and regulator requirements.
+
+Results
+60–70% reduction in theft and vandalism incidents across monitored mining leases.
+
+Improved vehicle accountability, with LPR logs supporting chain‑of‑custody and contractor management.
+
+Operational continuity protected, avoiding costly downtime from vandalism or unauthorised access.
+
+Insurance confidence strengthened, with verifiable compliance and access records.
+
+Connectivity assured, even in remote areas, through Starlink integration.
+
+Key Points
+Mining leases often cover tens to hundreds of square kilometres, far larger than the pits themselves.
+
+Theft and vandalism across leases are under‑reported, but losses are substantial.
+
+Conventional CCTV is costly and impractical for lease‑wide coverage.
+
+LinkVision’s custom solutions — solar‑powered fleets, 4G/Starlink connectivity, FreeVision optics, and LPR analytics — deliver unified, scalable protection.
+
+Conclusion
+Mining and resource sites demand custom, scalable surveillance solutions. LinkVision’s stand‑alone solar‑powered fleet with FreeVision optics, LPR analytics, and flexible connectivity (4G or Starlink) secures expansive lease areas, reduces losses, and ensures unified oversight across kilometres of terrain. By tailoring deployments to each site’s unique challenges, LinkVision provides a proven, cost‑effective solution for Australia’s largest mines.
