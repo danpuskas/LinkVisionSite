@@ -1,0 +1,50 @@
+Case Study: Protecting Commercial Construction Sites Across Australia
+Industry Context
+Commercial construction projects in Australia face dual challenges: property crime and compliance oversight. Industry reports estimate that theft and vandalism cost businesses over $100 million annually, with copper wiring, generators, and building materials among the most common losses.
+
+At the same time, PPE compliance is under increasing scrutiny. A 2024 audit found that up to 30% of workers on commercial sites were non-compliant with PPE protocols during the workday. Insurers and regulators now expect verifiable records of PPE usage as part of risk management frameworks.
+
+The Challenge
+High-value theft: Heavy machinery, wiring, and fixtures are prime targets, especially during overnight downtime.
+
+Operational disruption: Vandalism and unauthorised access cause costly delays and insurance claims.
+
+Compliance gaps: Manual PPE checks miss transient violations and lack timestamped evidence.
+
+Fragmented oversight: Large sites with multiple subcontractors struggle to maintain consistent monitoring.
+
+LinkVision’s Solution
+LinkVision deployed a tailored surveillance and compliance system across commercial projects:
+
+AI-powered surveillance units with perimeter breach and vehicle movement detection.
+
+Cloud-based monitoring for managers and insurers, enabling remote oversight.
+
+Smart deterrence tools including alarms, lighting, and voice-down features.
+
+PPE Analytics Add-on to automatically detect helmet, vest, and boot usage at entry points and active zones.
+
+Automated reporting to provide daily compliance summaries and audit-ready evidence.
+
+Results
+70% reduction in theft and vandalism incidents within the first 90 days of deployment.
+
+Improved PPE compliance visibility, with automated detection achieving >95% accuracy.
+
+Insurance premiums lowered, supported by verifiable compliance records.
+
+Project timelines protected, with fewer interruptions linked to crime or compliance breaches.
+
+Stakeholder confidence strengthened, especially among insurers and investors.
+
+Key Insights
+Nationwide, commercial construction sites lose over $100 million annually to theft and vandalism.
+
+PPE compliance gaps affect up to 30% of workers daily, exposing contractors to liability.
+
+LinkVision’s combined approach of AI surveillance + PPE analytics delivers measurable reductions in risk.
+
+Automated compliance reporting transforms PPE oversight from a manual task into a data-driven process.
+
+Conclusion
+Commercial construction in Australia demands proactive risk management. LinkVision’s integrated surveillance and PPE analytics system reduces theft, deters vandalism, and ensures compliance is documented in real time. The result is fewer losses, stronger accountability, and greater confidence in project delivery.
