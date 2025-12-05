@@ -36,7 +36,7 @@ export default function CaseStudies() {
       metrics: {
         reduction: "60%+",
         deployment: "6 months",
-        coverage: "Nationwide",
+        coverage: "Central QLD",
       },
       keyTakeaways: [
         "Theft and vandalism remain a nationwide issue in residential construction, costing millions annually",
@@ -219,7 +219,7 @@ export default function CaseStudies() {
                         <caseStudy.icon className="w-8 h-8 text-white" />
                       </div>
                       <div>
-                        <div className="text-xl text-[#C800FF] font-bold mb-1">
+                        <div className="text-sm text-[#C800FF] font-semibold mb-1">
                           {caseStudy.industry}
                         </div>
                         <CardTitle className="text-white font-display text-3xl">
