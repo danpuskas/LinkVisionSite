@@ -210,7 +210,7 @@ export default function CaseStudies() {
             {cases.map((caseStudy, index) => (
               <div key={index} id={caseStudy.id} className="scroll-mt-24">
                 <Card
-                  className="bg-[#1a2f6f] border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate transition-colors duration-300"
+                  className="bg-[#1a2f6f] border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300"
                   data-testid={`card-case-${index}`}
                 >
                   <CardHeader>
@@ -312,7 +312,7 @@ export default function CaseStudies() {
       <section className="py-20 bg-[#182863]/80 relative z-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <Card className="bg-[#1a2f6f] border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate transition-colors duration-300">
+            <Card className="bg-[#1a2f6f] border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300">
               <CardContent className="p-12">
                 <h2 className="font-display font-bold text-4xl text-white mb-4">
                   Ready to Write Your Success Story?

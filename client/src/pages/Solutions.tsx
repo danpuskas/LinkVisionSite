@@ -104,7 +104,7 @@ export default function Products() {
             {products.map((product, index) => (
               <div key={index} className="flex gap-8">
                 <Card
-                  className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate flex flex-col h-full flex-1 transition-colors duration-300"
+                  className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate flex flex-col h-full flex-1 transition-all duration-300"
                   data-testid={`card-product-${index}`}
                 >
                   <CardHeader>
@@ -143,7 +143,7 @@ export default function Products() {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover-elevate flex-1 flex items-center justify-center transition-colors duration-300 relative overflow-hidden">
+                <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate flex-1 flex items-center justify-center transition-all duration-300 relative overflow-hidden">
                   <img 
                     src="/camera-tower-cropped.jpg" 
                     alt={`${product.name} Camera Tower`} 
@@ -174,7 +174,7 @@ export default function Products() {
             {accessories.map((accessory, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate text-center transition-colors duration-300 w-64"
+                className="bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate text-center transition-all duration-300 w-64"
                 data-testid={`card-accessory-${index}`}
               >
                 <CardHeader>

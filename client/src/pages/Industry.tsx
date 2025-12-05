@@ -118,7 +118,7 @@ export default function Solutions() {
               {solutions.slice(0, 3).map((solution, index) => (
                 <a key={index} href={`/case-studies#${solution.caseStudyId}`}>
                   <Card
-                    className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate transition-colors duration-300 cursor-pointer h-full"
+                    className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300 cursor-pointer h-full"
                     data-testid={`card-solution-${index}`}
                   >
                     <CardHeader>
@@ -153,7 +153,7 @@ export default function Solutions() {
               {solutions.slice(3).map((solution, index) => (
                 <a key={index + 3} href={`/case-studies#${solution.caseStudyId}`}>
                   <Card
-                    className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover-elevate transition-colors duration-300 cursor-pointer h-full"
+                    className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300 cursor-pointer h-full"
                     data-testid={`card-solution-${index + 3}`}
                   >
                     <CardHeader>
@@ -191,7 +191,7 @@ export default function Solutions() {
       <section className="py-20 bg-[#1a2f6f]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <Card className="bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 transition-colors duration-300">
+            <Card className="bg-[#1a2f6f]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300">
               <CardContent className="p-12 text-center">
                 <h2 className="font-display font-bold text-4xl text-white mb-4">
                   Don't See Your Industry?
