@@ -107,7 +107,7 @@ export default function Products() {
 
           <div className="space-y-8 max-w-6xl mx-auto">
             {products.map((product, index) => (
-              <div key={index} className="flex gap-8">
+              <div key={index} className="flex flex-col md:flex-row gap-8">
                 <Card
                   className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate flex flex-col h-full flex-1 transition-all duration-300"
                   data-testid={`card-product-${index}`}
@@ -148,7 +148,7 @@ export default function Products() {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate flex-1 flex items-center justify-center transition-all duration-300 relative overflow-hidden">
+                <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate flex-1 flex items-center justify-center transition-all duration-300 relative overflow-hidden min-h-[300px] md:min-h-0">
                   <img 
                     src={product.image} 
                     alt={`${product.name} Camera Tower`} 
