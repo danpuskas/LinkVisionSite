@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Camera, Building, Users, Settings, Shield, Zap } from "lucide-react";
 
 export default function CustomSolutions() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, []);
   const features = [
     "Unlimited Camera Support",
     "Centralized Management",

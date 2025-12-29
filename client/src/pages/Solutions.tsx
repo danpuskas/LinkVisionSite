@@ -152,7 +152,7 @@ export default function Products() {
                   </CardContent>
                 </Card>
 
-                <Link href={`/solutions/${product.slug}`}>
+                <Link href={`/solutions/${product.slug}`} className="flex-1 flex">
                   <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate flex-1 flex items-center justify-center transition-all duration-300 relative overflow-hidden min-h-[300px] md:min-h-0 cursor-pointer">
                     <img 
                       src={product.image} 

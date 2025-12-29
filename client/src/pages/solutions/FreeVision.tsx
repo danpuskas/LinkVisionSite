@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Move, UserCheck, Car, Shield, AlertTriangle, Volume2 } from "lucide-react";
 
 export default function FreeVision() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, []);
   const features = [
     "Advanced AI Object Detection",
     "PTZ (Pan-Tilt-Zoom) Capability",

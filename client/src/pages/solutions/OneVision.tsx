@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Sun, Camera, Cloud, Shield, Volume2, Clock } from "lucide-react";
 import oneVisionImage from "@assets/OneVisionOranePole_1764930426921.png";
 
 export default function OneVision() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, []);
   const features = [
     "4K Ultra HD Resolution",
     "Wide Angle Lens",
