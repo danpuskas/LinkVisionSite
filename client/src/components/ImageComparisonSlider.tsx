@@ -54,7 +54,7 @@ export default function ImageComparisonSlider({
   return (
     <div
       ref={containerRef}
-      className="relative w-full aspect-video rounded-xl overflow-hidden cursor-ew-resize select-none border-2 border-[#C800FF]/30 hover:border-[#C800FF] transition-all duration-300 touch-none"
+      className="relative w-full aspect-video rounded-xl overflow-hidden cursor-ew-resize select-none border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300 touch-none"
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
