@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Home, CheckCircle2 } from "lucide-react";
-import residentialBg from "@assets/stock_images/residential_home_sec_0623215e.jpg";
+import residentialBg from "@assets/CaseStudyResidential_1767052634793.png";
 
 export default function ResidentialCaseStudy() {
   useEffect(() => {
