@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 
 interface ImageComparisonSliderProps {
   dayImage: string;
@@ -14,8 +14,8 @@ export default function ImageComparisonSlider({
   nightLabel = "Night",
 }: ImageComparisonSliderProps) {
   const [sliderPosition, setSliderPosition] = useState(50);
+  const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const isDragging = useRef(false);
 
   const handleMove = useCallback((clientX: number) => {
     if (!containerRef.current) return;
@@ -26,50 +26,39 @@ export default function ImageComparisonSlider({
     setSliderPosition(percentage);
   }, []);
 
-  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+  const handlePointerDown = useCallback((e: React.PointerEvent) => {
     e.preventDefault();
-    isDragging.current = true;
+    if (containerRef.current) {
+      containerRef.current.setPointerCapture(e.pointerId);
+    }
+    setIsDragging(true);
     handleMove(e.clientX);
   }, [handleMove]);
 
-  const handleMouseMove = useCallback((e: React.MouseEvent) => {
-    if (!isDragging.current) return;
+  const handlePointerMove = useCallback((e: React.PointerEvent) => {
+    if (!isDragging) return;
+    handleMove(e.clientX);
+  }, [isDragging, handleMove]);
+
+  const handlePointerUp = useCallback((e: React.PointerEvent) => {
+    if (containerRef.current) {
+      containerRef.current.releasePointerCapture(e.pointerId);
+    }
+    setIsDragging(false);
+  }, []);
+
+  const handleClick = useCallback((e: React.MouseEvent) => {
     handleMove(e.clientX);
   }, [handleMove]);
-
-  const handleMouseUp = useCallback(() => {
-    isDragging.current = false;
-  }, []);
-
-  const handleMouseLeave = useCallback(() => {
-    isDragging.current = false;
-  }, []);
-
-  const handleTouchStart = useCallback((e: React.TouchEvent) => {
-    isDragging.current = true;
-    handleMove(e.touches[0].clientX);
-  }, [handleMove]);
-
-  const handleTouchMove = useCallback((e: React.TouchEvent) => {
-    if (!isDragging.current) return;
-    handleMove(e.touches[0].clientX);
-  }, [handleMove]);
-
-  const handleTouchEnd = useCallback(() => {
-    isDragging.current = false;
-  }, []);
 
   return (
     <div
       ref={containerRef}
-      className="relative w-full aspect-video rounded-xl overflow-hidden cursor-ew-resize select-none border-2 border-[#C800FF]/30 hover:border-[#C800FF] transition-all duration-300"
-      onMouseDown={handleMouseDown}
-      onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUp}
-      onMouseLeave={handleMouseLeave}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
+      className="relative w-full aspect-video rounded-xl overflow-hidden cursor-ew-resize select-none border-2 border-[#C800FF]/30 hover:border-[#C800FF] transition-all duration-300 touch-none"
+      onPointerDown={handlePointerDown}
+      onPointerMove={handlePointerMove}
+      onPointerUp={handlePointerUp}
+      onClick={handleClick}
       data-testid="image-comparison-slider"
     >
       {/* Night image (background) */}
