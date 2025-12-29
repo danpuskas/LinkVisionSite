@@ -21,7 +21,7 @@ export function Header() {
     { path: "/industry", label: "Industry" },
     { path: "/case-studies", label: "Case Studies" },
     { path: "/solutions", label: "Solutions", hasDropdown: true },
-    { path: "/pricing", label: "Pricing" },
+    { path: "/timelapse", label: "Timelapse" },
     { path: "/about", label: "About" },
     { path: "/contact", label: "Contact" },
   ];

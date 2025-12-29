@@ -10,7 +10,7 @@ import OneVision from "@/pages/solutions/OneVision";
 import WideVision from "@/pages/solutions/WideVision";
 import FreeVision from "@/pages/solutions/FreeVision";
 import CustomSolutions from "@/pages/solutions/CustomSolutions";
-import Pricing from "@/pages/Pricing";
+import Timelapse from "@/pages/Timelapse";
 import Industry from "@/pages/Industry";
 import About from "@/pages/About";
 import CaseStudies from "@/pages/CaseStudies";
@@ -29,7 +29,7 @@ function Router() {
       <Route path="/solutions/freevision" component={FreeVision} />
       <Route path="/solutions/custom" component={CustomSolutions} />
       <Route path="/industry" component={Industry} />
-      <Route path="/pricing" component={Pricing} />
+      <Route path="/timelapse" component={Timelapse} />
       <Route path="/about" component={About} />
       <Route path="/case-studies" component={CaseStudies} />
       <Route path="/contact" component={Contact} />

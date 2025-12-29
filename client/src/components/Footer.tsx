@@ -87,8 +87,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" data-testid="link-footer-pricing">
-                  <span className="text-white/80 hover:text-[#C800FF] transition-colors cursor-pointer">Pricing</span>
+                <Link href="/timelapse" data-testid="link-footer-timelapse">
+                  <span className="text-white/80 hover:text-[#C800FF] transition-colors cursor-pointer">Timelapse</span>
                 </Link>
               </li>
               <li>
