@@ -9,6 +9,10 @@ export function Header() {
   const [solutionsOpen, setSolutionsOpen] = useState(false);
   const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  };
+
   const solutionItems = [
     { path: "/solutions/onevision", label: "OneVision" },
     { path: "/solutions/widevision", label: "WideVision" },
@@ -30,7 +34,7 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-[#182863] border-b border-[#C800FF]/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" data-testid="link-home">
+          <Link href="/" data-testid="link-home" onClick={scrollToTop}>
             <div className="flex items-center hover-elevate active-elevate-2 px-2 py-1 rounded-md cursor-pointer">
               <img
                 src="/linkvision-logo.png"
@@ -52,6 +56,7 @@ export function Header() {
                   <Link
                     href={item.path}
                     data-testid={`link-nav-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
+                    onClick={scrollToTop}
                   >
                     <Button
                       variant="ghost"
@@ -72,6 +77,7 @@ export function Header() {
                             key={solution.path}
                             href={solution.path}
                             data-testid={`link-dropdown-${solution.label.toLowerCase().replace(/\s+/g, "-")}`}
+                            onClick={scrollToTop}
                           >
                             <div className={`px-4 py-3 text-white hover:bg-gradient-linkvision hover:text-white transition-all duration-300 cursor-pointer border-b border-[#C800FF]/10 last:border-b-0 ${
                               location === solution.path ? "bg-[#C800FF]/20" : ""
@@ -89,6 +95,7 @@ export function Header() {
                   key={item.path}
                   href={item.path}
                   data-testid={`link-nav-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
+                  onClick={scrollToTop}
                 >
                   <Button
                     variant="ghost"
@@ -109,7 +116,7 @@ export function Header() {
                 Login
               </Button>
             </a>
-            <Link href="/contact" data-testid="link-cta-contact">
+            <Link href="/contact" data-testid="link-cta-contact" onClick={scrollToTop}>
               <Button className="bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30">
                 Get Started
               </Button>
@@ -148,13 +155,13 @@ export function Header() {
                         <Link
                           href="/solutions"
                           data-testid="link-mobile-solutions-all"
+                          onClick={() => { scrollToTop(); setMobileMenuOpen(false); }}
                         >
                           <Button
                             variant="ghost"
                             className={`w-full justify-start text-white/80 hover:text-white hover:bg-gradient-linkvision transition-all duration-300 text-sm ${
                               location === "/solutions" ? "bg-[#C800FF]/20" : ""
                             }`}
-                            onClick={() => setMobileMenuOpen(false)}
                           >
                             All Solutions
                           </Button>
@@ -164,13 +171,13 @@ export function Header() {
                             key={solution.path}
                             href={solution.path}
                             data-testid={`link-mobile-${solution.label.toLowerCase().replace(/\s+/g, "-")}`}
+                            onClick={() => { scrollToTop(); setMobileMenuOpen(false); }}
                           >
                             <Button
                               variant="ghost"
                               className={`w-full justify-start text-white/80 hover:text-white hover:bg-gradient-linkvision transition-all duration-300 text-sm ${
                                 location === solution.path ? "bg-[#C800FF]/20" : ""
                               }`}
-                              onClick={() => setMobileMenuOpen(false)}
                             >
                               {solution.label}
                             </Button>
@@ -184,13 +191,13 @@ export function Header() {
                     key={item.path}
                     href={item.path}
                     data-testid={`link-mobile-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
+                    onClick={() => { scrollToTop(); setMobileMenuOpen(false); }}
                   >
                     <Button
                       variant="ghost"
                       className={`w-full justify-start text-white hover:text-white hover:bg-gradient-linkvision transition-all duration-300 ${
                         location === item.path ? "bg-[#C800FF]/20" : ""
                       }`}
-                      onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.label}
                     </Button>
@@ -205,10 +212,9 @@ export function Header() {
                   Login
                 </Button>
               </a>
-              <Link href="/contact" data-testid="link-mobile-cta">
+              <Link href="/contact" data-testid="link-mobile-cta" onClick={() => { scrollToTop(); setMobileMenuOpen(false); }}>
                 <Button
                   className="w-full bg-gradient-linkvision text-white border-0 mt-2"
-                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Get Started
                 </Button>
