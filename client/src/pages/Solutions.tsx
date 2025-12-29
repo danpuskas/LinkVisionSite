@@ -8,6 +8,7 @@ export default function Products() {
   const products = [
     {
       name: "OneVision",
+      slug: "onevision",
       category: "The New Standard for AI Surveillance",
       image: oneVisionImage,
       features: [
@@ -27,6 +28,7 @@ export default function Products() {
     },
     {
       name: "WideVision",
+      slug: "widevision",
       category: "Capture More",
       image: "/camera-tower-cropped.jpg",
       features: [
@@ -45,6 +47,7 @@ export default function Products() {
     },
     {
       name: "FreeVision",
+      slug: "freevision",
       category: "Move and Zoom In on Whats Important",
       image: "/camera-tower-cropped.jpg",
       features: [
@@ -61,6 +64,7 @@ export default function Products() {
     },
     {
       name: "On or Off Grid",
+      slug: "custom",
       category: "Custom Solutions",
       image: "/camera-tower-cropped.jpg",
       features: [
@@ -148,16 +152,18 @@ export default function Products() {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate flex-1 flex items-center justify-center transition-all duration-300 relative overflow-hidden min-h-[300px] md:min-h-0">
-                  <img 
-                    src={product.image} 
-                    alt={`${product.name} Camera Tower`} 
-                    className="h-full w-full object-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className="text-white font-display text-3xl font-bold drop-shadow-lg">{product.name}</span>
-                  </div>
-                </Card>
+                <Link href={`/solutions/${product.slug}`}>
+                  <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate flex-1 flex items-center justify-center transition-all duration-300 relative overflow-hidden min-h-[300px] md:min-h-0 cursor-pointer">
+                    <img 
+                      src={product.image} 
+                      alt={`${product.name} Camera Tower`} 
+                      className="h-full w-full object-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <span className="text-white font-display text-3xl font-bold drop-shadow-lg">{product.name}</span>
+                    </div>
+                  </Card>
+                </Link>
               </div>
             ))}
           </div>
