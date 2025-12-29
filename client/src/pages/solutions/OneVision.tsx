@@ -3,6 +3,9 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Sun, Camera, Cloud, Shield, Volume2, Clock } from "lucide-react";
 import oneVisionImage from "@assets/OneVisionOranePole_1764930426921.png";
+import dayImage from "@assets/DayColoutImage_1767000632112.png";
+import nightImage from "@assets/NightColourImage_1767000647165.png";
+import ImageComparisonSlider from "@/components/ImageComparisonSlider";
 
 export default function OneVision() {
   useEffect(() => {
@@ -89,7 +92,7 @@ export default function OneVision() {
                   className="bg-gradient-linkvision text-white border-0 shadow-lg shadow-[#C800FF]/30 text-lg px-8 py-6"
                   data-testid="button-request-pricing"
                 >
-                  Request Pricing
+                  Request a Quote
                 </Button>
               </Link>
             </div>
@@ -114,6 +117,24 @@ export default function OneVision() {
             </h2>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
               OneVision combines cutting-edge technology with robust Australian-made hardware
+            </p>
+          </div>
+
+          {/* Colour Night Vision Comparison Slider */}
+          <div className="mb-16">
+            <h3 className="text-white font-bold text-2xl mb-6 text-center">
+              Powerful Colour Night Vision
+            </h3>
+            <div className="max-w-4xl mx-auto">
+              <ImageComparisonSlider
+                dayImage={dayImage}
+                nightImage={nightImage}
+                dayLabel="Day"
+                nightLabel="Night"
+              />
+            </div>
+            <p className="text-white/70 text-center mt-4 text-sm">
+              Drag the slider to compare day and night vision quality
             </p>
           </div>
 
