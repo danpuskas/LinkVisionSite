@@ -132,7 +132,7 @@ export function Footer() {
               href="https://www.ndpservices.net"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#C800FF] transition-colors"
+              className="text-pink-300 hover:text-[#C800FF] transition-colors"
               data-testid="link-ndp-services"
             >
               NDP Services Pty Ltd
