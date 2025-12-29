@@ -71,17 +71,13 @@ export default function ImageComparisonSlider({
 
       {/* Day image (foreground with clip) */}
       <div
-        className="absolute inset-0 overflow-hidden"
-        style={{ width: `${sliderPosition}%` }}
+        className="absolute inset-0"
+        style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
       >
         <img
           src={dayImage}
           alt="Day view"
           className="absolute inset-0 w-full h-full object-cover"
-          style={{ 
-            width: containerRef.current ? `${containerRef.current.offsetWidth}px` : '100vw',
-            maxWidth: 'none'
-          }}
           draggable={false}
         />
       </div>
