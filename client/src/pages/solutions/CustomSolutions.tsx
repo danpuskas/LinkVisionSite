@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { CheckCircle2, Camera, Building, Users, Settings, Shield, Zap } from "lucide-react";
 
 export default function CustomSolutions() {
@@ -155,25 +156,43 @@ export default function CustomSolutions() {
           <h3 className="text-white font-bold text-2xl mb-8 text-center">Explore Other Solutions</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Link href="/solutions/onevision">
-              <div className="bg-[#182863]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] rounded-xl p-6 text-center transition-all duration-300 cursor-pointer">
-                <img src="/onevision-product.png" alt="OneVision" className="h-24 w-auto mx-auto mb-4 rounded-lg" />
-                <h4 className="text-white font-bold text-xl mb-2">OneVision</h4>
-                <p className="text-white/70">The New Standard</p>
-              </div>
+              <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300 relative overflow-hidden h-64 cursor-pointer">
+                <img 
+                  src="/onevision-product.png" 
+                  alt="OneVision" 
+                  className="h-full w-full object-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
+                />
+                <div className="absolute bottom-4 left-4">
+                  <span className="text-white font-display text-2xl font-bold drop-shadow-lg">OneVision</span>
+                  <p className="text-white/80 text-sm drop-shadow-lg">The New Standard</p>
+                </div>
+              </Card>
             </Link>
             <Link href="/solutions/widevision">
-              <div className="bg-[#182863]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] rounded-xl p-6 text-center transition-all duration-300 cursor-pointer">
-                <img src="/camera-tower-cropped.jpg" alt="WideVision" className="h-24 w-auto mx-auto mb-4 rounded-lg" />
-                <h4 className="text-white font-bold text-xl mb-2">WideVision</h4>
-                <p className="text-white/70">180° Panoramic Coverage</p>
-              </div>
+              <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300 relative overflow-hidden h-64 cursor-pointer">
+                <img 
+                  src="/camera-tower-cropped.jpg" 
+                  alt="WideVision" 
+                  className="h-full w-full object-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
+                />
+                <div className="absolute bottom-4 left-4">
+                  <span className="text-white font-display text-2xl font-bold drop-shadow-lg">WideVision</span>
+                  <p className="text-white/80 text-sm drop-shadow-lg">180° Panoramic Coverage</p>
+                </div>
+              </Card>
             </Link>
             <Link href="/solutions/freevision">
-              <div className="bg-[#182863]/50 border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] rounded-xl p-6 text-center transition-all duration-300 cursor-pointer">
-                <img src="/camera-tower-cropped.jpg" alt="FreeVision" className="h-24 w-auto mx-auto mb-4 rounded-lg" />
-                <h4 className="text-white font-bold text-xl mb-2">FreeVision</h4>
-                <p className="text-white/70">PTZ Precision Control</p>
-              </div>
+              <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300 relative overflow-hidden h-64 cursor-pointer">
+                <img 
+                  src="/camera-tower-cropped.jpg" 
+                  alt="FreeVision" 
+                  className="h-full w-full object-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
+                />
+                <div className="absolute bottom-4 left-4">
+                  <span className="text-white font-display text-2xl font-bold drop-shadow-lg">FreeVision</span>
+                  <p className="text-white/80 text-sm drop-shadow-lg">PTZ Precision Control</p>
+                </div>
+              </Card>
             </Link>
           </div>
         </div>
