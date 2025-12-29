@@ -7,7 +7,9 @@ export function Header() {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
+  const [caseStudiesOpen, setCaseStudiesOpen] = useState(false);
   const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
+  const [mobileCaseStudiesOpen, setMobileCaseStudiesOpen] = useState(false);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
@@ -20,15 +22,58 @@ export function Header() {
     { path: "/solutions/custom", label: "Custom Solutions" },
   ];
 
+  const caseStudyItems = [
+    { path: "/case-studies/residential", label: "Residential" },
+    { path: "/case-studies/commercial", label: "Commercial" },
+    { path: "/case-studies/industrial-civil", label: "Industrial & Civil" },
+    { path: "/case-studies/mining-resources", label: "Mining & Resources" },
+    { path: "/case-studies/warehouse-logistics", label: "Warehouse & Logistics" },
+    { path: "/case-studies/agriculture-farming", label: "Agriculture & Farming" },
+  ];
+
   const navItems = [
     { path: "/", label: "Home" },
     { path: "/industry", label: "Industry" },
-    { path: "/case-studies", label: "Case Studies" },
-    { path: "/solutions", label: "Solutions", hasDropdown: true },
+    { path: "/case-studies", label: "Case Studies", hasDropdown: true, dropdownType: "caseStudies" },
+    { path: "/solutions", label: "Solutions", hasDropdown: true, dropdownType: "solutions" },
     { path: "/timelapse", label: "Timelapse" },
     { path: "/about", label: "About" },
     { path: "/contact", label: "Contact" },
   ];
+
+  const getDropdownItems = (type: string) => {
+    if (type === "solutions") return solutionItems;
+    if (type === "caseStudies") return caseStudyItems;
+    return [];
+  };
+
+  const isDropdownOpen = (type: string) => {
+    if (type === "solutions") return solutionsOpen;
+    if (type === "caseStudies") return caseStudiesOpen;
+    return false;
+  };
+
+  const setDropdownOpen = (type: string, open: boolean) => {
+    if (type === "solutions") setSolutionsOpen(open);
+    if (type === "caseStudies") setCaseStudiesOpen(open);
+  };
+
+  const isMobileDropdownOpen = (type: string) => {
+    if (type === "solutions") return mobileSolutionsOpen;
+    if (type === "caseStudies") return mobileCaseStudiesOpen;
+    return false;
+  };
+
+  const toggleMobileDropdown = (type: string) => {
+    if (type === "solutions") setMobileSolutionsOpen(!mobileSolutionsOpen);
+    if (type === "caseStudies") setMobileCaseStudiesOpen(!mobileCaseStudiesOpen);
+  };
+
+  const isActiveDropdown = (type: string) => {
+    if (type === "solutions") return location.startsWith("/solutions");
+    if (type === "caseStudies") return location.startsWith("/case-studies");
+    return false;
+  };
 
   return (
     <header className="sticky top-0 z-50 bg-[#182863] border-b border-[#C800FF]/20">
@@ -50,8 +95,8 @@ export function Header() {
                 <div
                   key={item.path}
                   className="relative"
-                  onMouseEnter={() => setSolutionsOpen(true)}
-                  onMouseLeave={() => setSolutionsOpen(false)}
+                  onMouseEnter={() => setDropdownOpen(item.dropdownType!, true)}
+                  onMouseLeave={() => setDropdownOpen(item.dropdownType!, false)}
                 >
                   <Link
                     href={item.path}
@@ -61,28 +106,28 @@ export function Header() {
                     <Button
                       variant="ghost"
                       className={`text-white hover:text-white hover:bg-gradient-linkvision transition-all duration-300 flex items-center gap-1 ${
-                        location.startsWith("/solutions") ? "bg-[#C800FF]/20" : ""
+                        isActiveDropdown(item.dropdownType!) ? "bg-[#C800FF]/20" : ""
                       }`}
                     >
                       {item.label}
-                      <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${solutionsOpen ? "rotate-180" : ""}`} />
+                      <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen(item.dropdownType!) ? "rotate-180" : ""}`} />
                     </Button>
                   </Link>
                   
-                  {solutionsOpen && (
+                  {isDropdownOpen(item.dropdownType!) && (
                     <div className="absolute top-full left-0 pt-2 w-56">
                       <div className="bg-[#182863] border-2 border-[#C800FF]/30 rounded-lg shadow-[0_0_30px_rgba(200,0,255,0.3)] overflow-hidden">
-                        {solutionItems.map((solution) => (
+                        {getDropdownItems(item.dropdownType!).map((dropdownItem) => (
                           <Link
-                            key={solution.path}
-                            href={solution.path}
-                            data-testid={`link-dropdown-${solution.label.toLowerCase().replace(/\s+/g, "-")}`}
+                            key={dropdownItem.path}
+                            href={dropdownItem.path}
+                            data-testid={`link-dropdown-${dropdownItem.label.toLowerCase().replace(/\s+/g, "-")}`}
                             onClick={scrollToTop}
                           >
                             <div className={`px-4 py-3 text-white hover:bg-gradient-linkvision hover:text-white transition-all duration-300 cursor-pointer border-b border-[#C800FF]/10 last:border-b-0 ${
-                              location === solution.path ? "bg-[#C800FF]/20" : ""
+                              location === dropdownItem.path ? "bg-[#C800FF]/20" : ""
                             }`}>
-                              {solution.label}
+                              {dropdownItem.label}
                             </div>
                           </Link>
                         ))}
@@ -141,45 +186,45 @@ export function Header() {
                     <Button
                       variant="ghost"
                       className={`w-full justify-between text-white hover:text-white hover:bg-gradient-linkvision transition-all duration-300 ${
-                        location.startsWith("/solutions") ? "bg-[#C800FF]/20" : ""
+                        isActiveDropdown(item.dropdownType!) ? "bg-[#C800FF]/20" : ""
                       }`}
-                      onClick={() => setMobileSolutionsOpen(!mobileSolutionsOpen)}
-                      data-testid="button-mobile-solutions-toggle"
+                      onClick={() => toggleMobileDropdown(item.dropdownType!)}
+                      data-testid={`button-mobile-${item.dropdownType}-toggle`}
                     >
                       {item.label}
-                      <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${mobileSolutionsOpen ? "rotate-180" : ""}`} />
+                      <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isMobileDropdownOpen(item.dropdownType!) ? "rotate-180" : ""}`} />
                     </Button>
                     
-                    {mobileSolutionsOpen && (
+                    {isMobileDropdownOpen(item.dropdownType!) && (
                       <div className="ml-4 mt-2 border-l-2 border-[#C800FF]/30 pl-4 space-y-1">
                         <Link
-                          href="/solutions"
-                          data-testid="link-mobile-solutions-all"
+                          href={item.path}
+                          data-testid={`link-mobile-${item.dropdownType}-all`}
                           onClick={() => { scrollToTop(); setMobileMenuOpen(false); }}
                         >
                           <Button
                             variant="ghost"
                             className={`w-full justify-start text-white/80 hover:text-white hover:bg-gradient-linkvision transition-all duration-300 text-sm ${
-                              location === "/solutions" ? "bg-[#C800FF]/20" : ""
+                              location === item.path ? "bg-[#C800FF]/20" : ""
                             }`}
                           >
-                            All Solutions
+                            All {item.label}
                           </Button>
                         </Link>
-                        {solutionItems.map((solution) => (
+                        {getDropdownItems(item.dropdownType!).map((dropdownItem) => (
                           <Link
-                            key={solution.path}
-                            href={solution.path}
-                            data-testid={`link-mobile-${solution.label.toLowerCase().replace(/\s+/g, "-")}`}
+                            key={dropdownItem.path}
+                            href={dropdownItem.path}
+                            data-testid={`link-mobile-${dropdownItem.label.toLowerCase().replace(/\s+/g, "-")}`}
                             onClick={() => { scrollToTop(); setMobileMenuOpen(false); }}
                           >
                             <Button
                               variant="ghost"
                               className={`w-full justify-start text-white/80 hover:text-white hover:bg-gradient-linkvision transition-all duration-300 text-sm ${
-                                location === solution.path ? "bg-[#C800FF]/20" : ""
+                                location === dropdownItem.path ? "bg-[#C800FF]/20" : ""
                               }`}
                             >
-                              {solution.label}
+                              {dropdownItem.label}
                             </Button>
                           </Link>
                         ))}

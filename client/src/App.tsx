@@ -14,6 +14,12 @@ import Timelapse from "@/pages/Timelapse";
 import Industry from "@/pages/Industry";
 import About from "@/pages/About";
 import CaseStudies from "@/pages/CaseStudies";
+import ResidentialCaseStudy from "@/pages/case-studies/Residential";
+import CommercialCaseStudy from "@/pages/case-studies/Commercial";
+import IndustrialCivilCaseStudy from "@/pages/case-studies/IndustrialCivil";
+import MiningResourcesCaseStudy from "@/pages/case-studies/MiningResources";
+import WarehouseLogisticsCaseStudy from "@/pages/case-studies/WarehouseLogistics";
+import AgricultureFarmingCaseStudy from "@/pages/case-studies/AgricultureFarming";
 import Contact from "@/pages/Contact";
 import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
@@ -32,6 +38,12 @@ function Router() {
       <Route path="/timelapse" component={Timelapse} />
       <Route path="/about" component={About} />
       <Route path="/case-studies" component={CaseStudies} />
+      <Route path="/case-studies/residential" component={ResidentialCaseStudy} />
+      <Route path="/case-studies/commercial" component={CommercialCaseStudy} />
+      <Route path="/case-studies/industrial-civil" component={IndustrialCivilCaseStudy} />
+      <Route path="/case-studies/mining-resources" component={MiningResourcesCaseStudy} />
+      <Route path="/case-studies/warehouse-logistics" component={WarehouseLogisticsCaseStudy} />
+      <Route path="/case-studies/agriculture-farming" component={AgricultureFarmingCaseStudy} />
       <Route path="/contact" component={Contact} />
       <Route path="/legal/privacy" component={Privacy} />
       <Route path="/legal/terms" component={Terms} />
