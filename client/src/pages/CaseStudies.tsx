@@ -3,16 +3,18 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2, Factory, Home, HardHat, Warehouse, Tractor, CheckCircle2 } from "lucide-react";
-import constructionBg from "@assets/excavator_Case_Study4K_1764902546352.png";
+import constructionBg from "@assets/excavator-case-study-compressed.jpg";
 
 export default function CaseStudies() {
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
-      const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: 'instant', block: 'start' });
-      }
+      requestAnimationFrame(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'instant', block: 'start' });
+        }
+      });
     } else {
       window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }
