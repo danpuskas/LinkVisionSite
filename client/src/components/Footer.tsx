@@ -126,6 +126,19 @@ export function Footer() {
           <p className="text-white/60 text-sm">
             &copy; {new Date().getFullYear()} LinkVision. All rights reserved.
           </p>
+          <p className="text-white/60 text-sm">
+            LinkVision: An{" "}
+            <a
+              href="https://www.ndpservices.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#C800FF] transition-colors"
+              data-testid="link-ndp-services"
+            >
+              NDP Services Pty Ltd
+            </a>{" "}
+            Product.
+          </p>
           <div className="flex gap-6 text-sm">
             <Link href="/legal/privacy" data-testid="link-footer-privacy">
               <span className="text-white/60 hover:text-[#C800FF] transition-colors cursor-pointer">
