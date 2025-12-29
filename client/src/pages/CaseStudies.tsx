@@ -11,9 +11,7 @@ export default function CaseStudies() {
     if (hash) {
       const element = document.querySelector(hash);
       if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 100);
+        element.scrollIntoView({ behavior: 'instant', block: 'start' });
       }
     } else {
       window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
