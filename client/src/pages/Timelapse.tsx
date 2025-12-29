@@ -45,9 +45,9 @@ export default function Timelapse() {
         
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-[#C800FF]/20 border border-[#C800FF]/40 rounded-full px-4 py-2 mb-6">
-              <Play className="w-4 h-4 text-[#C800FF]" />
-              <span className="text-white/90 text-sm font-medium">Construction Timelapse</span>
+            <div className="inline-flex items-center gap-4 bg-[#C800FF]/20 border-2 border-[#C800FF]/40 rounded-full px-8 py-4 mb-6">
+              <Play className="w-8 h-8 text-[#C800FF]" />
+              <span className="text-white/90 text-2xl font-medium">Construction Timelapse</span>
             </div>
             
             <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight">
