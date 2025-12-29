@@ -40,33 +40,33 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-display font-bold text-lg mb-4">Products</h3>
+            <h3 className="font-display font-bold text-lg mb-4">Solutions</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/products" data-testid="link-footer-solar-cctv">
+                <Link href="/solutions/onevision" data-testid="link-footer-onevision">
                   <span className="text-white/80 hover:text-[#C800FF] transition-colors cursor-pointer">
-                    Solar CCTV Systems
+                    OneVision
                   </span>
                 </Link>
               </li>
               <li>
-                <Link href="/products" data-testid="link-footer-ai-cameras">
+                <Link href="/solutions/widevision" data-testid="link-footer-widevision">
                   <span className="text-white/80 hover:text-[#C800FF] transition-colors cursor-pointer">
-                    AI-Powered Cameras
+                    WideVision
                   </span>
                 </Link>
               </li>
               <li>
-                <Link href="/products" data-testid="link-footer-monitoring">
+                <Link href="/solutions/freevision" data-testid="link-footer-freevision">
                   <span className="text-white/80 hover:text-[#C800FF] transition-colors cursor-pointer">
-                    24/7 Monitoring
+                    FreeVision
                   </span>
                 </Link>
               </li>
               <li>
-                <Link href="/products" data-testid="link-footer-cloud-storage">
+                <Link href="/solutions/custom" data-testid="link-footer-custom">
                   <span className="text-white/80 hover:text-[#C800FF] transition-colors cursor-pointer">
-                    Cloud Storage
+                    Custom Solutions
                   </span>
                 </Link>
               </li>
