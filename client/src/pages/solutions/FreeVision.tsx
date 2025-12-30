@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { CheckCircle2, Move, UserCheck, Car, Shield, AlertTriangle, Volume2 } from "lucide-react";
+import { CheckCircle2, Move, UserCheck, Car, Shield, AlertTriangle, Volume2, Cloud } from "lucide-react";
 
 export default function FreeVision() {
   useEffect(() => {
@@ -17,7 +17,7 @@ export default function FreeVision() {
     "Behavioral Analytics",
     "Real-time Alerts",
     "Custom Alert Zones",
-    "2 Way Audio",
+    "2-Way Audio",
   ];
 
   const capabilities = [
@@ -25,11 +25,6 @@ export default function FreeVision() {
       icon: Move,
       title: "PTZ Control",
       description: "Full pan, tilt, and zoom capability allows you to track subjects across your site. Remote operators can follow activity in real-time or set up automated patrol patterns."
-    },
-    {
-      icon: UserCheck,
-      title: "Facial Recognition",
-      description: "Advanced facial recognition technology identifies known individuals and flags unknown persons. Create allowlists for authorized personnel and alerts for restricted areas."
     },
     {
       icon: Car,
@@ -50,6 +45,11 @@ export default function FreeVision() {
       icon: Volume2,
       title: "2-Way Audio",
       description: "Communicate directly with people on site through the camera's built-in speaker and microphone. Issue warnings, provide instructions, or deter intruders remotely."
+    },
+    {
+      icon: Cloud,
+      title: "One Year Secure Cloud Storage",
+      description: "All FreeVision footage is securely stored in the cloud for 12 months. Review,access and export your recordings anytime, anywhere through our web and mobile applications."
     },
   ];
 

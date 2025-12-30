@@ -23,12 +23,12 @@ export default function CustomSolutions() {
     {
       icon: Building,
       title: "Multi-Site Management",
-      description: "Monitor multiple locations from a single dashboard. Perfect for organizations with sites spread across Australia. Real-time visibility across your entire operation."
+      description: "Monitor multiple locations from a single dashboard. Perfect for organizations with sites spread across different geographical area. Real-time visibility across your entire operation."
     },
     {
       icon: Camera,
       title: "Unlimited Camera Support",
-      description: "Scale your surveillance infrastructure without limits. Add as many cameras as your sites require - our platform grows with your business."
+      description: "Scale your surveillance infrastructure without limits. Add as many cameras as your sites require - our platform grows with your all your sites."
     },
     {
       icon: Users,

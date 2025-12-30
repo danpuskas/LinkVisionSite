@@ -24,7 +24,7 @@ export default function OneVision() {
     "100% Solar Powered",
     "Long Lasting Lithium Battery",
     "Built-in timelapse",
-    "2 Way Audio",
+    "2-Way Audio",
   ];
 
   const capabilities = [
@@ -46,12 +46,12 @@ export default function OneVision() {
     {
       icon: Sun,
       title: "100% Solar Powered",
-      description: "Completely off-grid operation with our high-efficiency solar panels. No external power required - perfect for remote sites across Australia."
+      description: "Completely off-grid operation with our high-efficiency solar panels. No external power required - perfect for any construction site across Central QLD."
     },
     {
       icon: Cloud,
-      title: "One Year Cloud Storage",
-      description: "All footage is securely stored in the cloud for 12 months. Access your recordings anytime, anywhere through our web and mobile applications."
+      title: "One Year Secure Cloud Storage",
+      description: "All OneVision footage is securely stored in the cloud for 12 months. Review,access and export your recordings anytime, anywhere through our web and mobile applications."
     },
     {
       icon: Clock,
@@ -76,7 +76,7 @@ export default function OneVision() {
                 OneVision
               </h1>
               <p className="text-xl text-white/90 mb-8">
-                Our all-in-one flagship system, AI powered with 4K vision, powerful intrusion detection, and built-in timelapse. Perfect for construction sites, infrastructure, and remote locations.
+                Our OneVision system does it all, AI intelligence to pickup any intrusion on your site, 4K Ultra HD video quality and built-in 4K timelapse. Perfect for temporary building sites, development and remote sites.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
@@ -117,14 +117,14 @@ export default function OneVision() {
               Key Capabilities
             </h2>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              OneVision combines cutting-edge technology with robust Australian-made hardware
+              OneVision combines AI driven cutting-edge video technology with the features of an alarm system and monitoring service to provide you with the ultimate in security.
             </p>
           </div>
 
           {/* Colour Night Vision Comparison Slider */}
           <div className="mb-16">
             <h3 className="text-white font-bold text-2xl mb-6 text-center">
-              Powerful Colour Night Vision
+              Superior Colour Night Vision
             </h3>
             <div className="max-w-4xl mx-auto">
               <ImageComparisonSlider

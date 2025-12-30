@@ -1,0 +1,53 @@
+1.Find all "2 Way Audio" throughout all the pages and change it to "2-Way Audio" so it has the hyphen.
+
+
+Commercial Security Case Study Page
+1.Apply new background image uploaded called CaseStudyCommercial.png
+
+
+Agriculture & Farming Page
+1.Apply new background image uploaded called CaseStudyLivestock.png
+
+
+Warehouse & Logistics Page
+1.Apply new background image uploaded called CaseStudyLogistics.png
+
+
+All Case Study Pages in the sub menu
+1.Apply the same card effects to each card on each case study page as on the industry page which have the glow effect/styling
+2.Also change the opacity to 50% for each background image on each case study page.
+
+OneVision Page
+1.Add video of timelapse after the cards. The size of the video to be the same as the Colour Night Vision Slider Images. Keep the same styling.
+2.Video Uploaded: OneVision_ConcretePoor.mp4
+
+
+
+About Page
+1.Remove the Our Journy Section
+2.Remove the Leadership Team Section
+3.Apply the same card effects to all cards on the about page as on the industry page which have the glow effect.
+
+4.Insert the following text into the top card on the about page (currently starting with "Founded in 2108:
+
+LinkVision was developed to solve a recurring problem seen across construction and remote sites: security solutions were either too slow to deploy, too fragmented (multiple vendors and platforms), or too expensive to run at scale once guard hours and ongoing site changes were factored in.
+
+Why LinkVision exists
+LinkVision was built to give builders and project teams a practical alternative to the “layered” model of separate cameras, separate monitoring, and separate response—especially on sites where the layout, access points, and risk areas change weekly.
+The core idea was to make site security deployable in hours (not weeks), and movable as the job progresses, without needing a redesign every time the project shifts.
+
+The problem it targets
+Traditional site security often creates gaps because systems aren’t integrated: footage is in one place, alerts in another, and accountability spread across different providers.
+LinkVision was developed to reduce those gaps by centralising visibility (what happened), detection (what matters), and action (what to do next) into one operating workflow.
+
+The design philosophy
+LinkVision was designed around three principles:
+
+Rapid deployment and relocation as the site footprint evolves.
+
+Remote visibility for project managers who can’t be everywhere at once.
+
+Smarter detection to reduce noise and improve response speed compared with “record-only” setups.
+
+
+

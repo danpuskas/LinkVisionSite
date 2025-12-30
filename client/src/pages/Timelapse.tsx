@@ -17,12 +17,12 @@ export default function Timelapse() {
     {
       icon: Clock,
       title: "Automated Capture",
-      description: "Set it and forget it - our cameras automatically capture footage at your preferred intervals"
+      description: "Turn it on and forget it - our systems automatically capture snapshots at every motion recording the complete build process"
     },
     {
       icon: Shield,
-      title: "Cloud Storage",
-      description: "All timelapse footage is securely stored in the cloud with easy access anytime"
+      title: "Secure Cloud Storage",
+      description: "All timelapse snaphots are securely stored in the cloud with easy access anytime. Generate your own timelapse videos of the build progress or complete project."
     },
   ];
 
@@ -55,7 +55,7 @@ export default function Timelapse() {
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-              Our AI-powered surveillance cameras capture stunning timelapse footage of your construction site, documenting every milestone from groundbreaking to completion.
+              Our AI-powered surveillance cameras capture stunning timelapse footage of your construction site, documenting every milestone from earthworks to completion.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

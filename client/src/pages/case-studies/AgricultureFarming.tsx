@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tractor, CheckCircle2 } from "lucide-react";
-import agricultureBg from "@assets/stock_images/agriculture_farming__1d3e0a9d.jpg";
+import agricultureBg from "@assets/CaseStudyLivestock_1767080113365.png";
 
 export default function AgricultureFarmingCaseStudy() {
   useEffect(() => {
@@ -40,7 +40,7 @@ export default function AgricultureFarmingCaseStudy() {
   return (
     <div className="min-h-screen bg-[#182863] relative">
       <div 
-        className="fixed inset-0 opacity-30 bg-cover bg-center bg-no-repeat pointer-events-none"
+        className="fixed inset-0 opacity-50 bg-cover bg-center bg-no-repeat pointer-events-none"
         style={{ backgroundImage: `url(${agricultureBg})` }}
       />
       <div className="fixed inset-0 bg-gradient-to-b from-[#182863]/70 via-[#182863]/80 to-[#182863]/95 pointer-events-none" />
@@ -66,7 +66,7 @@ export default function AgricultureFarmingCaseStudy() {
 
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               {Object.entries(caseStudy.metrics).map(([key, value], idx) => (
-                <Card key={idx} className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30">
+                <Card key={idx} className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300">
                   <CardContent className="p-6 text-center">
                     <div className="text-3xl font-display font-bold text-white mb-1">
                       {value}
@@ -78,28 +78,28 @@ export default function AgricultureFarmingCaseStudy() {
             </div>
 
             <div className="space-y-8">
-              <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30">
+              <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300">
                 <CardContent className="p-8">
                   <h3 className="text-white font-bold text-xl mb-4">Overview</h3>
                   <p className="text-white/80 leading-relaxed">{caseStudy.overview}</p>
                 </CardContent>
               </Card>
 
-              <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30">
+              <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300">
                 <CardContent className="p-8">
                   <h3 className="text-white font-bold text-xl mb-4">The Challenge</h3>
                   <p className="text-white/80 leading-relaxed">{caseStudy.challenge}</p>
                 </CardContent>
               </Card>
 
-              <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30">
+              <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300">
                 <CardContent className="p-8">
                   <h3 className="text-white font-bold text-xl mb-4">LinkVision's Approach</h3>
                   <p className="text-white/80 leading-relaxed">{caseStudy.solution}</p>
                 </CardContent>
               </Card>
 
-              <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30">
+              <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300">
                 <CardContent className="p-8">
                   <h3 className="text-white font-bold text-xl mb-4">Results</h3>
                   <ul className="space-y-3">
@@ -113,7 +113,7 @@ export default function AgricultureFarmingCaseStudy() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30">
+              <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300">
                 <CardContent className="p-8">
                   <h3 className="text-white font-bold text-xl mb-4">Key Takeaways</h3>
                   <ul className="space-y-3">
@@ -127,7 +127,7 @@ export default function AgricultureFarmingCaseStudy() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30">
+              <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300">
                 <CardContent className="p-8">
                   <h3 className="text-white font-bold text-xl mb-4">Conclusion</h3>
                   <p className="text-white/80 leading-relaxed">{caseStudy.conclusion}</p>

@@ -23,7 +23,7 @@ export default function Products() {
         "100% Solar Powered",
         "Long Lasting Lithium Battery",
         "Built-in timelapse",
-        "2 Way Audio",
+        "2-Way Audio",
       ],
     },
     {
@@ -42,7 +42,7 @@ export default function Products() {
           "100% Solar Powered",
           "Long Lasting Lithium Battery",
           "Built-in timelapse",
-          "2 Way Audio"
+          "2-Way Audio"
       ],
     },
     {
@@ -59,7 +59,7 @@ export default function Products() {
         "Behavioral Analytics",
         "Real-time Alerts",
         "Custom Alert Zones",
-        "2 Way Audio",
+        "2-Way Audio",
       ],
     },
     {

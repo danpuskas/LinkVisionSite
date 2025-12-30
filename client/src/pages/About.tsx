@@ -23,7 +23,7 @@ export default function About() {
     {
       icon: Target,
       title: "Reliability",
-      description: "99.9% uptime guarantee with battle-tested systems",
+      description: "Battle-tested systems for proven and consistant reliablity",
     },
     {
       icon: Globe,
@@ -106,7 +106,7 @@ export default function About() {
               About LinkVision
             </h1>
             <p className="text-xl text-white/80">
-              We're on a mission to make world-class security accessible, sustainable, and intelligent for every Australian
+              LinkVision was developed to give commercial construction teams a simpler way to protect high-value sites—reducing complexity, improving real-time visibility, and delivering scalable security that moves as the project moves.
             </p>
           </div>
 

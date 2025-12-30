@@ -9,17 +9,18 @@ export default function WideVision() {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, []);
   const features = [
-    "4K Ultra HD Resolution",
     "Dual Lenses providing a 180 Degree Panoramic View",
+    "4K Ultra HD Resolution",
     "Colour Night Vision",
     "AI-Powered Detection",
+    "Loud Siren Alarm and Strobe Light",
     "One Year Cloud Storage",
     "24/7 back to base monitoring",
     "4G Connectivity",
     "100% Solar Powered",
     "Long Lasting Lithium Battery",
     "Built-in timelapse",
-    "2 Way Audio",
+    "2-Way Audio",
   ];
 
   const capabilities = [
@@ -30,7 +31,7 @@ export default function WideVision() {
     },
     {
       icon: Camera,
-      title: "Dual 4K Lenses",
+      title: "Dual Lenses with 4K Video",
       description: "Two synchronized 4K cameras work together to create a seamless panoramic image. No blind spots, no stitching artifacts - just crystal clear coverage."
     },
     {
@@ -41,12 +42,12 @@ export default function WideVision() {
     {
       icon: Sun,
       title: "100% Solar Powered",
-      description: "Completely off-grid operation with our high-efficiency solar panels. Perfect for large perimeters and wide-open spaces across Australia."
+      description: "Completely off-grid operation with our high-efficiency solar panels. Perfect for large perimeters and wide-open spaces across Central QLD."
     },
     {
       icon: Cloud,
-      title: "One Year Cloud Storage",
-      description: "All panoramic footage is securely stored in the cloud for 12 months. Review any moment from any angle through our intuitive interface."
+      title: "One Year Secure Cloud Storage",
+      description: "All WideVision footage is securely stored in the cloud for 12 months. Review,access and export your recordings anytime, anywhere through our web and mobile applications."
     },
     {
       icon: Clock,
@@ -71,7 +72,7 @@ export default function WideVision() {
                 WideVision
               </h1>
               <p className="text-xl text-white/90 mb-8">
-                Our panoramic surveillance solution with dual 4K lenses providing 180-degree coverage. See everything with a single unit - perfect for perimeters, parking lots, and large open areas.
+                WideVision provides a remarkable panoramic surveillance solution with dual lenses showcasing 180-degree coverage. See everything with a single unit - perfect for large scale construction sites.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
@@ -112,7 +113,7 @@ export default function WideVision() {
               Key Capabilities
             </h2>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              WideVision maximizes coverage with minimal infrastructure
+              Everything that OneVision does but goes one stop futher. WideVision maximizes coverage with minimal infrastructure
             </p>
           </div>
 
