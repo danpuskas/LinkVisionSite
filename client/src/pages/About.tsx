@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Award, Users, Target, Globe, Heart, User } from "lucide-react";
+import { Shield, Award, Users, Target, Globe, Heart } from "lucide-react";
 
 export default function About() {
   useEffect(() => {
@@ -42,62 +42,6 @@ export default function About() {
     },
   ];
 
-  const timeline = [
-    {
-      year: "2018",
-      title: "Founded",
-      description: "LinkVision was born from a vision to make security accessible and sustainable",
-    },
-    {
-      year: "2019",
-      title: "First Solar CCTV",
-      description: "Launched Australia's first fully solar-powered AI surveillance camera",
-    },
-    {
-      year: "2021",
-      title: "1,000 Installations",
-      description: "Reached milestone of 1,000 installations across Australia",
-    },
-    {
-      year: "2023",
-      title: "AI Revolution",
-      description: "Introduced advanced AI analytics and facial recognition",
-    },
-    {
-      year: "2024",
-      title: "Industry Leader",
-      description: "Became Australia's #1 solar surveillance provider",
-    },
-    {
-      year: "2025",
-      title: "Global Expansion",
-      description: "Expanding to New Zealand and Southeast Asia",
-    },
-  ];
-
-  const team = [
-    {
-      name: "Sarah Chen",
-      role: "CEO & Founder",
-      bio: "Former security consultant with 15 years of industry experience",
-    },
-    {
-      name: "Michael O'Brien",
-      role: "CTO",
-      bio: "AI researcher and solar energy expert",
-    },
-    {
-      name: "Jessica Martinez",
-      role: "Head of Sales",
-      bio: "Passionate about helping customers find the perfect solution",
-    },
-    {
-      name: "David Kim",
-      role: "Head of Engineering",
-      bio: "Leading our product development and innovation efforts",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-[#182863]">
       <section className="py-20 bg-gradient-to-b from-[#1a2f6f] to-[#182863]">
@@ -114,16 +58,51 @@ export default function About() {
           <div className="max-w-4xl mx-auto">
             <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300">
               <CardContent className="p-8 md:p-12">
-                <div className="prose prose-invert max-w-none">
-                  <p className="text-white/90 text-lg leading-relaxed mb-6">
-                    Founded in 2018, LinkVision emerged from a simple observation: traditional security systems were expensive, energy-intensive, and difficult to install in remote locations. We believed there had to be a better way.
-                  </p>
-                  <p className="text-white/90 text-lg leading-relaxed mb-6">
-                    By combining cutting-edge solar technology with advanced AI algorithms, we created Australia's first truly sustainable and intelligent surveillance platform. Today, we protect over 10,000 properties across the country, from family homes in suburban Melbourne to mining operations in the Outback.
-                  </p>
+                <div className="prose prose-invert max-w-none space-y-8">
                   <p className="text-white/90 text-lg leading-relaxed">
-                    Our team of engineers, security experts, and AI researchers work tirelessly to push the boundaries of what's possible in surveillance technology—always with an eye toward sustainability, affordability, and exceptional customer service.
+                    LinkVision was developed to solve a recurring problem seen across construction and remote sites: security solutions were either too slow to deploy, too fragmented (multiple vendors and platforms), or too expensive to run at scale once guard hours and ongoing site changes were factored in.
                   </p>
+
+                  <div>
+                    <h3 className="text-white font-display text-xl font-semibold mb-3">Why LinkVision exists</h3>
+                    <p className="text-white/90 text-lg leading-relaxed">
+                      LinkVision was built to give builders and project teams a practical alternative to the "layered" model of separate cameras, separate monitoring, and separate response—especially on sites where the layout, access points, and risk areas change weekly.
+                    </p>
+                    <p className="text-white/90 text-lg leading-relaxed mt-3">
+                      The core idea was to make site security deployable in hours (not weeks), and movable as the job progresses, without needing a redesign every time the project shifts.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-white font-display text-xl font-semibold mb-3">The problem it targets</h3>
+                    <p className="text-white/90 text-lg leading-relaxed">
+                      Traditional site security often creates gaps because systems aren't integrated: footage is in one place, alerts in another, and accountability spread across different providers.
+                    </p>
+                    <p className="text-white/90 text-lg leading-relaxed mt-3">
+                      LinkVision was developed to reduce those gaps by centralising visibility (what happened), detection (what matters), and action (what to do next) into one operating workflow.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-white font-display text-xl font-semibold mb-3">The design philosophy</h3>
+                    <p className="text-white/90 text-lg leading-relaxed mb-4">
+                      LinkVision was designed around three principles:
+                    </p>
+                    <ul className="space-y-3 text-white/90 text-lg">
+                      <li className="flex items-start gap-3">
+                        <span className="text-[#C800FF] font-bold">1.</span>
+                        <span>Rapid deployment and relocation as the site footprint evolves.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-[#C800FF] font-bold">2.</span>
+                        <span>Remote visibility for project managers who can't be everywhere at once.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-[#C800FF] font-bold">3.</span>
+                        <span>Smarter detection to reduce noise and improve response speed compared with "record-only" setups.</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -157,83 +136,6 @@ export default function About() {
                     {value.title}
                   </h3>
                   <p className="text-white/80">{value.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-[#1a2f6f]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-display font-bold text-4xl text-white mb-4">
-              Our Journey
-            </h2>
-            <p className="text-xl text-white/80">
-              From startup to industry leader
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-8">
-              {timeline.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex gap-6 items-start"
-                  data-testid={`timeline-${index}`}
-                >
-                  <div className="flex-shrink-0">
-                    <div className="w-24 h-24 rounded-lg bg-gradient-linkvision flex items-center justify-center">
-                      <span className="text-white font-display font-bold text-xl">
-                        {item.year}
-                      </span>
-                    </div>
-                  </div>
-                  <Card className="flex-1 bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300">
-                    <CardContent className="p-6">
-                      <h3 className="text-white font-display text-2xl font-semibold mb-2">
-                        {item.title}
-                      </h3>
-                      <p className="text-white/80">{item.description}</p>
-                    </CardContent>
-                  </Card>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-[#182863]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-display font-bold text-4xl text-white mb-4">
-              Leadership Team
-            </h2>
-            <p className="text-xl text-white/80">
-              Meet the people driving innovation at LinkVision
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {team.map((member, index) => (
-              <Card
-                key={index}
-                className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300 text-center"
-                data-testid={`card-team-${index}`}
-              >
-                <CardContent className="p-6">
-                  <div className="w-16 h-16 rounded-full bg-gradient-linkvision flex items-center justify-center mx-auto mb-4">
-                    <User className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-white font-display text-xl font-semibold mb-1">
-                    {member.name}
-                  </h3>
-                  <div className="text-[#C800FF] font-semibold mb-3">
-                    {member.role}
-                  </div>
-                  <p className="text-white/80 text-sm">{member.bio}</p>
                 </CardContent>
               </Card>
             ))}
