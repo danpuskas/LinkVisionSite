@@ -6,6 +6,7 @@ import { CheckCircle2, Sun, Camera, Cloud, Shield, Volume2, Clock } from "lucide
 import oneVisionImage from "@assets/OneVisionOranePole_1764930426921.png";
 import dayImage from "@assets/DayColoutImage_1767000632112.png";
 import nightImage from "@assets/NightColourImage_1767000647165.png";
+import timelapseVideo from "@assets/OneVision_ConcretePoor_1767080101570.mp4";
 import ImageComparisonSlider from "@/components/ImageComparisonSlider";
 
 export default function OneVision() {
@@ -152,6 +153,32 @@ export default function OneVision() {
                 <p className="text-white/80">{capability.description}</p>
               </div>
             ))}
+          </div>
+
+          {/* Timelapse Video Section */}
+          <div className="mt-16">
+            <h3 className="text-white font-bold text-2xl mb-6 text-center">
+              Built-in Timelapse Recording
+            </h3>
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] rounded-xl overflow-hidden transition-all duration-300">
+                <video
+                  className="w-full h-auto"
+                  controls
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  data-testid="video-timelapse"
+                >
+                  <source src={timelapseVideo} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <p className="text-white/70 text-center mt-4 text-sm">
+              Example timelapse from a construction site monitoring project
+            </p>
           </div>
         </div>
       </section>
