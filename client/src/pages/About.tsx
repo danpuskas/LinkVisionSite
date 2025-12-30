@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Award, Users, Target, Globe, Heart } from "lucide-react";
+import { Shield, Award, Users, Target, Globe, Heart, User } from "lucide-react";
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, []);
+
   const values = [
     {
       icon: Shield,
@@ -23,7 +28,7 @@ export default function About() {
     {
       icon: Target,
       title: "Reliability",
-      description: "Battle-tested systems for proven and consistant reliablity",
+      description: "Battle-tested systems for proven and consistent reliability",
     },
     {
       icon: Globe,
@@ -74,25 +79,21 @@ export default function About() {
     {
       name: "Sarah Chen",
       role: "CEO & Founder",
-      avatar: "👩‍💼",
       bio: "Former security consultant with 15 years of industry experience",
     },
     {
       name: "Michael O'Brien",
       role: "CTO",
-      avatar: "👨‍💻",
       bio: "AI researcher and solar energy expert",
     },
     {
       name: "Jessica Martinez",
       role: "Head of Sales",
-      avatar: "👩‍💼",
       bio: "Passionate about helping customers find the perfect solution",
     },
     {
       name: "David Kim",
       role: "Head of Engineering",
-      avatar: "👨‍🔧",
       bio: "Leading our product development and innovation efforts",
     },
   ];
@@ -111,7 +112,7 @@ export default function About() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <Card className="bg-[#1a2f6f] border-2 border-[#C800FF]/30">
+            <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300">
               <CardContent className="p-8 md:p-12">
                 <div className="prose prose-invert max-w-none">
                   <p className="text-white/90 text-lg leading-relaxed mb-6">
@@ -145,7 +146,7 @@ export default function About() {
             {values.map((value, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f] border-2 border-white/10 hover-elevate"
+                className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300"
                 data-testid={`card-value-${index}`}
               >
                 <CardContent className="p-6">
@@ -189,7 +190,7 @@ export default function About() {
                       </span>
                     </div>
                   </div>
-                  <Card className="flex-1 bg-[#182863] border-2 border-white/10">
+                  <Card className="flex-1 bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300">
                     <CardContent className="p-6">
                       <h3 className="text-white font-display text-2xl font-semibold mb-2">
                         {item.title}
@@ -219,11 +220,13 @@ export default function About() {
             {team.map((member, index) => (
               <Card
                 key={index}
-                className="bg-[#1a2f6f] border-2 border-white/10 hover-elevate text-center"
+                className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] transition-all duration-300 text-center"
                 data-testid={`card-team-${index}`}
               >
                 <CardContent className="p-6">
-                  <div className="text-6xl mb-4">{member.avatar}</div>
+                  <div className="w-16 h-16 rounded-full bg-gradient-linkvision flex items-center justify-center mx-auto mb-4">
+                    <User className="w-8 h-8 text-white" />
+                  </div>
                   <h3 className="text-white font-display text-xl font-semibold mb-1">
                     {member.name}
                   </h3>
