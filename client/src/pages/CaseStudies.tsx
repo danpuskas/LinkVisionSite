@@ -7,6 +7,8 @@ import residentialBg from "@assets/CaseStudyResidential_1767052634793.webp";
 import commercialBg from "@assets/CaseStudyCommercial_1767080113365.webp";
 import agricultureBg from "@assets/CaseStudyLivestock_1767080113365.webp";
 import warehouseBg from "@assets/CaseStudyLogistics_1767080113365.webp";
+import industrialBg from "@assets/stock_images/industrial_construct_b79bc8df.webp";
+import miningBg from "@assets/stock_images/mining_operations_op_eb042ffe.webp";
 import SEO from "@/components/SEO";
 
 export default function CaseStudies() {
@@ -46,7 +48,7 @@ export default function CaseStudies() {
       stat: ">95%",
       statLabel: "PPE detection accuracy",
       link: "/case-studies/industrial-civil",
-      image: null,
+      image: industrialBg,
     },
     {
       id: "mining-resources",
@@ -57,7 +59,7 @@ export default function CaseStudies() {
       stat: "40+ km²",
       statLabel: "coverage area",
       link: "/case-studies/mining-resources",
-      image: null,
+      image: miningBg,
     },
     {
       id: "warehouse-logistics",
