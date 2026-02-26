@@ -3,7 +3,8 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Warehouse, CheckCircle2 } from "lucide-react";
-import warehouseBg from "@assets/CaseStudyLogistics_1767080113365.png";
+import warehouseBg from "@assets/CaseStudyLogistics_1767080113365.webp";
+import SEO from "@/components/SEO";
 
 export default function WarehouseLogisticsCaseStudy() {
   useEffect(() => {
@@ -38,7 +39,9 @@ export default function WarehouseLogisticsCaseStudy() {
   };
 
   return (
-    <div className="min-h-screen bg-[#182863] relative">
+    <>
+      <SEO title="Warehouse & Logistics Case Study" description="LinkVision's three-tier surveillance solution for warehousing and logistics: OneVision, WideVision, and FreeVision. 60-70% theft reduction across Australian depots." canonical="/case-studies/warehouse-logistics" />
+      <div className="min-h-screen bg-[#182863] relative">
       <div 
         className="fixed inset-0 opacity-50 bg-cover bg-center bg-no-repeat pointer-events-none"
         style={{ backgroundImage: `url(${warehouseBg})` }}
@@ -149,5 +152,6 @@ export default function WarehouseLogisticsCaseStudy() {
         </div>
       </section>
     </div>
+    </>
   );
 }

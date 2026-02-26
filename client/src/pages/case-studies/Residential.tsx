@@ -3,7 +3,8 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Home, CheckCircle2 } from "lucide-react";
-import residentialBg from "@assets/CaseStudyResidential_1767052634793.png";
+import residentialBg from "@assets/CaseStudyResidential_1767052634793.webp";
+import SEO from "@/components/SEO";
 
 export default function ResidentialCaseStudy() {
   useEffect(() => {
@@ -37,7 +38,9 @@ export default function ResidentialCaseStudy() {
   };
 
   return (
-    <div className="min-h-screen bg-[#182863] relative">
+    <>
+      <SEO title="Residential Construction Case Study" description="How LinkVision reduced theft and vandalism by 60%+ on residential construction sites across Central Queensland. Real results for Australian home builders and developers." canonical="/case-studies/residential" />
+      <div className="min-h-screen bg-[#182863] relative">
       <div 
         className="fixed inset-0 opacity-50 bg-cover bg-center bg-no-repeat pointer-events-none"
         style={{ backgroundImage: `url(${residentialBg})` }}
@@ -148,5 +151,6 @@ export default function ResidentialCaseStudy() {
         </div>
       </section>
     </div>
+    </>
   );
 }

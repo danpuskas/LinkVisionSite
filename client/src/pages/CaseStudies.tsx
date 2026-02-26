@@ -3,10 +3,11 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Factory, Home, HardHat, Warehouse, Tractor, ArrowRight } from "lucide-react";
-import residentialBg from "@assets/CaseStudyResidential_1767052634793.png";
-import commercialBg from "@assets/CaseStudyCommercial_1767080113365.png";
-import agricultureBg from "@assets/CaseStudyLivestock_1767080113365.png";
-import warehouseBg from "@assets/CaseStudyLogistics_1767080113365.png";
+import residentialBg from "@assets/CaseStudyResidential_1767052634793.webp";
+import commercialBg from "@assets/CaseStudyCommercial_1767080113365.webp";
+import agricultureBg from "@assets/CaseStudyLivestock_1767080113365.webp";
+import warehouseBg from "@assets/CaseStudyLogistics_1767080113365.webp";
+import SEO from "@/components/SEO";
 
 export default function CaseStudies() {
   useEffect(() => {
@@ -83,7 +84,9 @@ export default function CaseStudies() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#182863]">
+    <>
+      <SEO title="Industry Case Studies" description="See how LinkVision reduced theft and vandalism by 60-70% across Australian construction, mining, agriculture, and warehousing industries. Real results from real Australian sites." canonical="/case-studies" />
+      <div className="min-h-screen bg-[#182863]">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-b from-[#1a2f6f] to-[#182863]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -204,5 +207,6 @@ export default function CaseStudies() {
         </div>
       </section>
     </div>
+    </>
   );
 }

@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import SEO from "@/components/SEO";
 
 export default function Privacy() {
   const sections = [
@@ -75,11 +76,13 @@ export default function Privacy() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#182863]">
-      <section className="py-20 bg-gradient-to-b from-[#1a2f6f] to-[#182863]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
+    <>
+      <SEO title="Privacy Policy" description="Read LinkVision's Privacy Policy to understand how we collect, use, and protect your personal information when you use our solar surveillance services across Australia." canonical="/legal/privacy" />
+      <div className="min-h-screen bg-[#182863]">
+        <section className="py-20 bg-gradient-to-b from-[#1a2f6f] to-[#182863]">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
               <h1 className="font-display font-bold text-5xl md:text-6xl text-white mb-6">
                 Privacy Policy
               </h1>
@@ -122,5 +125,6 @@ export default function Privacy() {
         </div>
       </section>
     </div>
+    </>
   );
 }

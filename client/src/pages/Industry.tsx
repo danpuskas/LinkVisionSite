@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import SEO from "@/components/SEO";
 import {
   Building2,
   Home,
@@ -85,12 +86,14 @@ export default function Solutions() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#182863]">
+    <>
+      <SEO title="Industries We Serve" description="LinkVision serves construction, industrial, mining, warehousing, logistics, and agriculture industries across Australia with tailored solar CCTV surveillance solutions." canonical="/industry" />
+      <div className="min-h-screen bg-[#182863]">
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/mining-excavator-bg.jpg" 
-            alt="" 
+            src="/mining-excavator-bg.webp" 
+            alt="Mining excavator operating at an Australian resource and mining site"
             className="w-full h-full object-cover opacity-98"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#182863]/40 via-[#182863]/50 to-[#182863]/70" />
@@ -207,5 +210,6 @@ export default function Solutions() {
       </section>
 
     </div>
+    </>
   );
 }

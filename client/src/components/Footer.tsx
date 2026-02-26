@@ -10,7 +10,7 @@ export function Footer() {
             <div className="flex items-center mb-4">
               <img 
                 src="/linkvision-logo.png" 
-                alt="LinkVision - AI Surveillance" 
+                alt="LinkVision - Solar-Powered AI Surveillance Systems Australia" 
                 className="h-12 w-auto"
               />
             </div>

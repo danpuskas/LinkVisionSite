@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Award, Users, Target, Globe, Heart } from "lucide-react";
+import SEO from "@/components/SEO";
 
 export default function About() {
   useEffect(() => {
@@ -43,7 +44,9 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#182863]">
+    <>
+      <SEO title="About LinkVision" description="LinkVision is an Australian company delivering solar-powered AI surveillance solutions to construction, mining, agriculture, and logistics industries. Learn about our mission." canonical="/about" />
+      <div className="min-h-screen bg-[#182863]">
       <section className="py-20 bg-gradient-to-b from-[#1a2f6f] to-[#182863]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -163,5 +166,6 @@ export default function About() {
         </div>
       </section>
     </div>
+    </>
   );
 }

@@ -3,7 +3,8 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tractor, CheckCircle2 } from "lucide-react";
-import agricultureBg from "@assets/CaseStudyLivestock_1767080113365.png";
+import agricultureBg from "@assets/CaseStudyLivestock_1767080113365.webp";
+import SEO from "@/components/SEO";
 
 export default function AgricultureFarmingCaseStudy() {
   useEffect(() => {
@@ -38,7 +39,9 @@ export default function AgricultureFarmingCaseStudy() {
   };
 
   return (
-    <div className="min-h-screen bg-[#182863] relative">
+    <>
+      <SEO title="Agriculture & Farming Case Study" description="Protecting Australian livestock and farmland with LinkVision solar surveillance. Reduces cattle theft, monitors paddocks with 500M+ visibility, integrates Starlink for remote properties." canonical="/case-studies/agriculture-farming" />
+      <div className="min-h-screen bg-[#182863] relative">
       <div 
         className="fixed inset-0 opacity-50 bg-cover bg-center bg-no-repeat pointer-events-none"
         style={{ backgroundImage: `url(${agricultureBg})` }}
@@ -149,5 +152,6 @@ export default function AgricultureFarmingCaseStudy() {
         </div>
       </section>
     </div>
+    </>
   );
 }

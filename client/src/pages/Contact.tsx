@@ -11,6 +11,7 @@ import { apiRequest } from "@/lib/queryClient";
 import { insertContactSubmissionSchema, type InsertContactSubmission } from "@shared/schema";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import SEO from "@/components/SEO";
 
 export default function Contact() {
   const { toast } = useToast();
@@ -78,7 +79,9 @@ export default function Contact() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#182863]">
+    <>
+      <SEO title="Contact Us" description="Get a custom solar surveillance quote from LinkVision. We design tailored AI-powered CCTV systems for your industry and site requirements anywhere in Australia." canonical="/contact" />
+      <div className="min-h-screen bg-[#182863]">
       <section className="py-20 bg-gradient-to-b from-[#1a2f6f] to-[#182863]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -287,5 +290,6 @@ export default function Contact() {
         </div>
       </section>
     </div>
+    </>
   );
 }

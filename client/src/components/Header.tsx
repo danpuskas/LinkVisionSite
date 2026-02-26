@@ -83,7 +83,7 @@ export function Header() {
             <div className="flex items-center hover-elevate active-elevate-2 px-2 py-1 rounded-md cursor-pointer">
               <img
                 src="/linkvision-logo.png"
-                alt="LinkVision - AI Surveillance"
+                alt="LinkVision - Solar-Powered AI Surveillance Systems Australia"
                 className="h-[50px] md:h-[59px] w-auto"
               />
             </div>

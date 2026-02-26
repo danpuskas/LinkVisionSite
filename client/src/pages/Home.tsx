@@ -24,15 +24,16 @@ import {
   Signal,
 } from "lucide-react";
 
-import solarPoweredImg from "@assets/stock_images/solar_panel_energy_r_d5b1e442.jpg";
-import aiDetectionImg from "@assets/AIChipset_1764746384026.png";
-import cloudStorageImg from "@assets/stock_images/cloud_computing_stor_8c4901fe.jpg";
-import ruggedisedImg from "@assets/RuggedTablet_1764736592557.png";
-import resolution4kImg from "@assets/4KCompare_1764740879540.png";
-import instantAlertsImg from "@assets/iphoneAlert3_1764744194316.png";
-import twoWayAudioImg from "@assets/TwowayAudio_1764739561735.png";
-import monitoringImg from "@assets/MonitoringStation_1764733453498.png";
-import connectivity4gImg from "@assets/4GRouterIndustrial_1764733632211.png";
+import solarPoweredImg from "@assets/stock_images/solar_panel_energy_r_d5b1e442.webp";
+import aiDetectionImg from "@assets/AIChipset_1764746384026.webp";
+import cloudStorageImg from "@assets/stock_images/cloud_computing_stor_8c4901fe.webp";
+import ruggedisedImg from "@assets/RuggedTablet_1764736592557.webp";
+import resolution4kImg from "@assets/4KCompare_1764740879540.webp";
+import instantAlertsImg from "@assets/iphoneAlert3_1764744194316.webp";
+import twoWayAudioImg from "@assets/TwowayAudio_1764739561735.webp";
+import monitoringImg from "@assets/MonitoringStation_1764733453498.webp";
+import connectivity4gImg from "@assets/4GRouterIndustrial_1764733632211.webp";
+import SEO from "@/components/SEO";
 
 export default function Home() {
   const { toast } = useToast();
@@ -148,12 +149,42 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#182863]">
+    <>
+      <SEO
+        title="Solar CCTV & AI Surveillance Systems"
+        description="LinkVision provides AI-powered solar CCTV and surveillance systems built for Australia. 100% solar-powered, 4G connected, and AI-ready for construction, mining, agriculture, and more."
+        canonical="/"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "LinkVision",
+          "description": "AI-powered solar CCTV and surveillance systems built for Australia. Serving construction, mining, agriculture, warehousing, and logistics industries.",
+          "url": "https://linkvision.com.au",
+          "logo": "https://linkvision.com.au/linkvision-logo.png",
+          "image": "https://linkvision.com.au/linkvision-logo.png",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Australia"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "AU"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "areaServed": "AU",
+            "availableLanguage": "English"
+          },
+          "sameAs": []
+        }}
+      />
+      <div className="min-h-screen bg-[#182863]">
       <section className="relative min-h-[700px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/solar-camera-bg.jpg" 
-            alt="" 
+            src="/solar-camera-bg.webp" 
+            alt="LinkVision solar-powered CCTV camera tower installed at an Australian site"
             className="w-full h-full object-cover opacity-98"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#182863]/40 via-[#182863]/50 to-[#182863]/70" />
@@ -165,7 +196,7 @@ export default function Home() {
             <div className="mb-8 flex justify-center">
               <img 
                 src="/linkvision-logo.png" 
-                alt="LinkVision - AI Surveillance" 
+                alt="LinkVision - Solar-Powered AI Surveillance Systems Australia" 
                 className="w-full max-w-xl h-auto px-4 drop-shadow-2xl"
               />
             </div>
@@ -383,5 +414,6 @@ export default function Home() {
         </div>
       </section>
     </div>
+    </>
   );
 }

@@ -2,7 +2,8 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Sun, Camera, Cloud, Shield, Wifi, Battery, CheckCircle2, Car, Users, HardHat } from "lucide-react";
-import oneVisionImage from "@assets/OneVisionOranePole_1764930426921.png";
+import oneVisionImage from "@assets/OneVisionOranePole_1764930426921.webp";
+import SEO from "@/components/SEO";
 
 export default function Products() {
   const products = [
@@ -87,12 +88,14 @@ export default function Products() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#182863]">
+    <>
+      <SEO title="Surveillance Solutions" description="Explore LinkVision's range of solar-powered surveillance solutions: OneVision, WideVision, FreeVision, and Custom Systems designed for Australian industries." canonical="/solutions" />
+      <div className="min-h-screen bg-[#182863]">
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/solutions-camera-bg.jpg" 
-            alt="" 
+            src="/solutions-camera-bg.webp" 
+            alt="LinkVision surveillance camera tower against the sky, solar-powered AI security solution"
             className="w-full h-full object-cover opacity-98"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#182863]/40 via-[#182863]/50 to-[#182863]/70" />
@@ -232,5 +235,6 @@ export default function Products() {
         </div>
       </section>
     </div>
+    </>
   );
 }

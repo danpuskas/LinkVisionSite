@@ -3,7 +3,8 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { HardHat, CheckCircle2 } from "lucide-react";
-import industrialBg from "@assets/stock_images/industrial_construct_b79bc8df.jpg";
+import industrialBg from "@assets/stock_images/industrial_construct_b79bc8df.webp";
+import SEO from "@/components/SEO";
 
 export default function IndustrialCivilCaseStudy() {
   useEffect(() => {
@@ -38,7 +39,9 @@ export default function IndustrialCivilCaseStudy() {
   };
 
   return (
-    <div className="min-h-screen bg-[#182863] relative">
+    <>
+      <SEO title="Industrial & Civil Construction Case Study" description="Scalable solar surveillance for large industrial and civil construction projects. LinkVision delivered 65% fewer incidents, full PPE tracking, and licence plate recognition." canonical="/case-studies/industrial-civil" />
+      <div className="min-h-screen bg-[#182863] relative">
       <div 
         className="fixed inset-0 opacity-50 bg-cover bg-center bg-no-repeat pointer-events-none"
         style={{ backgroundImage: `url(${industrialBg})` }}
@@ -149,5 +152,6 @@ export default function IndustrialCivilCaseStudy() {
         </div>
       </section>
     </div>
+    </>
   );
 }

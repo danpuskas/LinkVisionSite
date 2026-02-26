@@ -3,7 +3,8 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Factory, CheckCircle2 } from "lucide-react";
-import miningBg from "@assets/stock_images/mining_operations_op_eb042ffe.jpg";
+import miningBg from "@assets/stock_images/mining_operations_op_eb042ffe.webp";
+import SEO from "@/components/SEO";
 
 export default function MiningResourcesCaseStudy() {
   useEffect(() => {
@@ -39,7 +40,9 @@ export default function MiningResourcesCaseStudy() {
   };
 
   return (
-    <div className="min-h-screen bg-[#182863] relative">
+    <>
+      <SEO title="Mining & Resources Case Study" description="Custom LinkVision surveillance for Australian mining leases up to 40km2. 4G and Starlink connectivity, FreeVision long-range optics, and 60-70% theft reduction." canonical="/case-studies/mining-resources" />
+      <div className="min-h-screen bg-[#182863] relative">
       <div 
         className="fixed inset-0 opacity-50 bg-cover bg-center bg-no-repeat pointer-events-none"
         style={{ backgroundImage: `url(${miningBg})` }}
@@ -150,5 +153,6 @@ export default function MiningResourcesCaseStudy() {
         </div>
       </section>
     </div>
+    </>
   );
 }

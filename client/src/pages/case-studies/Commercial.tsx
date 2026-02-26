@@ -3,7 +3,8 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, CheckCircle2 } from "lucide-react";
-import commercialBg from "@assets/CaseStudyCommercial_1767080113365.png";
+import commercialBg from "@assets/CaseStudyCommercial_1767080113365.webp";
+import SEO from "@/components/SEO";
 
 export default function CommercialCaseStudy() {
   useEffect(() => {
@@ -38,7 +39,9 @@ export default function CommercialCaseStudy() {
   };
 
   return (
-    <div className="min-h-screen bg-[#182863] relative">
+    <>
+      <SEO title="Commercial Construction Case Study" description="LinkVision achieved a 70% reduction in theft and over 95% PPE detection accuracy on commercial construction sites. Protecting Australian projects and workers." canonical="/case-studies/commercial" />
+      <div className="min-h-screen bg-[#182863] relative">
       <div 
         className="fixed inset-0 opacity-50 bg-cover bg-center bg-no-repeat pointer-events-none"
         style={{ backgroundImage: `url(${commercialBg})` }}
@@ -149,5 +152,6 @@ export default function CommercialCaseStudy() {
         </div>
       </section>
     </div>
+    </>
   );
 }

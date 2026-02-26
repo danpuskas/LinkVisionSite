@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Play, Camera, Clock, Shield } from "lucide-react";
+import SEO from "@/components/SEO";
 
 export default function Timelapse() {
   useEffect(() => {
@@ -27,7 +28,9 @@ export default function Timelapse() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#182863]">
+    <>
+      <SEO title="Construction Timelapse Services" description="Capture your entire construction project with LinkVision's integrated timelapse photography. Solar-powered cameras with built-in timelapse for any Australian site." canonical="/timelapse" />
+      <div className="min-h-screen bg-[#182863]">
       <section className="relative h-screen overflow-hidden">
         <video
           autoPlay
@@ -139,5 +142,6 @@ export default function Timelapse() {
         </div>
       </section>
     </div>
+    </>
   );
 }

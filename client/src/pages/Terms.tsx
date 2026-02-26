@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import SEO from "@/components/SEO";
 
 export default function Terms() {
   const sections = [
@@ -98,11 +99,13 @@ export default function Terms() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#182863]">
-      <section className="py-20 bg-gradient-to-b from-[#1a2f6f] to-[#182863]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
+    <>
+      <SEO title="Terms of Service" description="Review LinkVision's Terms of Service governing the use of our solar-powered AI surveillance solutions, website, and related services across Australia." canonical="/legal/terms" />
+      <div className="min-h-screen bg-[#182863]">
+        <section className="py-20 bg-gradient-to-b from-[#1a2f6f] to-[#182863]">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
               <h1 className="font-display font-bold text-5xl md:text-6xl text-white mb-6">
                 Terms of Service
               </h1>
@@ -145,5 +148,6 @@ export default function Terms() {
         </div>
       </section>
     </div>
+    </>
   );
 }

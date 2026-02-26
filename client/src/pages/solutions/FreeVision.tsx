@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Move, UserCheck, Car, Shield, AlertTriangle, Volume2, Cloud } from "lucide-react";
+import SEO from "@/components/SEO";
 
 export default function FreeVision() {
   useEffect(() => {
@@ -54,7 +55,28 @@ export default function FreeVision() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#182863]">
+    <>
+      <SEO
+        title="FreeVision — PTZ Long-Range Surveillance"
+        description="FreeVision by LinkVision: 25x optical zoom PTZ camera with 500M+ clarity, licence plate recognition, and AI-powered detection. Long-range surveillance for mining and large sites."
+        canonical="/solutions/freevision"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "FreeVision PTZ Long-Range Solar Surveillance Tower",
+          "description": "25x optical zoom PTZ solar surveillance with 500M+ clarity, licence plate recognition, and AI-powered detection. Built for mining leases and large Australian sites.",
+          "brand": { "@type": "Brand", "name": "LinkVision" },
+          "url": "https://linkvision.com.au/solutions/freevision",
+          "category": "Security Camera",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "AUD",
+            "availability": "https://schema.org/InStock",
+            "seller": { "@type": "Organization", "name": "LinkVision" }
+          }
+        }}
+      />
+      <div className="min-h-screen bg-[#182863]">
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-b from-[#182863]/40 via-[#182863]/60 to-[#182863]" />
@@ -94,7 +116,7 @@ export default function FreeVision() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-[#C800FF]/20 to-[#B100FF]/20 rounded-2xl blur-3xl" />
               <img
-                src="/camera-tower-cropped.jpg"
+                src="/camera-tower-cropped.webp"
                 alt="FreeVision PTZ Surveillance Tower"
                 className="relative z-10 w-full h-auto rounded-2xl shadow-2xl shadow-[#C800FF]/20"
               />
@@ -159,8 +181,8 @@ export default function FreeVision() {
             <Link href="/solutions/onevision">
               <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300 relative overflow-hidden h-64 cursor-pointer">
                 <img 
-                  src="/onevision-product.png" 
-                  alt="OneVision" 
+                  src="/onevision-product.webp" 
+                  alt="OneVision fixed solar surveillance tower by LinkVision" 
                   className="h-full w-full object-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
                 />
                 <div className="absolute bottom-4 left-4">
@@ -172,8 +194,8 @@ export default function FreeVision() {
             <Link href="/solutions/widevision">
               <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300 relative overflow-hidden h-64 cursor-pointer">
                 <img 
-                  src="/camera-tower-cropped.jpg" 
-                  alt="WideVision" 
+                  src="/camera-tower-cropped.webp" 
+                  alt="WideVision 180-degree panoramic solar surveillance by LinkVision" 
                   className="h-full w-full object-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
                 />
                 <div className="absolute bottom-4 left-4">
@@ -185,8 +207,8 @@ export default function FreeVision() {
             <Link href="/solutions/custom">
               <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300 relative overflow-hidden h-64 cursor-pointer">
                 <img 
-                  src="/camera-tower-cropped.jpg" 
-                  alt="Custom Solutions" 
+                  src="/camera-tower-cropped.webp" 
+                  alt="LinkVision custom solar surveillance system" 
                   className="h-full w-full object-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
                 />
                 <div className="absolute bottom-4 left-4">
@@ -199,5 +221,6 @@ export default function FreeVision() {
         </div>
       </section>
     </div>
+    </>
   );
 }

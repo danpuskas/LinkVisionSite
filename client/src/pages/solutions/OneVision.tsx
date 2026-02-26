@@ -3,11 +3,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Sun, Camera, Cloud, Shield, Volume2, Clock } from "lucide-react";
-import oneVisionImage from "@assets/OneVisionOranePole_1764930426921.png";
-import dayImage from "@assets/DayColoutImage_1767000632112.png";
-import nightImage from "@assets/NightColourImage_1767000647165.png";
+import oneVisionImage from "@assets/OneVisionOranePole_1764930426921.webp";
+import dayImage from "@assets/DayColoutImage_1767000632112.webp";
+import nightImage from "@assets/NightColourImage_1767000647165.webp";
 import timelapseVideo from "@assets/OneVision_ConcretePoor_1767080101570.mp4";
 import ImageComparisonSlider from "@/components/ImageComparisonSlider";
+import SEO from "@/components/SEO";
 
 export default function OneVision() {
   useEffect(() => {
@@ -62,7 +63,28 @@ export default function OneVision() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#182863]">
+    <>
+      <SEO
+        title="OneVision — Fixed Solar Surveillance Tower"
+        description="OneVision by LinkVision: 4K solar-powered CCTV with AI detection, 4G connectivity, colour night vision, and cloud storage. The new standard for Australian site security."
+        canonical="/solutions/onevision"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "OneVision Solar Surveillance Tower",
+          "description": "4K solar-powered CCTV with AI detection, 4G connectivity, colour night vision, cloud storage, and 2-way audio. Fully autonomous solar surveillance for Australian sites.",
+          "brand": { "@type": "Brand", "name": "LinkVision" },
+          "url": "https://linkvision.com.au/solutions/onevision",
+          "category": "Security Camera",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "AUD",
+            "availability": "https://schema.org/InStock",
+            "seller": { "@type": "Organization", "name": "LinkVision" }
+          }
+        }}
+      />
+      <div className="min-h-screen bg-[#182863]">
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-b from-[#182863]/40 via-[#182863]/60 to-[#182863]" />
@@ -211,8 +233,8 @@ export default function OneVision() {
             <Link href="/solutions/widevision">
               <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300 relative overflow-hidden h-64 cursor-pointer">
                 <img 
-                  src="/camera-tower-cropped.jpg" 
-                  alt="WideVision" 
+                  src="/camera-tower-cropped.webp" 
+                  alt="WideVision 180-degree panoramic solar surveillance by LinkVision" 
                   className="h-full w-full object-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
                 />
                 <div className="absolute bottom-4 left-4">
@@ -224,8 +246,8 @@ export default function OneVision() {
             <Link href="/solutions/freevision">
               <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300 relative overflow-hidden h-64 cursor-pointer">
                 <img 
-                  src="/camera-tower-cropped.jpg" 
-                  alt="FreeVision" 
+                  src="/camera-tower-cropped.webp" 
+                  alt="FreeVision PTZ long-range solar surveillance by LinkVision" 
                   className="h-full w-full object-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
                 />
                 <div className="absolute bottom-4 left-4">
@@ -237,8 +259,8 @@ export default function OneVision() {
             <Link href="/solutions/custom">
               <Card className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300 relative overflow-hidden h-64 cursor-pointer">
                 <img 
-                  src="/camera-tower-cropped.jpg" 
-                  alt="Custom Solutions" 
+                  src="/camera-tower-cropped.webp" 
+                  alt="LinkVision custom solar surveillance system" 
                   className="h-full w-full object-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
                 />
                 <div className="absolute bottom-4 left-4">
@@ -251,5 +273,6 @@ export default function OneVision() {
         </div>
       </section>
     </div>
+    </>
   );
 }

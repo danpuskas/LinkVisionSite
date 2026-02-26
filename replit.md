@@ -87,11 +87,20 @@ Preferred communication style: Simple, everyday language.
 - Embla Carousel: Carousel/slider functionality (imported but implementation pending)
 - CMDK: Command menu component for keyboard-driven interfaces
 
+**SEO & Performance**
+- react-helmet-async: Per-page meta tags, Open Graph tags, canonical URLs, and JSON-LD structured data
+- All 20 pages have unique title tags, descriptions, and OG tags managed dynamically
+- JSON-LD LocalBusiness schema on Home; Product schema on all 4 solution pages
+- sitemap.xml and robots.txt served as static files from client/public/
+- Code splitting via React.lazy + Suspense on all page-level routes in App.tsx
+- All images converted to WebP format for performance (26 images converted)
+
 **Development Tools**
 - tsx: TypeScript execution for development server
 - esbuild: Fast JavaScript bundler for production builds
 - Drizzle Kit: CLI tool for database migrations and schema management
 - Replit-specific Vite plugins for enhanced development experience
+- sharp: Image processing library used for WebP conversion (scripts/convert-to-webp.mjs)
 
 **Form & Validation**
 - React Hook Form: Performance-optimized form state management
@@ -109,6 +118,7 @@ Preferred communication style: Simple, everyday language.
 - nanoid: Compact unique ID generation
 
 **Brand Assets**
-- Logo files: `/public/linkvision-logo.svg` (full wordmark) and `/public/linkvision-symbol.svg` (icon only)
-- Video assets referenced in design for hero section background
+- Logo files: `/client/public/linkvision-logo.png` and `/client/public/linkvision-symbol.png` (kept as PNG for quality)
+- All other images converted to WebP format and stored in `client/public/` or `attached_assets/`
+- Video assets: `timelapse-hero.mp4` in client/public/
 - Design guidelines document specifying exact color codes, typography, and layout structure
