@@ -10,6 +10,7 @@ import {
   Warehouse,
   Tractor,
   CheckCircle2,
+  ArrowRight,
 } from "lucide-react";
 
 export default function Solutions() {
@@ -18,6 +19,7 @@ export default function Solutions() {
       icon: Home,
       title: "Residential Construction",
       description: "Protect your build with AI Driven intelligent solar surveillance",
+      caseStudyLink: "/case-studies/residential",
       benefits: [
         "Deter and reduce theft and vandalism",
         "Monitor deliveries",
@@ -29,6 +31,7 @@ export default function Solutions() {
       icon: Building2,
       title: "Commercial Construction",
       description: "Complete surveillance solutions for commercial construction sites",
+      caseStudyLink: "/case-studies/commercial",
       benefits: [
         "24/7 perimeter monitoring",
         "Arm and Disarm your site just like an Alarm System",
@@ -40,6 +43,7 @@ export default function Solutions() {
       icon: Factory,
       title: "Industrial & Civil Construction",
       description: "Protect and Monitor expansive areas all from the one screen",
+      caseStudyLink: "/case-studies/industrial-civil",
       benefits: [
         "Protect industrial machinery and equipment",
         "Monitor entry and exit construction ramps",
@@ -52,6 +56,7 @@ export default function Solutions() {
       icon: HardHat,
       title: "Mining & Resources",
       description: "Rugged surveillance for remote mining operations",
+      caseStudyLink: "/case-studies/mining-resources",
       benefits: [
         "Monitor remote mine sites 24/7",
         "Heavy equipment and asset protection",
@@ -63,6 +68,7 @@ export default function Solutions() {
       icon: Warehouse,
       title: "Warehouses & Logistics",
       description: "Monitor large facilities with solar-powered coverage",
+      caseStudyLink: "/case-studies/warehouse-logistics",
       benefits: [
         "Inventory and asset protection",
         "Loading dock monitoring",
@@ -75,6 +81,7 @@ export default function Solutions() {
       icon: Tractor,
       title: "Agriculture & Farming",
       description: "Protect livestock, machinery, and rural properties",
+      caseStudyLink: "/case-studies/agriculture-farming",
       benefits: [
         "Livestock theft prevention",
         "Machinery and fuel protection",
@@ -115,7 +122,7 @@ export default function Solutions() {
               {solutions.slice(0, 3).map((solution, index) => (
                 <Card
                   key={index}
-                  className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300 h-full"
+                  className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300 h-full flex flex-col"
                   data-testid={`card-solution-${index}`}
                 >
                   <CardHeader>
@@ -129,8 +136,8 @@ export default function Solutions() {
                       {solution.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <div>
+                  <CardContent className="flex flex-col flex-1">
+                    <div className="flex-1">
                       <h4 className="text-white font-semibold mb-3">Key Benefits</h4>
                       <ul className="space-y-2">
                         {solution.benefits.map((benefit, idx) => (
@@ -141,6 +148,16 @@ export default function Solutions() {
                         ))}
                       </ul>
                     </div>
+                    <Link href={solution.caseStudyLink} className="mt-6 block">
+                      <Button
+                        variant="outline"
+                        className="w-full border-[#C800FF]/50 text-white hover:border-[#C800FF]"
+                        data-testid={`button-case-study-${index}`}
+                      >
+                        View Case Study
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               ))}
@@ -149,7 +166,7 @@ export default function Solutions() {
               {solutions.slice(3).map((solution, index) => (
                 <Card
                   key={index + 3}
-                  className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300 h-full"
+                  className="bg-[#1a2f6f]/50 backdrop-blur-sm border-2 border-[#C800FF]/30 hover:border-[#C800FF] hover:bg-[#1a2f6f]/85 hover:shadow-[0_0_30px_rgba(200,0,255,0.5)] hover-elevate transition-all duration-300 h-full flex flex-col"
                   data-testid={`card-solution-${index + 3}`}
                 >
                   <CardHeader>
@@ -163,8 +180,8 @@ export default function Solutions() {
                       {solution.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <div>
+                  <CardContent className="flex flex-col flex-1">
+                    <div className="flex-1">
                       <h4 className="text-white font-semibold mb-3">Key Benefits</h4>
                       <ul className="space-y-2">
                         {solution.benefits.map((benefit, idx) => (
@@ -175,6 +192,16 @@ export default function Solutions() {
                         ))}
                       </ul>
                     </div>
+                    <Link href={solution.caseStudyLink} className="mt-6 block">
+                      <Button
+                        variant="outline"
+                        className="w-full border-[#C800FF]/50 text-white hover:border-[#C800FF]"
+                        data-testid={`button-case-study-${index + 3}`}
+                      >
+                        View Case Study
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               ))}
